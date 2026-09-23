@@ -1,0 +1,13 @@
+# Direct runtime dependencies for the retained source tree (Python >= 3.10).
+# This is an installation specification, NOT the original Full-run lockfile.
+# Install the appropriate CPU/CUDA torch build first; see README.md.
+numpy>=1.26,<3
+pandas>=2.2,<3
+torch>=2.2,<3
+xarray>=2024.1
+h5py>=3.10,<4
+h5netcdf>=1.3,<2
+scikit-learn>=1.4,<2
+matplotlib>=3.8,<4
+
+# Optional process-title support (code has a fallback): setproctitle

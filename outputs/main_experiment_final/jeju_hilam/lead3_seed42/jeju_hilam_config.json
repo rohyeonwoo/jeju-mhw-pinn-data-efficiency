@@ -1,0 +1,101 @@
+{
+  "model": "jeju_hilam",
+  "model_label": "SeaCast-inspired HiLAM / JejuHiLAM",
+  "lead": 3,
+  "history": 30,
+  "seed": 42,
+  "input_feature_names": [
+    "sst_mean",
+    "sst_anom",
+    "u_ml",
+    "v_ml",
+    "mlotst",
+    "ssr",
+    "str",
+    "slhf",
+    "sshf",
+    "mslp",
+    "tcc",
+    "Td_glorys",
+    "wind10",
+    "thetao_z0m_anom",
+    "thetao_z16m_anom",
+    "thetao_z34m_anom",
+    "thetao_z78m_anom",
+    "thetao_z110m_anom",
+    "thetao_z156m_anom"
+  ],
+  "input_dim": 19,
+  "include_residual_feature": false,
+  "prediction_mode": "direct",
+  "physics_mode": "none",
+  "lambda_physics": 0.0,
+  "physics_preset": null,
+  "physics_components": null,
+  "physics_normalize": null,
+  "physics_rhs_scale": null,
+  "zero_rres_physics": null,
+  "lambda_rres": 0.0,
+  "rres_penalty_normalize": null,
+  "lambda_we_tie": 0.0,
+  "entrainment_dt": 1.0,
+  "hidden_dim": 256,
+  "temporal_hidden_dim": 256,
+  "processor_layers": 3,
+  "mlp_hidden_layers": 1,
+  "batch_size": 8,
+  "epochs": 80,
+  "patience": 12,
+  "lr": 0.0002,
+  "initial_lr": 2e-05,
+  "weight_decay": 0.1,
+  "device": "cuda",
+  "graph": {
+    "height": 29,
+    "width": 33,
+    "grid_cells": 957,
+    "ocean_nodes": 661,
+    "land_or_masked_cells": 296,
+    "sw_nodes": 36,
+    "levels": [
+      {
+        "level": 0,
+        "nodes": 661,
+        "same_directed_edges": 4842
+      },
+      {
+        "level": 1,
+        "nodes": 192,
+        "same_directed_edges": 1328
+      },
+      {
+        "level": 2,
+        "nodes": 52,
+        "same_directed_edges": 322
+      }
+    ],
+    "cross_level_edges": [
+      {
+        "from_level": 0,
+        "to_level": 1,
+        "up_directed_edges": 661,
+        "down_directed_edges": 661
+      },
+      {
+        "from_level": 1,
+        "to_level": 2,
+        "up_directed_edges": 192,
+        "down_directed_edges": 192
+      }
+    ],
+    "g2m_directed_edges": 661,
+    "m2g_directed_edges": 661,
+    "static_feature_dim": 5,
+    "edge_feature_dim": 5
+  },
+  "train_samples": 7647,
+  "val_samples": 1638,
+  "test_samples": 1640,
+  "target_mean": 19.15559959411621,
+  "target_std": 5.748348236083984
+}

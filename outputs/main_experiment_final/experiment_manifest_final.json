@@ -1,0 +1,93 @@
+{
+  "experiment_set": "main_experiment_final",
+  "final_physics": "P0",
+  "final_physics_reason": "P1 degraded too strongly at lead14 in final P0-P3 ablation; P0 is selected for main experiments.",
+  "output_root": "D:\\MHW\\outputs\\main_experiment_final",
+  "data_path": "D:\\MHW\\data\\merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+  "target": "sst_mean",
+  "split": "chronological 70/15/15",
+  "history_days": 30,
+  "leads": [
+    1,
+    3,
+    7,
+    14
+  ],
+  "seeds": [
+    42,
+    7,
+    123
+  ],
+  "dynamic_vars": "sst_mean,sst_anom,u_ml,v_ml,mlotst,ssr,str,slhf,sshf,mslp,tcc,Td_glorys,wind10,thetao_z0m_anom,thetao_z16m_anom,thetao_z34m_anom,thetao_z78m_anom,thetao_z110m_anom,thetao_z156m_anom",
+  "convlstm_static_vars": "ocean_mask_static,lat2d,lon2d",
+  "residual_feature_map": "off",
+  "reuse_old_results": true,
+  "convlstm_input_channels": 22,
+  "hilam_temporal_input_channels": 19,
+  "lambda_physics": 0.1,
+  "lambda_rres": 10,
+  "zero_rres_physics": true,
+  "rhs_normalization": "train-fixed",
+  "physics_time_mode": "daily_rollout",
+  "git_commit": "unknown (git rev-parse failed)",
+  "run_timestamp_utc": "2026-08-29T08:07:05.9312378Z",
+  "invoked_command": "D:\\MHW\\MHW\\run_main_experiment_final.ps1 -FinalPhysics \"P0\" -AblationRoot \"D:\\MHW\\outputs\\physics_ablation_final\" -OutputRoot \"D:\\MHW\\outputs\\main_experiment_final\" -Leads \"1,3,7,14\" -Seeds \"42,7,123\" -RunSummary \"True\"",
+  "ablation_root": "D:\\MHW\\outputs\\physics_ablation_final",
+  "reused_runs": [
+    {
+      "family": "convlstm_pinn",
+      "lead": 7,
+      "seed": 42,
+      "source_metrics_path": "D:\\MHW\\outputs\\physics_ablation_final\\seed42\\lead7\\p0_original\\hybrid_mt_pinn_lead_07_history_30_metrics.json",
+      "dest_metrics_path": "D:\\MHW\\outputs\\main_experiment_final\\convlstm_pinn\\lead7\\seed42\\hybrid_mt_pinn_lead_07_history_30_metrics.json"
+    },
+    {
+      "family": "convlstm_pinn",
+      "lead": 7,
+      "seed": 7,
+      "source_metrics_path": "D:\\MHW\\outputs\\physics_ablation_final\\seed7\\lead7\\p0_original\\hybrid_mt_pinn_lead_07_history_30_metrics.json",
+      "dest_metrics_path": "D:\\MHW\\outputs\\main_experiment_final\\convlstm_pinn\\lead7\\seed7\\hybrid_mt_pinn_lead_07_history_30_metrics.json"
+    },
+    {
+      "family": "convlstm_pinn",
+      "lead": 7,
+      "seed": 123,
+      "source_metrics_path": "D:\\MHW\\outputs\\physics_ablation_final\\seed123\\lead7\\p0_original\\hybrid_mt_pinn_lead_07_history_30_metrics.json",
+      "dest_metrics_path": "D:\\MHW\\outputs\\main_experiment_final\\convlstm_pinn\\lead7\\seed123\\hybrid_mt_pinn_lead_07_history_30_metrics.json"
+    },
+    {
+      "family": "convlstm_pinn",
+      "lead": 14,
+      "seed": 42,
+      "source_metrics_path": "D:\\MHW\\outputs\\physics_ablation_final\\seed42\\lead14\\p0_original\\hybrid_mt_pinn_lead_14_history_30_metrics.json",
+      "dest_metrics_path": "D:\\MHW\\outputs\\main_experiment_final\\convlstm_pinn\\lead14\\seed42\\hybrid_mt_pinn_lead_14_history_30_metrics.json"
+    },
+    {
+      "family": "convlstm_pinn",
+      "lead": 14,
+      "seed": 7,
+      "source_metrics_path": "D:\\MHW\\outputs\\physics_ablation_final\\seed7\\lead14\\p0_original\\hybrid_mt_pinn_lead_14_history_30_metrics.json",
+      "dest_metrics_path": "D:\\MHW\\outputs\\main_experiment_final\\convlstm_pinn\\lead14\\seed7\\hybrid_mt_pinn_lead_14_history_30_metrics.json"
+    },
+    {
+      "family": "convlstm_pinn",
+      "lead": 14,
+      "seed": 123,
+      "source_metrics_path": "D:\\MHW\\outputs\\physics_ablation_final\\seed123\\lead14\\p0_original\\hybrid_mt_pinn_lead_14_history_30_metrics.json",
+      "dest_metrics_path": "D:\\MHW\\outputs\\main_experiment_final\\convlstm_pinn\\lead14\\seed123\\hybrid_mt_pinn_lead_14_history_30_metrics.json"
+    }
+  ],
+  "reused_run_count": 6,
+  "summary_status": "complete",
+  "missing_run_count": 0,
+  "missing_runs": [],
+  "summary_files": {
+    "raw_results": "D:\\MHW\\outputs\\main_experiment_final\\main_experiment_raw_results_final.csv",
+    "summary": "D:\\MHW\\outputs\\main_experiment_final\\main_experiment_summary_final.csv",
+    "seed_paired_deltas": "D:\\MHW\\outputs\\main_experiment_final\\main_experiment_seed_paired_deltas_final.csv",
+    "delta_summary": "D:\\MHW\\outputs\\main_experiment_final\\main_experiment_deltas_final.csv",
+    "markdown": "D:\\MHW\\outputs\\main_experiment_final\\main_experiment_summary_final.md",
+    "per_run_csv_dir": "D:\\MHW\\outputs\\main_experiment_final\\per_run_csvs_final"
+  },
+  "mhw_definition": "train-only DOY 90% threshold, +/-5 day centered window, min_duration=5, no threshold smoothing, no gap merge"
+}

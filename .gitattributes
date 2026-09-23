@@ -1,0 +1,22 @@
+# Normalize new documentation and support files.
+* text=auto
+/.gitignore text eol=lf
+/.gitattributes text eol=lf
+/requirements.txt text eol=lf
+/README.md text eol=lf
+/AGENTS.md text eol=lf
+/scripts/*.py text eol=lf
+/docs/*.md text eol=lf
+
+# Preserve exact bytes: subset metadata contains source/manifest SHA-256,
+# and --check compares generated subset JSON byte-for-byte.
+/src/** -text
+/data/subsets/*.json -text
+/outputs/main_experiment_final/experiment_manifest_final.json -text
+
+*.nc binary
+*.pt binary
+*.pth binary
+*.ckpt binary
+*.npz binary
+*.npy binary

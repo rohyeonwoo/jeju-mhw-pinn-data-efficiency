@@ -1,0 +1,382 @@
+{
+  "data_path": "D:\\MHW\\data\\merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+  "dataset_dims": {
+    "time": 10957,
+    "latitude": 29,
+    "longitude": 33
+  },
+  "experiment_set": "main_experiment_final",
+  "target": "sst_mean",
+  "split": "chronological 70/15/15 by window sample count",
+  "history_days": 30,
+  "leads": [
+    1,
+    3,
+    7,
+    14
+  ],
+  "seeds": [
+    42,
+    7,
+    123
+  ],
+  "persistence": "deterministic, no seed",
+  "final_physics": "P0",
+  "feature_map_enabled": false,
+  "residual_map_loaded": false,
+  "dynamic_vars": [
+    "sst_mean",
+    "sst_anom",
+    "u_ml",
+    "v_ml",
+    "mlotst",
+    "ssr",
+    "str",
+    "slhf",
+    "sshf",
+    "mslp",
+    "tcc",
+    "Td_glorys",
+    "wind10",
+    "thetao_z0m_anom",
+    "thetao_z16m_anom",
+    "thetao_z34m_anom",
+    "thetao_z78m_anom",
+    "thetao_z110m_anom",
+    "thetao_z156m_anom"
+  ],
+  "dynamic_var_count": 19,
+  "static_vars": [
+    "ocean_mask_static",
+    "lat2d",
+    "lon2d"
+  ],
+  "static_var_count": 3,
+  "convlstm_expected_channels": 22,
+  "hilam_expected_temporal_channels": 19,
+  "physics_settings": {
+    "qnet_formula": "qnet = ssr + str + slhf + sshf",
+    "qnet_positive_direction": "ocean warming",
+    "u_v": "u_ml, v_ml",
+    "zero_rres_physics": true,
+    "lambda_physics": 0.1,
+    "lambda_rres": 10.0,
+    "rhs_normalization": "train-fixed",
+    "physics_time_mode": "daily_rollout",
+    "k_diff_m2_s": 100.0,
+    "hm_min_m": 5.0,
+    "vadv_kday_cap": "+/-2.0 K day^-1"
+  },
+  "final_physics_terms": {
+    "physics_preset": "P0",
+    "physics_components": "original",
+    "vertical_enabled": false,
+    "diffusion_enabled": false
+  },
+  "available_ablation_terms": [
+    {
+      "preset": "P0",
+      "physics_components": "original",
+      "vertical_enabled": false,
+      "diffusion_enabled": false
+    },
+    {
+      "preset": "P1",
+      "physics_components": "original,vertical",
+      "vertical_enabled": true,
+      "diffusion_enabled": false
+    },
+    {
+      "preset": "P2",
+      "physics_components": "original,diffusion",
+      "vertical_enabled": false,
+      "diffusion_enabled": true
+    },
+    {
+      "preset": "P3",
+      "physics_components": "original,vertical,diffusion",
+      "vertical_enabled": true,
+      "diffusion_enabled": true
+    }
+  ],
+  "split_rows": [
+    {
+      "lead": 1,
+      "split": "train",
+      "n_samples": 7648,
+      "input_start": "1993-01-01",
+      "input_end": "2014-01-07",
+      "target_start": "1993-01-31",
+      "target_end": "2014-01-08"
+    },
+    {
+      "lead": 1,
+      "split": "val",
+      "n_samples": 1639,
+      "input_start": "2013-12-10",
+      "input_end": "2018-07-04",
+      "target_start": "2014-01-09",
+      "target_end": "2018-07-05"
+    },
+    {
+      "lead": 1,
+      "split": "test",
+      "n_samples": 1640,
+      "input_start": "2018-06-06",
+      "input_end": "2022-12-30",
+      "target_start": "2018-07-06",
+      "target_end": "2022-12-31"
+    },
+    {
+      "lead": 3,
+      "split": "train",
+      "n_samples": 7647,
+      "input_start": "1993-01-01",
+      "input_end": "2014-01-06",
+      "target_start": "1993-02-02",
+      "target_end": "2014-01-09"
+    },
+    {
+      "lead": 3,
+      "split": "val",
+      "n_samples": 1638,
+      "input_start": "2013-12-09",
+      "input_end": "2018-07-02",
+      "target_start": "2014-01-10",
+      "target_end": "2018-07-05"
+    },
+    {
+      "lead": 3,
+      "split": "test",
+      "n_samples": 1640,
+      "input_start": "2018-06-04",
+      "input_end": "2022-12-28",
+      "target_start": "2018-07-06",
+      "target_end": "2022-12-31"
+    },
+    {
+      "lead": 7,
+      "split": "train",
+      "n_samples": 7644,
+      "input_start": "1993-01-01",
+      "input_end": "2014-01-03",
+      "target_start": "1993-02-06",
+      "target_end": "2014-01-10"
+    },
+    {
+      "lead": 7,
+      "split": "val",
+      "n_samples": 1638,
+      "input_start": "2013-12-06",
+      "input_end": "2018-06-29",
+      "target_start": "2014-01-11",
+      "target_end": "2018-07-06"
+    },
+    {
+      "lead": 7,
+      "split": "test",
+      "n_samples": 1639,
+      "input_start": "2018-06-01",
+      "input_end": "2022-12-24",
+      "target_start": "2018-07-07",
+      "target_end": "2022-12-31"
+    },
+    {
+      "lead": 14,
+      "split": "train",
+      "n_samples": 7639,
+      "input_start": "1993-01-01",
+      "input_end": "2013-12-29",
+      "target_start": "1993-02-13",
+      "target_end": "2014-01-12"
+    },
+    {
+      "lead": 14,
+      "split": "val",
+      "n_samples": 1637,
+      "input_start": "2013-12-01",
+      "input_end": "2018-06-23",
+      "target_start": "2014-01-13",
+      "target_end": "2018-07-07"
+    },
+    {
+      "lead": 14,
+      "split": "test",
+      "n_samples": 1638,
+      "input_start": "2018-05-26",
+      "input_end": "2022-12-17",
+      "target_start": "2018-07-08",
+      "target_end": "2022-12-31"
+    }
+  ],
+  "channel_checks": [
+    {
+      "lead": 1,
+      "convlstm_x_channels_without_feature_map": 22,
+      "convlstm_model_input_channels": 22,
+      "convlstm_expected_channels": 22,
+      "f_seq_placeholder_channels": 1,
+      "f_seq_placeholder_max_abs": 0.0,
+      "hilam_temporal_channels_without_residual": 19,
+      "hilam_expected_temporal_channels": 19,
+      "hilam_node_count": 661,
+      "hilam_static_feature_dim": 5,
+      "hilam_edge_feature_dim": 5,
+      "hilam_input_features": [
+        "sst_mean",
+        "sst_anom",
+        "u_ml",
+        "v_ml",
+        "mlotst",
+        "ssr",
+        "str",
+        "slhf",
+        "sshf",
+        "mslp",
+        "tcc",
+        "Td_glorys",
+        "wind10",
+        "thetao_z0m_anom",
+        "thetao_z16m_anom",
+        "thetao_z34m_anom",
+        "thetao_z78m_anom",
+        "thetao_z110m_anom",
+        "thetao_z156m_anom"
+      ]
+    },
+    {
+      "lead": 3,
+      "convlstm_x_channels_without_feature_map": 22,
+      "convlstm_model_input_channels": 22,
+      "convlstm_expected_channels": 22,
+      "f_seq_placeholder_channels": 1,
+      "f_seq_placeholder_max_abs": 0.0,
+      "hilam_temporal_channels_without_residual": 19,
+      "hilam_expected_temporal_channels": 19,
+      "hilam_node_count": 661,
+      "hilam_static_feature_dim": 5,
+      "hilam_edge_feature_dim": 5,
+      "hilam_input_features": [
+        "sst_mean",
+        "sst_anom",
+        "u_ml",
+        "v_ml",
+        "mlotst",
+        "ssr",
+        "str",
+        "slhf",
+        "sshf",
+        "mslp",
+        "tcc",
+        "Td_glorys",
+        "wind10",
+        "thetao_z0m_anom",
+        "thetao_z16m_anom",
+        "thetao_z34m_anom",
+        "thetao_z78m_anom",
+        "thetao_z110m_anom",
+        "thetao_z156m_anom"
+      ]
+    },
+    {
+      "lead": 7,
+      "convlstm_x_channels_without_feature_map": 22,
+      "convlstm_model_input_channels": 22,
+      "convlstm_expected_channels": 22,
+      "f_seq_placeholder_channels": 1,
+      "f_seq_placeholder_max_abs": 0.0,
+      "hilam_temporal_channels_without_residual": 19,
+      "hilam_expected_temporal_channels": 19,
+      "hilam_node_count": 661,
+      "hilam_static_feature_dim": 5,
+      "hilam_edge_feature_dim": 5,
+      "hilam_input_features": [
+        "sst_mean",
+        "sst_anom",
+        "u_ml",
+        "v_ml",
+        "mlotst",
+        "ssr",
+        "str",
+        "slhf",
+        "sshf",
+        "mslp",
+        "tcc",
+        "Td_glorys",
+        "wind10",
+        "thetao_z0m_anom",
+        "thetao_z16m_anom",
+        "thetao_z34m_anom",
+        "thetao_z78m_anom",
+        "thetao_z110m_anom",
+        "thetao_z156m_anom"
+      ]
+    },
+    {
+      "lead": 14,
+      "convlstm_x_channels_without_feature_map": 22,
+      "convlstm_model_input_channels": 22,
+      "convlstm_expected_channels": 22,
+      "f_seq_placeholder_channels": 1,
+      "f_seq_placeholder_max_abs": 0.0,
+      "hilam_temporal_channels_without_residual": 19,
+      "hilam_expected_temporal_channels": 19,
+      "hilam_node_count": 661,
+      "hilam_static_feature_dim": 5,
+      "hilam_edge_feature_dim": 5,
+      "hilam_input_features": [
+        "sst_mean",
+        "sst_anom",
+        "u_ml",
+        "v_ml",
+        "mlotst",
+        "ssr",
+        "str",
+        "slhf",
+        "sshf",
+        "mslp",
+        "tcc",
+        "Td_glorys",
+        "wind10",
+        "thetao_z0m_anom",
+        "thetao_z16m_anom",
+        "thetao_z34m_anom",
+        "thetao_z78m_anom",
+        "thetao_z110m_anom",
+        "thetao_z156m_anom"
+      ]
+    }
+  ],
+  "seed_probes": [
+    {
+      "seed": 42,
+      "python_random": 0.6394268,
+      "numpy_random": 0.37454012,
+      "torch_random": 0.88226926
+    },
+    {
+      "seed": 7,
+      "python_random": 0.32383276,
+      "numpy_random": 0.07630829,
+      "torch_random": 0.53492254
+    },
+    {
+      "seed": 123,
+      "python_random": 0.0523636,
+      "numpy_random": 0.69646919,
+      "torch_random": 0.29611194
+    }
+  ],
+  "torch_determinism": {
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false
+  },
+  "qnet_minmax": {
+    "min": -1633.234130859375,
+    "max": 425.9721374511719
+  },
+  "vadv_kday_minmax": {
+    "min": -2.0,
+    "max": 2.0
+  }
+}
