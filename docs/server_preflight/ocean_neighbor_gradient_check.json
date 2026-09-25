@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "linear_field_derivatives_exact": true,
+  "land_fill_invariance": true,
+  "land_gradient_exactly_zero": true,
+  "unsupported_cell_excluded": true,
+  "autograd_finite_difference_passed": true,
+  "accuracy": "second-order centered when both neighbors are ocean; first-order one-sided with one ocean neighbor"
+}

@@ -1,0 +1,8 @@
+{
+  "local_dataset": "/home/yeonwoo/mhw_subset/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+  "ceph_dataset": "/ceph_data/yeonwoo/MHW_subset/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+  "dataset_sha256": "fff22a44aeeb35fdd26f29b0d0ade7cf9549c18f5ae29aef2a415a5826708ec2",
+  "local_duplicate_bytes_removed": 1300083528,
+  "local_output_link": "/home/yeonwoo/mhw_subset/outputs/data_efficiency",
+  "ceph_output_directory": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency"
+}

@@ -93,3 +93,81 @@ SeaCast baseline보다 더 나은 성능을 보이는지 확인한다.
 ## 작업 원칙
 - 파일 삭제, 이동, 모델 코드 수정은 반드시 목록을 먼저 보여주고 승인을 받은 뒤 진행한다.
 - 주요 결정과 이유는 docs/research_log.md에 날짜별로 기록한다.
+
+
+## 서버 GPU 프로세스 이름 규칙 (2026-09-24 사용자 지시)
+
+- 모든 GPU 점검·학습 프로세스는 `yeonwoo` 계정으로 실행하고, nvidia-smi의 Process name에도 정확히 `yeonwoo`가 표시되어야 한다. PID 칸은 숫자다.
+- `mhw_subset` 환경의 setproctitle은 필수다. `scripts/requirements-server.txt`에 서버 추가 의존성을 기록했다.
+- 기존 원본 src를 수정하지 않고 `python -B scripts/run_as_yeonwoo.py <실행할 Python 파일> [인자...]`로 실행한다. 이 래퍼는 GPU 사용 전에 이름을 지정한다. 향후 별도 학습 실행기와 subprocess 실행도 이 규칙을 적용한다.
+- 새 GPU 진입점을 직접 실행해야 한다면 CUDA 사용 전에 setproctitle.setproctitle("yeonwoo")를 호출하고 라이브 nvidia-smi 표시를 검증한다. MHW_PROCESS_NAME 환경변수만 지정해도 미호출 코드에 자동 적용되는 것은 아니다.
+- 검증 명령: `python -B scripts/run_as_yeonwoo.py --check-gpu-name`. 모델 학습 없이 GPU를 잠깐 사용해 자신의 PID/Process name을 검사하고 종료한다.
+
+
+## 로컬 디스크와 Ceph 저장 규칙 (2026-09-24 사용자 정정, 최우선)
+
+- `~/mhw_subset`에는 코드·문서·작은 설정/지표/subset JSON만 보관한다. 대용량 NetCDF, 체크포인트, 예측 배열, 대용량 로그·캐시를 로컬에 복사하거나 생성하지 않는다.
+- 데이터 실체: `/ceph_data/yeonwoo/MHW_subset/data/`. 로컬 `data/`의 NetCDF는 Ceph 원본을 가리키는 심볼릭 링크다. 링크를 실체 파일로 바꾸는 copy/dereference 작업을 하지 않는다.
+- 새 실험 출력 실체: `/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/`. 로컬 `outputs/data_efficiency`는 이 폴더를 가리키는 링크다. 향후 학습 실행기는 가능하면 Ceph 절대경로를 output-root로 지정한다. smoke 출력도 이 Ceph 경로 아래에 둔다.
+- conda 환경은 이미 `/ceph_data/yeonwoo/conda_envs/mhw_subset`에 있으므로 로컬로 복사하지 않는다. 기존 Full 결과는 보존한다.
+- subset 생성기는 데이터 경로를 resolve하여 메타데이터에 기록하므로 로컬 symlink 도입 후 로컬 생성기의 --check는 경로 메타데이터가 달라진다. 원본 JSON을 덮어쓰지 않고 아래 Ceph 원본 생성기로 바이트 재현성을 검사한다. 로컬 subset/분할 소스/실행기/manifest는 Ceph 원본과 별도 바이트 비교해 동일성을 확인한다.
+
+```bash
+cd ~/mhw_subset
+conda activate mhw_subset
+python -B scripts/run_as_yeonwoo.py /ceph_data/yeonwoo/MHW_subset/scripts/make_train_subsets.py --check
+```
+
+
+## 현재 본 실험 큐 (2026-09-24 사용자 재배치)
+
+- 이전 outputs/data_efficiency/_queue/batch_status.json은 stopped_by_user인 과거 시도다. 현재 큐는 Ceph `outputs/data_efficiency/allocation_5plus4/_queue/batch_status.json`, 포인터는 `outputs/data_efficiency/current_attempt.json`이다. 기존 큐를 재시작하거나 중복 실행하지 않는다.
+- tmux: `mhw_subset_5plus4`. GPU 0에 10% seed42/7/123 + 25% seed42/7 (5개), GPU 1에 25% seed123 + 50% seed42/7/123 (4개). GPU 2는 사용하지 않는다.
+- 각 비율/seed 슬롯의 baseline/P0 × lead7/14 네 실행 후, 먼저 빈 슬롯부터 100% 공용 큐를 처리한다. 100% 포함 전체 48개이며 batch8, fp32, Full 통계·S-step 일정은 유지한다.
+- 관리자: scripts/launch_fixed_allocation.py. 학습 실행기: scripts/train_data_efficiency.py. 모든 GPU 이름은 yeonwoo, 모든 대용량 출력은 Ceph에 둔다.
+
+
+## 최신 실행 조건: batch16 / 5+5 (2026-09-24 사용자 변경, 위 이전 배치보다 우선)
+
+- 사용자가 batch16으로 변경하고 GPU 0/1에 각각 5개 동시 실행을 확정했다. 이전 batch8 5+4 시도는 stopped_by_user이며 9+9 증설은 적용되지 않았다.
+- 현재 큐는 Ceph outputs/data_efficiency/allocation_batch16_5plus5/_queue/batch_status.json, tmux mhw_subset_b16_5plus5. current_attempt.json 포인터를 먼저 확인하고 과거 큐를 재시작하지 않는다.
+- GPU0: 10% seed42/7/123 + 25% seed42/7. GPU1: 25% seed123 + 50% seed42/7/123 + 100% seed42. 각 슬롯의 두 모델×두 lead 처리 후 나머지 100% seed7/123을 공용 큐에서 처리한다. 총 48개/동시 최대 10개.
+- 두 lead 모두 S=478, max_steps=38240, warmup_steps=2390, validation 간격 478. batch 외 기존 모델·분할·통계·손실·LR 조건은 유지한다. 기존 Full은 batch8 결과로 보존·별도 표기한다.
+- 학습: scripts/train_data_efficiency.py --batch-size 16. 큐: scripts/launch_batch16_5plus5.py. 모든 GPU 이름 yeonwoo 및 Ceph 저장 규칙 유지.
+
+
+## Full batch16 후속 기준점 (2026-09-24 사용자 추가 요청)
+
+- 현재 subset 48개 종료 후 batch16 Full 12개(3seed×2lead×2모델)를 추가한다. 총 본 학습 60개다. 기존 Full batch8 결과는 보존한다.
+- Full은 lead7 7644/lead14 7639 샘플이며 100% block subset 3995와 구분한다. 동일 batch16/S478/max38240/warmup2390/통계/val-test/평가 조건을 사용한다.
+- 후속 큐: scripts/run_full_batch16_after_subset.py, tmux mhw_subset_full_b16_followup. Ceph full_batch16_matched/_queue/batch_status.json은 현재 waiting_for_subset이며 subset 성공 완료 뒤 smoke→Full 순서로 실행한다. 중단된 이전 시도를 dependency로 바꾸지 않는다.
+- 학습 실행기의 --full과 --ratio는 상호 배타적이다. 후속 계획과 상태는 Ceph batch16_study_plan.json 및 full_followup.json을 참조한다. 예약 후 runner를 바꾸면 후속 큐의 해시 검토도 갱신해야 한다.
+
+
+## 최신 진행: lambda 파일럿 18회 (2026-09-25)
+
+- 기존 batch16 subset48+Full12는 완료·보존됐다. 현재 큐는 Ceph outputs/data_efficiency/lambda_pilot_lead7_20260925/_queue/batch_status.json, tmux mhw_lambda_pilot. current_attempt.json 또는 lambda_pilot_current.json을 먼저 확인한다.
+- lead7, 10% subset376개와 원래 Full7644개, 3seed, lambda_physics=0/0.01/0.3의 18개. lambda_rres=10 유지이므로 lambda_phys=0은 baseline이 아니라 보조 손실 대조다. 기존 lambda0.1과 baseline을 비교점으로 재사용한다.
+- GPU0/1 각각 최대5개. process name yeonwoo, conda mhw_subset, 코드 ~/mhw_subset, 큰 출력 Ceph 규칙 유지.
+- scripts/train_lambda_pilot.py와 launch_lambda_pilot.py가 현재 파일럿 실행기다. 원본 src 및 이전 train_data_efficiency.py는 보존한다. 범위·검증·통계 규칙은 docs/server_preflight/lambda_pilot_protocol.json, 검증 결과는 lambda_pilot_validation.json 참조.
+- 큐 완료 후 기존 MHW 평가와 summarize_lambda_pilot.py가 _analysis/report.md를 만든다. 25%·lead14·tendency-only·기후값 등 확대 실행은 이번 파일럿에 포함되지 않았다.
+
+
+## 최신 진행: 해양 이웃 차분 P0/P1 파일럿 30회 (2026-09-25)
+
+- 사용자 명시 승인으로 해양 이웃 중앙/한쪽 차분 보정을 적용한다. 원본src와 기존결과는 보존하고 새 scripts/train_physics_pilot.py와 physics_stencil.py, physics_interval.py를 사용한다.
+- 큐: Ceph outputs/data_efficiency/physics_pilot_lead7_20260925/_queue/batch_status.json. tmux mhw_physics_pilot. current_attempt.json 및 physics_pilot_current.json이 이 큐를 가리킨다. 이전 완료 큐를 재시작하지 않는다.
+- 10%/lead7/3seed: 맞춘baseline3 + 순수P0일별9 + 순수P0기간평균9 + 순수P1일별9 =30회. 각물리arm lambda.01/.1/.3, lambda_rres0, lambda_we_tie0, zero_rres_physics=True. baseline은추가손실모두0이고동일head초기화/RNG를유지한다.
+- 물리차분은바다이웃만사용하고660개격자에적용한다. 온도학습/평가는661개전체다. 새공통Full-train P0 RHS스케일0.08996321398271197을사용하며입력/타깃통계와분할은기존그대로다. 기존RHS스케일과Full/부분자료결과를덮어쓰지않는다.
+- batch16, S478, 최대38240step, 기존검증·조기종료조건, GPU0/1각5슬롯. GPU이름yeonwoo와Ceph저장규칙유지. 실제10개학습이시작되어50step이상진행한것을확인했다.
+- 실행전프로토콜: docs/server_preflight/physics_pilot_protocol.json. GPU4조건smoke, 동일초기화/배치순서, 평가격자검증통과: physics_pilot_validation.json. 실제시작증거: physics_pilot_launch_check.json.
+- 종료후원본MHW평가기와 summarize_physics_pilot.py로모든결과를보고하고검증평균으로lambda를선택한다. 추가비율/lead/Full로자동확장하지않는다. 경계진단과한계는docs/physics_boundary_review.md참조.
+
+
+## 최신 실행: 해안 보정 파일럿 4+4 재시작 (2026-09-25, 이전5+5보다우선)
+
+- 사용자가메모리여유를위해현재5+5를중단하고4+4로줄이라고명시했다. 이전physics_pilot_lead7_20260925는stopped_by_user이며부분결과를보존했다. 재시작하지않는다.
+- 현재큐는Ceph outputs/data_efficiency/physics_pilot_lead7_20260925_4plus4/_queue/batch_status.json, tmux mhw_physics_pilot_4plus4. current_attempt.json/physics_pilot_current.json을먼저확인한다.
+- 관리자scripts/launch_physics_pilot_4plus4.py가GPU0/1각4개,총8슬롯을사용한다. 동일30회를동일seed에서처음부터실행한다. 기존checkpoint에는optimizer/stream/RNG전체재개상태가없어서부분재개하지않는다.
+- 학습/손실코드는변경하지않았으며기존4조건GPU검증의해시와일치한다. batch16/fp32, P0/P1조건·lambda·660개물리/661개온도격자·통계·분할은모두같다. GPU이름yeonwoo/Ceph규칙유지.
+- 확정조건: docs/server_preflight/physics_pilot_4plus4_protocol.json. 시작확인: physics_pilot_4plus4_launch_check.json.

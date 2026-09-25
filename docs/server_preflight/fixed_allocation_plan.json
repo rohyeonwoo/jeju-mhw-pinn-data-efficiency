@@ -1,0 +1,556 @@
+{
+  "layout": [
+    [
+      "0",
+      10,
+      42
+    ],
+    [
+      "0",
+      10,
+      7
+    ],
+    [
+      "0",
+      10,
+      123
+    ],
+    [
+      "0",
+      25,
+      42
+    ],
+    [
+      "0",
+      25,
+      7
+    ],
+    [
+      "1",
+      25,
+      123
+    ],
+    [
+      "1",
+      50,
+      42
+    ],
+    [
+      "1",
+      50,
+      7
+    ],
+    [
+      "1",
+      50,
+      123
+    ]
+  ],
+  "jobs": [
+    {
+      "id": 0,
+      "ratio": 10,
+      "seed": 42,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/jeju_hilam/lead7_seed42",
+      "slot": 0,
+      "gpu": "0"
+    },
+    {
+      "id": 1,
+      "ratio": 10,
+      "seed": 42,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/pi_jeju_hilam/lead7_seed42",
+      "slot": 0,
+      "gpu": "0"
+    },
+    {
+      "id": 2,
+      "ratio": 10,
+      "seed": 42,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/jeju_hilam/lead14_seed42",
+      "slot": 0,
+      "gpu": "0"
+    },
+    {
+      "id": 3,
+      "ratio": 10,
+      "seed": 42,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/pi_jeju_hilam/lead14_seed42",
+      "slot": 0,
+      "gpu": "0"
+    },
+    {
+      "id": 4,
+      "ratio": 10,
+      "seed": 7,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/jeju_hilam/lead7_seed7",
+      "slot": 1,
+      "gpu": "0"
+    },
+    {
+      "id": 5,
+      "ratio": 10,
+      "seed": 7,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/pi_jeju_hilam/lead7_seed7",
+      "slot": 1,
+      "gpu": "0"
+    },
+    {
+      "id": 6,
+      "ratio": 10,
+      "seed": 7,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/jeju_hilam/lead14_seed7",
+      "slot": 1,
+      "gpu": "0"
+    },
+    {
+      "id": 7,
+      "ratio": 10,
+      "seed": 7,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/pi_jeju_hilam/lead14_seed7",
+      "slot": 1,
+      "gpu": "0"
+    },
+    {
+      "id": 8,
+      "ratio": 10,
+      "seed": 123,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/jeju_hilam/lead7_seed123",
+      "slot": 2,
+      "gpu": "0"
+    },
+    {
+      "id": 9,
+      "ratio": 10,
+      "seed": 123,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/pi_jeju_hilam/lead7_seed123",
+      "slot": 2,
+      "gpu": "0"
+    },
+    {
+      "id": 10,
+      "ratio": 10,
+      "seed": 123,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/jeju_hilam/lead14_seed123",
+      "slot": 2,
+      "gpu": "0"
+    },
+    {
+      "id": 11,
+      "ratio": 10,
+      "seed": 123,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_10/pi_jeju_hilam/lead14_seed123",
+      "slot": 2,
+      "gpu": "0"
+    },
+    {
+      "id": 12,
+      "ratio": 25,
+      "seed": 42,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/jeju_hilam/lead7_seed42",
+      "slot": 3,
+      "gpu": "0"
+    },
+    {
+      "id": 13,
+      "ratio": 25,
+      "seed": 42,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/pi_jeju_hilam/lead7_seed42",
+      "slot": 3,
+      "gpu": "0"
+    },
+    {
+      "id": 14,
+      "ratio": 25,
+      "seed": 42,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/jeju_hilam/lead14_seed42",
+      "slot": 3,
+      "gpu": "0"
+    },
+    {
+      "id": 15,
+      "ratio": 25,
+      "seed": 42,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/pi_jeju_hilam/lead14_seed42",
+      "slot": 3,
+      "gpu": "0"
+    },
+    {
+      "id": 16,
+      "ratio": 25,
+      "seed": 7,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/jeju_hilam/lead7_seed7",
+      "slot": 4,
+      "gpu": "0"
+    },
+    {
+      "id": 17,
+      "ratio": 25,
+      "seed": 7,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/pi_jeju_hilam/lead7_seed7",
+      "slot": 4,
+      "gpu": "0"
+    },
+    {
+      "id": 18,
+      "ratio": 25,
+      "seed": 7,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/jeju_hilam/lead14_seed7",
+      "slot": 4,
+      "gpu": "0"
+    },
+    {
+      "id": 19,
+      "ratio": 25,
+      "seed": 7,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/pi_jeju_hilam/lead14_seed7",
+      "slot": 4,
+      "gpu": "0"
+    },
+    {
+      "id": 20,
+      "ratio": 25,
+      "seed": 123,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/jeju_hilam/lead7_seed123",
+      "slot": 5,
+      "gpu": "1"
+    },
+    {
+      "id": 21,
+      "ratio": 25,
+      "seed": 123,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/pi_jeju_hilam/lead7_seed123",
+      "slot": 5,
+      "gpu": "1"
+    },
+    {
+      "id": 22,
+      "ratio": 25,
+      "seed": 123,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/jeju_hilam/lead14_seed123",
+      "slot": 5,
+      "gpu": "1"
+    },
+    {
+      "id": 23,
+      "ratio": 25,
+      "seed": 123,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_25/pi_jeju_hilam/lead14_seed123",
+      "slot": 5,
+      "gpu": "1"
+    },
+    {
+      "id": 24,
+      "ratio": 50,
+      "seed": 42,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/jeju_hilam/lead7_seed42",
+      "slot": 6,
+      "gpu": "1"
+    },
+    {
+      "id": 25,
+      "ratio": 50,
+      "seed": 42,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/pi_jeju_hilam/lead7_seed42",
+      "slot": 6,
+      "gpu": "1"
+    },
+    {
+      "id": 26,
+      "ratio": 50,
+      "seed": 42,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/jeju_hilam/lead14_seed42",
+      "slot": 6,
+      "gpu": "1"
+    },
+    {
+      "id": 27,
+      "ratio": 50,
+      "seed": 42,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/pi_jeju_hilam/lead14_seed42",
+      "slot": 6,
+      "gpu": "1"
+    },
+    {
+      "id": 28,
+      "ratio": 50,
+      "seed": 7,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/jeju_hilam/lead7_seed7",
+      "slot": 7,
+      "gpu": "1"
+    },
+    {
+      "id": 29,
+      "ratio": 50,
+      "seed": 7,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/pi_jeju_hilam/lead7_seed7",
+      "slot": 7,
+      "gpu": "1"
+    },
+    {
+      "id": 30,
+      "ratio": 50,
+      "seed": 7,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/jeju_hilam/lead14_seed7",
+      "slot": 7,
+      "gpu": "1"
+    },
+    {
+      "id": 31,
+      "ratio": 50,
+      "seed": 7,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/pi_jeju_hilam/lead14_seed7",
+      "slot": 7,
+      "gpu": "1"
+    },
+    {
+      "id": 32,
+      "ratio": 50,
+      "seed": 123,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/jeju_hilam/lead7_seed123",
+      "slot": 8,
+      "gpu": "1"
+    },
+    {
+      "id": 33,
+      "ratio": 50,
+      "seed": 123,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/pi_jeju_hilam/lead7_seed123",
+      "slot": 8,
+      "gpu": "1"
+    },
+    {
+      "id": 34,
+      "ratio": 50,
+      "seed": 123,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/jeju_hilam/lead14_seed123",
+      "slot": 8,
+      "gpu": "1"
+    },
+    {
+      "id": 35,
+      "ratio": 50,
+      "seed": 123,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_50/pi_jeju_hilam/lead14_seed123",
+      "slot": 8,
+      "gpu": "1"
+    },
+    {
+      "id": 36,
+      "ratio": 100,
+      "seed": 42,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/jeju_hilam/lead7_seed42"
+    },
+    {
+      "id": 37,
+      "ratio": 100,
+      "seed": 7,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/jeju_hilam/lead7_seed7"
+    },
+    {
+      "id": 38,
+      "ratio": 100,
+      "seed": 123,
+      "lead": 7,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/jeju_hilam/lead7_seed123"
+    },
+    {
+      "id": 39,
+      "ratio": 100,
+      "seed": 42,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/pi_jeju_hilam/lead7_seed42"
+    },
+    {
+      "id": 40,
+      "ratio": 100,
+      "seed": 7,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/pi_jeju_hilam/lead7_seed7"
+    },
+    {
+      "id": 41,
+      "ratio": 100,
+      "seed": 123,
+      "lead": 7,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/pi_jeju_hilam/lead7_seed123"
+    },
+    {
+      "id": 42,
+      "ratio": 100,
+      "seed": 42,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/jeju_hilam/lead14_seed42"
+    },
+    {
+      "id": 43,
+      "ratio": 100,
+      "seed": 7,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/jeju_hilam/lead14_seed7"
+    },
+    {
+      "id": 44,
+      "ratio": 100,
+      "seed": 123,
+      "lead": 14,
+      "mode": "none",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/jeju_hilam/lead14_seed123"
+    },
+    {
+      "id": 45,
+      "ratio": 100,
+      "seed": 42,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/pi_jeju_hilam/lead14_seed42"
+    },
+    {
+      "id": 46,
+      "ratio": 100,
+      "seed": 7,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/pi_jeju_hilam/lead14_seed7"
+    },
+    {
+      "id": 47,
+      "ratio": 100,
+      "seed": 123,
+      "lead": 14,
+      "mode": "p0_original",
+      "status": "pending",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_5plus4/ratio_100/pi_jeju_hilam/lead14_seed123"
+    }
+  ],
+  "status": "validated"
+}

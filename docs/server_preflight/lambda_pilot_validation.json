@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "runner_sha256": "97ab313e5d574fefae6a0dae58ed7e5e8e4aff0d508ad08b9d72f4851b7f55c7",
+  "cpu_report": "/home/yeonwoo/mhw_subset/docs/server_preflight/lambda_pilot_cpu_check.json",
+  "smoke_checks": [
+    {
+      "regime": "ratio_10",
+      "lambda_physics": 0.0,
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_lambda_pilot_20260925/new/_smoke/lambda_0/ratio_10/pi_jeju_hilam/lead7_seed42",
+      "status": "passed"
+    },
+    {
+      "regime": "ratio_10",
+      "lambda_physics": 0.01,
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_lambda_pilot_20260925/new/_smoke/lambda_0p01/ratio_10/pi_jeju_hilam/lead7_seed42",
+      "status": "passed"
+    },
+    {
+      "regime": "ratio_10",
+      "lambda_physics": 0.3,
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_lambda_pilot_20260925/new/_smoke/lambda_0p3/ratio_10/pi_jeju_hilam/lead7_seed42",
+      "status": "passed"
+    },
+    {
+      "regime": "full",
+      "lambda_physics": 0.0,
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_lambda_pilot_20260925/new/_smoke/lambda_0/full/pi_jeju_hilam/lead7_seed42",
+      "status": "passed"
+    },
+    {
+      "regime": "full",
+      "lambda_physics": 0.01,
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_lambda_pilot_20260925/new/_smoke/lambda_0p01/full/pi_jeju_hilam/lead7_seed42",
+      "status": "passed"
+    },
+    {
+      "regime": "full",
+      "lambda_physics": 0.3,
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_lambda_pilot_20260925/new/_smoke/lambda_0p3/full/pi_jeju_hilam/lead7_seed42",
+      "status": "passed"
+    }
+  ],
+  "compatibility": {
+    "lambda_physics": 0.1,
+    "legacy_run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_lambda_pilot_20260925/compat_legacy/_smoke/ratio_10/pi_jeju_hilam/lead7_seed42",
+    "new_run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_lambda_pilot_20260925/compat_new/_smoke/lambda_0p1/ratio_10/pi_jeju_hilam/lead7_seed42",
+    "max_parameter_difference": 0.0,
+    "max_prediction_difference": 0.0
+  },
+  "gpu": "0",
+  "batch_size": 16,
+  "process_name": "yeonwoo"
+}

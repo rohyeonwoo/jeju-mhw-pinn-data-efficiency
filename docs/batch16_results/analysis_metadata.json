@@ -1,0 +1,459 @@
+{
+  "created_utc": "2026-09-25T02:29:14.237565+00:00",
+  "script_sha256": "d7a0873237355f8323752d92fc65263e73bceba3e9c7804c3934304df7d837ac",
+  "sources": [
+    {
+      "path": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_10/mhw_skill.json",
+      "sha256": "09bd038c849bb769e65252d85f39415d1e5ed6d1a94efada052495fe7b5a9587",
+      "config": {
+        "data_path": "/ceph_data/yeonwoo/MHW_subset/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+        "roots": [
+          "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_10/jeju_hilam",
+          "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_10/pi_jeju_hilam"
+        ],
+        "leads": [
+          7,
+          14
+        ],
+        "seeds": [
+          7,
+          42,
+          123
+        ],
+        "threshold": "train-first-70% DOY 90% percentile, +/-5d, min_duration=5",
+        "mhw_counting": "CSI/POD/FAR are pooled over ocean grid-time cells.",
+        "strong_plus_definition": "tail_strong_plus_* uses Hobday normalized intensity >= 2.0 on MHW days after min-duration filtering.",
+        "event_definition": "Onset/duration are from the domain MHW index using area_frac=0.15 and onset_tolerance=3d."
+      }
+    },
+    {
+      "path": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_25/mhw_skill.json",
+      "sha256": "ba050f440c1282c49e7a26b411e4f1425570877c56b3963cc20aa7730ed29ef8",
+      "config": {
+        "data_path": "/ceph_data/yeonwoo/MHW_subset/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+        "roots": [
+          "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_25/jeju_hilam",
+          "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_25/pi_jeju_hilam"
+        ],
+        "leads": [
+          7,
+          14
+        ],
+        "seeds": [
+          7,
+          42,
+          123
+        ],
+        "threshold": "train-first-70% DOY 90% percentile, +/-5d, min_duration=5",
+        "mhw_counting": "CSI/POD/FAR are pooled over ocean grid-time cells.",
+        "strong_plus_definition": "tail_strong_plus_* uses Hobday normalized intensity >= 2.0 on MHW days after min-duration filtering.",
+        "event_definition": "Onset/duration are from the domain MHW index using area_frac=0.15 and onset_tolerance=3d."
+      }
+    },
+    {
+      "path": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_50/mhw_skill.json",
+      "sha256": "a2da2674038e21f5aebe58b4e13f11edfba19e5cf20ad311b57a93afcac22f4f",
+      "config": {
+        "data_path": "/ceph_data/yeonwoo/MHW_subset/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+        "roots": [
+          "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_50/jeju_hilam",
+          "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_50/pi_jeju_hilam"
+        ],
+        "leads": [
+          7,
+          14
+        ],
+        "seeds": [
+          7,
+          42,
+          123
+        ],
+        "threshold": "train-first-70% DOY 90% percentile, +/-5d, min_duration=5",
+        "mhw_counting": "CSI/POD/FAR are pooled over ocean grid-time cells.",
+        "strong_plus_definition": "tail_strong_plus_* uses Hobday normalized intensity >= 2.0 on MHW days after min-duration filtering.",
+        "event_definition": "Onset/duration are from the domain MHW index using area_frac=0.15 and onset_tolerance=3d."
+      }
+    },
+    {
+      "path": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_100/mhw_skill.json",
+      "sha256": "28023bad523aa3709c9e1f7e0a9c2649feee03d2c2f8f24b9d1f06b240998914",
+      "config": {
+        "data_path": "/ceph_data/yeonwoo/MHW_subset/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+        "roots": [
+          "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_100/jeju_hilam",
+          "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/allocation_batch16_5plus5/ratio_100/pi_jeju_hilam"
+        ],
+        "leads": [
+          7,
+          14
+        ],
+        "seeds": [
+          7,
+          42,
+          123
+        ],
+        "threshold": "train-first-70% DOY 90% percentile, +/-5d, min_duration=5",
+        "mhw_counting": "CSI/POD/FAR are pooled over ocean grid-time cells.",
+        "strong_plus_definition": "tail_strong_plus_* uses Hobday normalized intensity >= 2.0 on MHW days after min-duration filtering.",
+        "event_definition": "Onset/duration are from the domain MHW index using area_frac=0.15 and onset_tolerance=3d."
+      }
+    },
+    {
+      "path": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/full_batch16_matched/full/mhw_skill.json",
+      "sha256": "feda61327b7a492cfe838f99d0e13800a9639cd434b5eaf1fda87e93829a0717",
+      "config": {
+        "data_path": "/ceph_data/yeonwoo/MHW_subset/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+        "roots": [
+          "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/full_batch16_matched/full/jeju_hilam",
+          "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/full_batch16_matched/full/pi_jeju_hilam"
+        ],
+        "leads": [
+          7,
+          14
+        ],
+        "seeds": [
+          7,
+          42,
+          123
+        ],
+        "threshold": "train-first-70% DOY 90% percentile, +/-5d, min_duration=5",
+        "mhw_counting": "CSI/POD/FAR are pooled over ocean grid-time cells.",
+        "strong_plus_definition": "tail_strong_plus_* uses Hobday normalized intensity >= 2.0 on MHW days after min-duration filtering.",
+        "event_definition": "Onset/duration are from the domain MHW index using area_frac=0.15 and onset_tolerance=3d."
+      }
+    }
+  ],
+  "audit": "60 completed runs; config invariants, paired observed arrays and indices checked; RMSE recomputed",
+  "seed_order": [
+    42,
+    7,
+    123
+  ],
+  "bootstrap_replicates": 4000,
+  "bootstrap_seed_formula": "20260925 + lead + block_days",
+  "bootstrap_scope": "conditional on six fitted models per condition; common circular time blocks; no seed resampling",
+  "references": {
+    "14": {
+      "config": {
+        "batch_size": 16,
+        "history": 30,
+        "precision": "fp32",
+        "hidden_dim": 256,
+        "temporal_hidden_dim": 256,
+        "processor_layers": 3,
+        "mlp_hidden_layers": 1,
+        "lr": 0.0002,
+        "initial_lr": 2e-05,
+        "weight_decay": 0.1,
+        "S": 478,
+        "max_steps": 38240,
+        "warmup_steps": 2390,
+        "selection_metric": "val_rmse",
+        "early_stopping_patience_validations": 12,
+        "data_sha256": "fff22a44aeeb35fdd26f29b0d0ade7cf9549c18f5ae29aef2a415a5826708ec2",
+        "source_sha256": {
+          "src/JEJU_HILAM_README.md": "57e071dfc6af22f16f50c93e70fb299792573039d4202a155818cb9191b82b38",
+          "src/mhw/__init__.py": "9e407a12750a0f70a23fa3b596066d9f27867be3d7010848ce3a64bfb2d3da2b",
+          "src/mhw/datasets.py": "feb4b9bb2ad4f45fbbfb979c738d7d2ff17a502d3b8869916fce130ba4cfe108",
+          "src/mhw/eval_metrics.py": "31b04665c4b766282da0ce50411b41b97bab10514e7de3851497d0a4f587ee60",
+          "src/mhw/jeju_hilam_dataset.py": "d8d73a167a2336ee8b37e26d50d04d36c03b01e2f5481108eef204091215a676",
+          "src/mhw/jeju_hilam_graph.py": "aef1b0f59c9600e9c724cf4b8ae31a6e1ada1ff098a77ed89a1ba5f0d4752d6d",
+          "src/mhw/mhw_skill.py": "9b1864ca94724c641cca7786562c73c62dea8add3b0a28fdc47f1e5fed143853",
+          "src/mhw/models/__init__.py": "5e60b7c73f05c5012a2c106cae511f812bd7b0e9cc036bb54f69e20f0fbcc3ad",
+          "src/mhw/models/convlstm.py": "309901d63927af47b08707eb63f53bbaf0f7e730507b14e6442d9dc94ca593c7",
+          "src/mhw/models/jeju_hilam.py": "ad7205e9c6e311124886fe8d4eb1df5054148fa594bf6c2735da4b243563b087",
+          "src/mhw/models/pinn_model_alpha.py": "6630349e3cfb1f24f1454cd7117981f6756d5a2bd8050f55aedfb9424f6df670",
+          "src/mhw/models/pinn_mt_model.py": "c57bb50834474e2e1b34bf33333d4e475c00367ea167a375de092058540e8ac9",
+          "src/mhw/process_title.py": "7c32332b09cd9e7866523c1654f7639ab36223c3d37b63ca586a3057e6da2af6",
+          "src/mhw/train_utils.py": "4dff606014dd2bdcc7538d2759b17ede713386272a95f71cdf974733e79fa651",
+          "src/preflight_main_experiment_final.py": "da53d18cfa7915d5225ce50c8b98f73de89f718a05d9099ad0aa817e5a4f4331",
+          "src/run_main_experiment_final.ps1": "927487e5ed2d0ed76edad05f84cc3979b1129de0d5dc333d342218322c996a9d",
+          "src/run_main_experiment_final_hold.cmd": "c769875b1316a6b0da70d245a36c0a739aa4f63ef22ec0ddfc037237b71fe1c2",
+          "src/summarize_hybrid_fields_mhw_skill.py": "05cedd2a09b96319659a7070c2469d61340d3e2edbd4a6ee5925bdadbd88a5a4",
+          "src/summarize_jeju_hilam_mhw_skill.py": "076f2a0e6d793a217d6e7d3d8f801f5042dc6fe590d146762e8767d9e0f02c09",
+          "src/summarize_main_experiment_final.py": "4104b9db0f89eac4dbe3be6527c5de53e656aa9c6b8e0244287af5caca1dca7b",
+          "src/train_hybrid_jeju_forecast.py": "64a1234b99877482d674b07615d950f81bc6645ffb34d87d58d45f8a07ac67fc",
+          "src/train_jeju_hilam.py": "f37e3beba35bd579265a923054ff455c02cd52b4bec047f34b8d2a53440af231"
+        },
+        "split_sha256": {
+          "train": "085b1f2b9c61e9c4234d439bfe45f04f9ddaa553655884fbdac1504070c5daba",
+          "val": "858ec07dc5285fa45ddcdabefb54a72712914c0fb5b18c2e9f514cd8fa83f431",
+          "test": "e99e10619af2df8d184cc0bdf24fcd186fd80a6a6de4f7a1e5795511d4e1ee01"
+        },
+        "full_statistics": {
+          "sst_mean": [
+            19.15380859375,
+            5.7483625411987305
+          ],
+          "sst_anom": [
+            0.01158277690410614,
+            1.250184416770935
+          ],
+          "u_ml": [
+            0.05766785144805908,
+            0.15283909440040588
+          ],
+          "v_ml": [
+            0.03469254449009895,
+            0.14181026816368103
+          ],
+          "mlotst": [
+            30.945514678955078,
+            27.268390655517578
+          ],
+          "ssr": [
+            165.58221435546875,
+            79.71060943603516
+          ],
+          "str": [
+            -67.92919921875,
+            31.922748565673828
+          ],
+          "slhf": [
+            -124.03571319580078,
+            116.68438720703125
+          ],
+          "sshf": [
+            -31.52863121032715,
+            54.16501998901367
+          ],
+          "mslp": [
+            101580.953125,
+            763.5368041992188
+          ],
+          "tcc": [
+            0.6256384253501892,
+            0.3111458122730255
+          ],
+          "Td_glorys": [
+            18.934783935546875,
+            5.573275566101074
+          ],
+          "wind10": [
+            5.982875347137451,
+            2.94598650932312
+          ],
+          "thetao_z0m_anom": [
+            -0.0005206373753026128,
+            0.9456025958061218
+          ],
+          "thetao_z16m_anom": [
+            -0.0005231952527537942,
+            0.9485570788383484
+          ],
+          "thetao_z34m_anom": [
+            -0.0005291463457979262,
+            1.0333353281021118
+          ],
+          "thetao_z78m_anom": [
+            -0.0004805402422789484,
+            1.0145703554153442
+          ],
+          "thetao_z110m_anom": [
+            -0.0008275151485577226,
+            0.9258295893669128
+          ],
+          "thetao_z156m_anom": [
+            -0.00044300162699073553,
+            0.9557858109474182
+          ],
+          "ocean_mask_static": [
+            0.0,
+            1.0
+          ],
+          "lat2d": [
+            33.5,
+            2.0916500091552734
+          ],
+          "lon2d": [
+            127.0,
+            2.3804759979248047
+          ],
+          "target": [
+            19.15380859375,
+            5.7483625411987305
+          ],
+          "observed_tendency_mse_kday2": [
+            0.014090502634644508,
+            1.0
+          ],
+          "observed_tendency_rms_kday": [
+            0.11870342301148905,
+            1.0
+          ]
+        },
+        "include_residual_feature": false,
+        "target_mean": 19.15380859375,
+        "target_std": 5.7483625411987305,
+        "val_samples": 1637,
+        "test_samples": 1638
+      },
+      "array_hashes": {
+        "obs": "459aafaeb2ebe7687bf652e57398831c162958e8468fd1477ce4b94d441c4ae2",
+        "mask": "e49f79c8bb4d320b9e520354eda0122b972427cef31d1bc4a6e0f6201b3c9b67",
+        "index": "1410c62403ae5cc815d12b71be50357a9884215a3552accd1458a6f8d801c0ed"
+      }
+    },
+    "7": {
+      "config": {
+        "batch_size": 16,
+        "history": 30,
+        "precision": "fp32",
+        "hidden_dim": 256,
+        "temporal_hidden_dim": 256,
+        "processor_layers": 3,
+        "mlp_hidden_layers": 1,
+        "lr": 0.0002,
+        "initial_lr": 2e-05,
+        "weight_decay": 0.1,
+        "S": 478,
+        "max_steps": 38240,
+        "warmup_steps": 2390,
+        "selection_metric": "val_rmse",
+        "early_stopping_patience_validations": 12,
+        "data_sha256": "fff22a44aeeb35fdd26f29b0d0ade7cf9549c18f5ae29aef2a415a5826708ec2",
+        "source_sha256": {
+          "src/JEJU_HILAM_README.md": "57e071dfc6af22f16f50c93e70fb299792573039d4202a155818cb9191b82b38",
+          "src/mhw/__init__.py": "9e407a12750a0f70a23fa3b596066d9f27867be3d7010848ce3a64bfb2d3da2b",
+          "src/mhw/datasets.py": "feb4b9bb2ad4f45fbbfb979c738d7d2ff17a502d3b8869916fce130ba4cfe108",
+          "src/mhw/eval_metrics.py": "31b04665c4b766282da0ce50411b41b97bab10514e7de3851497d0a4f587ee60",
+          "src/mhw/jeju_hilam_dataset.py": "d8d73a167a2336ee8b37e26d50d04d36c03b01e2f5481108eef204091215a676",
+          "src/mhw/jeju_hilam_graph.py": "aef1b0f59c9600e9c724cf4b8ae31a6e1ada1ff098a77ed89a1ba5f0d4752d6d",
+          "src/mhw/mhw_skill.py": "9b1864ca94724c641cca7786562c73c62dea8add3b0a28fdc47f1e5fed143853",
+          "src/mhw/models/__init__.py": "5e60b7c73f05c5012a2c106cae511f812bd7b0e9cc036bb54f69e20f0fbcc3ad",
+          "src/mhw/models/convlstm.py": "309901d63927af47b08707eb63f53bbaf0f7e730507b14e6442d9dc94ca593c7",
+          "src/mhw/models/jeju_hilam.py": "ad7205e9c6e311124886fe8d4eb1df5054148fa594bf6c2735da4b243563b087",
+          "src/mhw/models/pinn_model_alpha.py": "6630349e3cfb1f24f1454cd7117981f6756d5a2bd8050f55aedfb9424f6df670",
+          "src/mhw/models/pinn_mt_model.py": "c57bb50834474e2e1b34bf33333d4e475c00367ea167a375de092058540e8ac9",
+          "src/mhw/process_title.py": "7c32332b09cd9e7866523c1654f7639ab36223c3d37b63ca586a3057e6da2af6",
+          "src/mhw/train_utils.py": "4dff606014dd2bdcc7538d2759b17ede713386272a95f71cdf974733e79fa651",
+          "src/preflight_main_experiment_final.py": "da53d18cfa7915d5225ce50c8b98f73de89f718a05d9099ad0aa817e5a4f4331",
+          "src/run_main_experiment_final.ps1": "927487e5ed2d0ed76edad05f84cc3979b1129de0d5dc333d342218322c996a9d",
+          "src/run_main_experiment_final_hold.cmd": "c769875b1316a6b0da70d245a36c0a739aa4f63ef22ec0ddfc037237b71fe1c2",
+          "src/summarize_hybrid_fields_mhw_skill.py": "05cedd2a09b96319659a7070c2469d61340d3e2edbd4a6ee5925bdadbd88a5a4",
+          "src/summarize_jeju_hilam_mhw_skill.py": "076f2a0e6d793a217d6e7d3d8f801f5042dc6fe590d146762e8767d9e0f02c09",
+          "src/summarize_main_experiment_final.py": "4104b9db0f89eac4dbe3be6527c5de53e656aa9c6b8e0244287af5caca1dca7b",
+          "src/train_hybrid_jeju_forecast.py": "64a1234b99877482d674b07615d950f81bc6645ffb34d87d58d45f8a07ac67fc",
+          "src/train_jeju_hilam.py": "f37e3beba35bd579265a923054ff455c02cd52b4bec047f34b8d2a53440af231"
+        },
+        "split_sha256": {
+          "train": "8683c8df1abc96ed48f59f72122cdde88b59b648324660a94606032208967a54",
+          "val": "bdeecd3861fade97bfaf84fc893e0be1c667da4adcbd976ca263097185fe0534",
+          "test": "5cf64646f2ae49ed9cbf5f1acbe9da9a298516bef29e74c899a6f486a101ce75"
+        },
+        "full_statistics": {
+          "sst_mean": [
+            19.15500259399414,
+            5.748350620269775
+          ],
+          "sst_anom": [
+            0.01158878207206726,
+            1.2501695156097412
+          ],
+          "u_ml": [
+            0.05767441168427467,
+            0.15284590423107147
+          ],
+          "v_ml": [
+            0.03470095247030258,
+            0.1418156623840332
+          ],
+          "mlotst": [
+            30.93623924255371,
+            27.2628173828125
+          ],
+          "ssr": [
+            165.60540771484375,
+            79.7068099975586
+          ],
+          "str": [
+            -67.92549133300781,
+            31.92447853088379
+          ],
+          "slhf": [
+            -124.02566528320312,
+            116.69366455078125
+          ],
+          "sshf": [
+            -31.51878547668457,
+            54.166236877441406
+          ],
+          "mslp": [
+            101580.5859375,
+            763.3001708984375
+          ],
+          "tcc": [
+            0.6255919337272644,
+            0.3111638128757477
+          ],
+          "Td_glorys": [
+            18.935819625854492,
+            5.573392868041992
+          ],
+          "wind10": [
+            5.982965469360352,
+            2.946239471435547
+          ],
+          "thetao_z0m_anom": [
+            -0.00044891051948070526,
+            0.9456506371498108
+          ],
+          "thetao_z16m_anom": [
+            -0.0004509058780968189,
+            0.9486063718795776
+          ],
+          "thetao_z34m_anom": [
+            -0.00045404775300994515,
+            1.0334042310714722
+          ],
+          "thetao_z78m_anom": [
+            -0.0004108260618522763,
+            1.0146085023880005
+          ],
+          "thetao_z110m_anom": [
+            -0.0007117220666259527,
+            0.9258542060852051
+          ],
+          "thetao_z156m_anom": [
+            -0.0002981493598781526,
+            0.9557914733886719
+          ],
+          "ocean_mask_static": [
+            0.0,
+            1.0
+          ],
+          "lat2d": [
+            33.5,
+            2.0916500091552734
+          ],
+          "lon2d": [
+            127.0,
+            2.3804759979248047
+          ],
+          "target": [
+            19.15500259399414,
+            5.748350620269775
+          ],
+          "observed_tendency_mse_kday2": [
+            0.024634545668959618,
+            1.0
+          ],
+          "observed_tendency_rms_kday": [
+            0.15695396034812126,
+            1.0
+          ]
+        },
+        "include_residual_feature": false,
+        "target_mean": 19.15500259399414,
+        "target_std": 5.748350620269775,
+        "val_samples": 1638,
+        "test_samples": 1639
+      },
+      "array_hashes": {
+        "obs": "e31ee57ab9c6bbba157d922ee39c1a3056fe0d559a8ecd4844edcbf2946a277d",
+        "mask": "f4d5303e13ba6ef969a4a653ff40f9026e6b84ab5f3ef679ca8c146f3e436aee",
+        "index": "36a624c80a19ea0e768eb846b7dafdd6dbcdc3494f1d5f9747a0fe727cb028d7"
+      }
+    }
+  }
+}

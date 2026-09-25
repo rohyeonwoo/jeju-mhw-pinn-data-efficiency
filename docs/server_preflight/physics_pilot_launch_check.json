@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-09-25T10:49:17.416815+00:00",
+  "coordinator_pid": 2538881,
+  "manifest": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/physics_pilot_lead7_20260925/_queue/batch_status.json",
+  "counts": {
+    "running": 10,
+    "pending": 20
+  },
+  "running": [
+    {
+      "id": 0,
+      "arm": "matched_baseline",
+      "seed": 42,
+      "gpu": "0",
+      "pid": 2538894,
+      "step": 225,
+      "status": "training"
+    },
+    {
+      "id": 1,
+      "arm": "matched_baseline",
+      "seed": 7,
+      "gpu": "0",
+      "pid": 2538898,
+      "step": 225,
+      "status": "training"
+    },
+    {
+      "id": 2,
+      "arm": "matched_baseline",
+      "seed": 123,
+      "gpu": "0",
+      "pid": 2538899,
+      "step": 225,
+      "status": "training"
+    },
+    {
+      "id": 3,
+      "arm": "p0_daily",
+      "seed": 42,
+      "gpu": "0",
+      "pid": 2538900,
+      "step": 225,
+      "status": "training"
+    },
+    {
+      "id": 4,
+      "arm": "p0_daily",
+      "seed": 7,
+      "gpu": "0",
+      "pid": 2538904,
+      "step": 225,
+      "status": "training"
+    },
+    {
+      "id": 5,
+      "arm": "p0_daily",
+      "seed": 123,
+      "gpu": "1",
+      "pid": 2538908,
+      "step": 225,
+      "status": "training"
+    },
+    {
+      "id": 6,
+      "arm": "p0_interval",
+      "seed": 42,
+      "gpu": "1",
+      "pid": 2538909,
+      "step": 225,
+      "status": "training"
+    },
+    {
+      "id": 7,
+      "arm": "p0_interval",
+      "seed": 7,
+      "gpu": "1",
+      "pid": 2538913,
+      "step": 225,
+      "status": "training"
+    },
+    {
+      "id": 8,
+      "arm": "p0_interval",
+      "seed": 123,
+      "gpu": "1",
+      "pid": 2538917,
+      "step": 225,
+      "status": "training"
+    },
+    {
+      "id": 9,
+      "arm": "p1_daily",
+      "seed": 42,
+      "gpu": "1",
+      "pid": 2538921,
+      "step": 225,
+      "status": "training"
+    }
+  ],
+  "nvidia_smi": "2538894, yeonwoo, 10240 MiB\n2538900, yeonwoo, 10240 MiB\n2538904, yeonwoo, 10240 MiB\n2538898, yeonwoo, 10240 MiB\n2538899, yeonwoo, 7414 MiB\n2538908, yeonwoo, 10240 MiB\n2538921, yeonwoo, 10240 MiB\n2538909, yeonwoo, 10240 MiB\n2538917, yeonwoo, 7414 MiB\n2538913, yeonwoo, 10240 MiB\n"
+}

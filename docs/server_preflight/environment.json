@@ -1,0 +1,70 @@
+{
+  "python": "3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]",
+  "executable": "/ceph_data/yeonwoo/conda_envs/mhw_subset/bin/python",
+  "platform": "Linux-5.15.0-133-generic-x86_64-with-glibc2.35",
+  "cuda_available": true,
+  "torch_cuda": "12.1",
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "xarray": "2026.7.0",
+    "h5py": "3.16.0",
+    "h5netcdf": "1.8.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA RTX A6000",
+      "memory_bytes": 51041271808
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA RTX A6000",
+      "memory_bytes": 51041271808
+    },
+    {
+      "index": 2,
+      "name": "NVIDIA RTX A6000",
+      "memory_bytes": 51041271808
+    },
+    {
+      "index": 3,
+      "name": "NVIDIA RTX A6000",
+      "memory_bytes": 51041271808
+    },
+    {
+      "index": 4,
+      "name": "NVIDIA RTX A6000",
+      "memory_bytes": 51041271808
+    },
+    {
+      "index": 5,
+      "name": "NVIDIA RTX A6000",
+      "memory_bytes": 51041271808
+    },
+    {
+      "index": 6,
+      "name": "NVIDIA RTX A6000",
+      "memory_bytes": 51041271808
+    },
+    {
+      "index": 7,
+      "name": "NVIDIA RTX A6000",
+      "memory_bytes": 51041271808
+    },
+    {
+      "index": 8,
+      "name": "NVIDIA RTX A6000",
+      "memory_bytes": 51041271808
+    },
+    {
+      "index": 9,
+      "name": "NVIDIA RTX A6000",
+      "memory_bytes": 51041271808
+    }
+  ],
+  "cuda_autograd_check": "passed"
+}

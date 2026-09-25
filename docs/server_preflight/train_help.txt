@@ -1,0 +1,87 @@
+usage: train_jeju_hilam.py [-h] [--data-path DATA_PATH]
+                           [--residual-map RESIDUAL_MAP]
+                           [--output-root OUTPUT_ROOT] [--history HISTORY]
+                           --lead {1,3,7,14} [--seed SEED] [--epochs EPOCHS]
+                           [--patience PATIENCE] [--batch-size BATCH_SIZE]
+                           [--num-workers NUM_WORKERS]
+                           [--hidden-dim HIDDEN_DIM]
+                           [--temporal-hidden-dim TEMPORAL_HIDDEN_DIM]
+                           [--processor-layers PROCESSOR_LAYERS]
+                           [--mlp-hidden-layers MLP_HIDDEN_LAYERS] [--lr LR]
+                           [--initial-lr INITIAL_LR]
+                           [--weight-decay WEIGHT_DECAY]
+                           [--warmup-epochs WARMUP_EPOCHS]
+                           [--selection-metric {val_rmse,val_loss}]
+                           [--device DEVICE] [--precision {fp32,bf16}]
+                           [--prediction-mode {direct,residual}]
+                           [--physics-mode {none,p0_original,p1_vertical}]
+                           [--lambda-physics LAMBDA_PHYSICS]
+                           [--physics-warmup-epochs PHYSICS_WARMUP_EPOCHS]
+                           [--physics-rhs-scale PHYSICS_RHS_SCALE]
+                           [--physics-normalize-eps PHYSICS_NORMALIZE_EPS]
+                           [--physics-clip PHYSICS_CLIP]
+                           [--lambda-rres LAMBDA_RRES]
+                           [--rres-penalty-normalize {head,tendency,rhs}]
+                           [--lambda-we-tie LAMBDA_WE_TIE]
+                           [--entrainment-dt ENTRAINMENT_DT] [--hm-min HM_MIN]
+                           [--we-scale WE_SCALE] [--rres-scale RRES_SCALE]
+                           [--we-softplus-shift WE_SOFTPLUS_SHIFT]
+                           [--no-zero-rres-physics]
+                           [--include-residual-feature]
+                           [--no-residual-feature]
+                           [--max-train-batches MAX_TRAIN_BATCHES]
+                           [--max-val-batches MAX_VAL_BATCHES] [--smoke-test]
+                           [--tiny-overfit] [--tiny-samples TINY_SAMPLES]
+                           [--tiny-overfit-steps TINY_OVERFIT_STEPS]
+                           [--plot-graph]
+
+Jeju-adapted HiLAM baseline
+
+options:
+  -h, --help            show this help message and exit
+  --data-path DATA_PATH
+  --residual-map RESIDUAL_MAP
+  --output-root OUTPUT_ROOT
+  --history HISTORY
+  --lead {1,3,7,14}
+  --seed SEED
+  --epochs EPOCHS
+  --patience PATIENCE
+  --batch-size BATCH_SIZE
+  --num-workers NUM_WORKERS
+  --hidden-dim HIDDEN_DIM
+  --temporal-hidden-dim TEMPORAL_HIDDEN_DIM
+  --processor-layers PROCESSOR_LAYERS
+  --mlp-hidden-layers MLP_HIDDEN_LAYERS
+  --lr LR
+  --initial-lr INITIAL_LR
+  --weight-decay WEIGHT_DECAY
+  --warmup-epochs WARMUP_EPOCHS
+  --selection-metric {val_rmse,val_loss}
+  --device DEVICE
+  --precision {fp32,bf16}
+  --prediction-mode {direct,residual}
+  --physics-mode {none,p0_original,p1_vertical}
+  --lambda-physics LAMBDA_PHYSICS
+  --physics-warmup-epochs PHYSICS_WARMUP_EPOCHS
+  --physics-rhs-scale PHYSICS_RHS_SCALE
+  --physics-normalize-eps PHYSICS_NORMALIZE_EPS
+  --physics-clip PHYSICS_CLIP
+  --lambda-rres LAMBDA_RRES
+  --rres-penalty-normalize {head,tendency,rhs}
+  --lambda-we-tie LAMBDA_WE_TIE
+  --entrainment-dt ENTRAINMENT_DT
+  --hm-min HM_MIN
+  --we-scale WE_SCALE
+  --rres-scale RRES_SCALE
+  --we-softplus-shift WE_SOFTPLUS_SHIFT
+  --no-zero-rres-physics
+  --include-residual-feature
+  --no-residual-feature
+  --max-train-batches MAX_TRAIN_BATCHES
+  --max-val-batches MAX_VAL_BATCHES
+  --smoke-test
+  --tiny-overfit
+  --tiny-samples TINY_SAMPLES
+  --tiny-overfit-steps TINY_OVERFIT_STEPS
+  --plot-graph

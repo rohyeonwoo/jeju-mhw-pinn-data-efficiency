@@ -1,0 +1,14 @@
+{
+  "ratio_10": {
+    "arm": "p0_0.3",
+    "criterion": "mean best validation RMSE across three seeds",
+    "best_val_rmse_mean": 0.9165479760206324,
+    "note": "aux0 is physics weight zero with auxiliary loss retained; it is not baseline"
+  },
+  "full": {
+    "arm": "p0_0.1",
+    "criterion": "mean best validation RMSE across three seeds",
+    "best_val_rmse_mean": 0.8088834787260497,
+    "note": "aux0 is physics weight zero with auxiliary loss retained; it is not baseline"
+  }
+}

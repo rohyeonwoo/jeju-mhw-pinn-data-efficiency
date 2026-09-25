@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "lead": 7,
+  "batch_size": 2,
+  "updates_per_seed": 2,
+  "scope": "real graph and full-size original model; fixed identical batch, all extra loss weights zero for parity",
+  "caveat": "Legacy baseline/P0 share seed and shared initialization but head creation consumes RNG; historical shuffled batch orders need not coincide. New P0 arms preserve legacy P0 RNG.",
+  "results": [
+    {
+      "seed": 42,
+      "shared_initialization_exact": true,
+      "max_shared_parameter_difference": 0.0,
+      "max_clipped_gradient_difference": 0.0,
+      "final_prediction_max_difference": 0.0,
+      "auxiliary_shared_gradient_norm": 883.8187866210938,
+      "post_init_rng_equal": false,
+      "losses": {
+        "0.0": {
+          "data_loss": 0.36362192034721375,
+          "physics_loss": 0.467384397983551,
+          "rres_l2": 2.162320613861084,
+          "total_loss": 21.98682975769043,
+          "lambda_physics_effective": 0.0
+        },
+        "0.01": {
+          "data_loss": 0.36362192034721375,
+          "physics_loss": 0.467384397983551,
+          "rres_l2": 2.162320613861084,
+          "total_loss": 21.99150276184082,
+          "lambda_physics_effective": 0.01
+        },
+        "0.1": {
+          "data_loss": 0.36362192034721375,
+          "physics_loss": 0.467384397983551,
+          "rres_l2": 2.162320613861084,
+          "total_loss": 22.033567428588867,
+          "lambda_physics_effective": 0.1
+        },
+        "0.3": {
+          "data_loss": 0.36362192034721375,
+          "physics_loss": 0.467384397983551,
+          "rres_l2": 2.162320613861084,
+          "total_loss": 22.127044677734375,
+          "lambda_physics_effective": 0.3
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "shared_initialization_exact": true,
+      "max_shared_parameter_difference": 0.0,
+      "max_clipped_gradient_difference": 0.0,
+      "final_prediction_max_difference": 0.0,
+      "auxiliary_shared_gradient_norm": 602.072509765625,
+      "post_init_rng_equal": false,
+      "losses": {
+        "0.0": {
+          "data_loss": 0.09169064462184906,
+          "physics_loss": 0.4544616937637329,
+          "rres_l2": 0.873832643032074,
+          "total_loss": 8.83001708984375,
+          "lambda_physics_effective": 0.0
+        },
+        "0.01": {
+          "data_loss": 0.09169064462184906,
+          "physics_loss": 0.4544616937637329,
+          "rres_l2": 0.873832643032074,
+          "total_loss": 8.834561347961426,
+          "lambda_physics_effective": 0.01
+        },
+        "0.1": {
+          "data_loss": 0.09169064462184906,
+          "physics_loss": 0.4544616937637329,
+          "rres_l2": 0.873832643032074,
+          "total_loss": 8.875462532043457,
+          "lambda_physics_effective": 0.1
+        },
+        "0.3": {
+          "data_loss": 0.09169064462184906,
+          "physics_loss": 0.4544616937637329,
+          "rres_l2": 0.873832643032074,
+          "total_loss": 8.966355323791504,
+          "lambda_physics_effective": 0.3
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "shared_initialization_exact": true,
+      "max_shared_parameter_difference": 5.960464477539063e-08,
+      "max_clipped_gradient_difference": 1.4901161193847656e-08,
+      "final_prediction_max_difference": 5.960464477539062e-07,
+      "auxiliary_shared_gradient_norm": 545.1333618164062,
+      "post_init_rng_equal": false,
+      "losses": {
+        "0.0": {
+          "data_loss": 0.10039135813713074,
+          "physics_loss": 0.45749253034591675,
+          "rres_l2": 0.8372445106506348,
+          "total_loss": 8.4728364944458,
+          "lambda_physics_effective": 0.0
+        },
+        "0.01": {
+          "data_loss": 0.10039135813713074,
+          "physics_loss": 0.45749253034591675,
+          "rres_l2": 0.8372445106506348,
+          "total_loss": 8.477411270141602,
+          "lambda_physics_effective": 0.01
+        },
+        "0.1": {
+          "data_loss": 0.10039135813713074,
+          "physics_loss": 0.45749253034591675,
+          "rres_l2": 0.8372445106506348,
+          "total_loss": 8.518586158752441,
+          "lambda_physics_effective": 0.1
+        },
+        "0.3": {
+          "data_loss": 0.10039135813713074,
+          "physics_loss": 0.45749253034591675,
+          "rres_l2": 0.8372445106506348,
+          "total_loss": 8.610084533691406,
+          "lambda_physics_effective": 0.3
+        }
+      }
+    }
+  ]
+}

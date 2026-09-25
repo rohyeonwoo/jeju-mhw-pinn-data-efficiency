@@ -1,0 +1,60 @@
+{
+  "batch_size": 16,
+  "precision": "fp32",
+  "physical_gpu": 0,
+  "results": [
+    {
+      "lead": 7,
+      "mode": "none",
+      "tested_batch_sizes": [
+        16,
+        8,
+        11,
+        6,
+        16
+      ],
+      "peak_allocated_mib": 6537.62548828125,
+      "peak_reserved_mib": 8034.0
+    },
+    {
+      "lead": 7,
+      "mode": "p0_original",
+      "tested_batch_sizes": [
+        16,
+        8,
+        11,
+        6,
+        16
+      ],
+      "peak_allocated_mib": 6541.150390625,
+      "peak_reserved_mib": 8048.0
+    },
+    {
+      "lead": 14,
+      "mode": "none",
+      "tested_batch_sizes": [
+        16,
+        8,
+        11,
+        6,
+        16
+      ],
+      "peak_allocated_mib": 6539.47314453125,
+      "peak_reserved_mib": 8046.0
+    },
+    {
+      "lead": 14,
+      "mode": "p0_original",
+      "tested_batch_sizes": [
+        16,
+        8,
+        11,
+        6,
+        16
+      ],
+      "peak_allocated_mib": 6541.150390625,
+      "peak_reserved_mib": 8048.0
+    }
+  ],
+  "five_process_estimate_mib_including_512mib_context_each": 42800.0
+}

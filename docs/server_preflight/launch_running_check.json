@@ -1,0 +1,26 @@
+[
+  {
+    "gpu": "0",
+    "pid": 1365327,
+    "seed": 42,
+    "status": "training",
+    "step": 550,
+    "elapsed_seconds": 79.87250289999065
+  },
+  {
+    "gpu": "1",
+    "pid": 1365329,
+    "seed": 7,
+    "status": "training",
+    "step": 575,
+    "elapsed_seconds": 80.66081364700221
+  },
+  {
+    "gpu": "2",
+    "pid": 1365330,
+    "seed": 123,
+    "status": "training",
+    "step": 600,
+    "elapsed_seconds": 81.3760004180076
+  }
+]

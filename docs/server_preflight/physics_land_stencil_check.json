@@ -1,0 +1,14 @@
+{
+  "shape": [
+    29,
+    33
+  ],
+  "ocean": 661,
+  "ocean_with_valid_gradient_stencil": 520,
+  "ocean_stencil_touches_land": 141,
+  "land_sst_finite": 0,
+  "land_sst_nan": 6216,
+  "land_sst_after_legacy_nan_to_num_unique": [
+    0.0
+  ]
+}

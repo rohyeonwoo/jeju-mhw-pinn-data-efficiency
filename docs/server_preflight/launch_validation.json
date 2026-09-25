@@ -1,0 +1,48 @@
+{
+  "smoke_checks": [
+    {
+      "model": "jeju_hilam",
+      "lead": 7,
+      "status": "passed",
+      "steps": 4,
+      "seconds": 16.700360271002864
+    },
+    {
+      "model": "jeju_hilam",
+      "lead": 14,
+      "status": "passed",
+      "steps": 4,
+      "seconds": 9.759200119995512
+    },
+    {
+      "model": "pi_jeju_hilam",
+      "lead": 7,
+      "status": "passed",
+      "steps": 4,
+      "seconds": 11.636496466002427
+    },
+    {
+      "model": "pi_jeju_hilam",
+      "lead": 14,
+      "status": "passed",
+      "steps": 4,
+      "seconds": 10.277794568988611
+    }
+  ],
+  "source_preservation": "passed",
+  "schedule_checks": {
+    "status": "passed",
+    "checks": [
+      "persistent shuffled iterator",
+      "partial final batches",
+      "no skipped batch at validation",
+      "original run_epoch optimizer equivalence",
+      "Full-step LR/physics warmup boundaries at both leads"
+    ]
+  },
+  "new_code_sha256": {
+    "scripts/train_data_efficiency.py": "9e13c5c831260ea16c9960d806f856ff0d2747b9c56963387d89fccc8d16a790",
+    "scripts/launch_data_efficiency.py": "b1f1217161af4b3638df6b88b0a6766b483898d2bc09744ff149169320e108b5",
+    "scripts/test_data_efficiency_schedule.py": "73ad3e4467781ac10c9ab9a2800c2ee431b177b75ef8763b8ee8f55ed4a74ec2"
+  }
+}

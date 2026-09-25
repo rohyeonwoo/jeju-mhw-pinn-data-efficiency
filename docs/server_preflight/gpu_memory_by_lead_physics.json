@@ -1,0 +1,43 @@
+{
+  "purpose": "Disposable 3-step memory probes; no production checkpoint or weights modified",
+  "physical_gpu": 1,
+  "precision": "fp32",
+  "results": [
+    {
+      "lead": 7,
+      "mode": "none",
+      "batch_size": 8,
+      "history": 30,
+      "steps": 3,
+      "peak_allocated_mib": 3371.82177734375,
+      "peak_reserved_mib": 4112.0
+    },
+    {
+      "lead": 7,
+      "mode": "p0_original",
+      "batch_size": 8,
+      "history": 30,
+      "steps": 3,
+      "peak_allocated_mib": 3375.7236328125,
+      "peak_reserved_mib": 4124.0
+    },
+    {
+      "lead": 14,
+      "mode": "none",
+      "batch_size": 8,
+      "history": 30,
+      "steps": 3,
+      "peak_allocated_mib": 3373.99169921875,
+      "peak_reserved_mib": 4120.0
+    },
+    {
+      "lead": 14,
+      "mode": "p0_original",
+      "batch_size": 8,
+      "history": 30,
+      "steps": 3,
+      "peak_allocated_mib": 3375.5517578125,
+      "peak_reserved_mib": 4124.0
+    }
+  ]
+}

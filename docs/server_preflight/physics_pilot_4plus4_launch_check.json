@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-09-25T10:55:53.268072+00:00",
+  "coordinator_pid": 2546949,
+  "manifest": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/physics_pilot_lead7_20260925_4plus4/_queue/batch_status.json",
+  "counts": {
+    "running": 8,
+    "pending": 22
+  },
+  "running": [
+    {
+      "id": 0,
+      "gpu": "0",
+      "pid": 2546958,
+      "arm": "matched_baseline",
+      "seed": 42,
+      "status": "training",
+      "step": 125,
+      "used_memory": "10240 MiB"
+    },
+    {
+      "id": 1,
+      "gpu": "0",
+      "pid": 2546960,
+      "arm": "matched_baseline",
+      "seed": 7,
+      "status": "training",
+      "step": 125,
+      "used_memory": "10240 MiB"
+    },
+    {
+      "id": 2,
+      "gpu": "0",
+      "pid": 2546961,
+      "arm": "matched_baseline",
+      "seed": 123,
+      "status": "training",
+      "step": 125,
+      "used_memory": "10240 MiB"
+    },
+    {
+      "id": 3,
+      "gpu": "0",
+      "pid": 2546962,
+      "arm": "p0_daily",
+      "seed": 42,
+      "status": "training",
+      "step": 125,
+      "used_memory": "10240 MiB"
+    },
+    {
+      "id": 4,
+      "gpu": "1",
+      "pid": 2546963,
+      "arm": "p0_daily",
+      "seed": 7,
+      "status": "training",
+      "step": 125,
+      "used_memory": "10240 MiB"
+    },
+    {
+      "id": 5,
+      "gpu": "1",
+      "pid": 2546967,
+      "arm": "p0_daily",
+      "seed": 123,
+      "status": "training",
+      "step": 125,
+      "used_memory": "10240 MiB"
+    },
+    {
+      "id": 6,
+      "gpu": "1",
+      "pid": 2546971,
+      "arm": "p0_interval",
+      "seed": 42,
+      "status": "training",
+      "step": 150,
+      "used_memory": "10240 MiB"
+    },
+    {
+      "id": 7,
+      "gpu": "1",
+      "pid": 2546975,
+      "arm": "p0_interval",
+      "seed": 7,
+      "status": "training",
+      "step": 125,
+      "used_memory": "10240 MiB"
+    }
+  ],
+  "nvidia_smi": "2546960, yeonwoo, 10240 MiB\n2546962, yeonwoo, 10240 MiB\n2546961, yeonwoo, 10240 MiB\n2546958, yeonwoo, 10240 MiB\n2546971, yeonwoo, 10240 MiB\n2546963, yeonwoo, 10240 MiB\n2546967, yeonwoo, 10240 MiB\n2546975, yeonwoo, 10240 MiB\n",
+  "gpu_memory": "0, 40975 MiB, 7701 MiB, 89 %\n1, 40975 MiB, 7701 MiB, 100 %\n2, 1 MiB, 48675 MiB, 0 %\n3, 1 MiB, 48675 MiB, 0 %\n4, 1 MiB, 48675 MiB, 0 %\n5, 1 MiB, 48675 MiB, 0 %\n6, 1 MiB, 48675 MiB, 0 %\n7, 1 MiB, 48675 MiB, 0 %\n8, 1 MiB, 48675 MiB, 0 %\n9, 1 MiB, 48675 MiB, 0 %\n"
+}

@@ -1,0 +1,232 @@
+{
+  "counts": {
+    "train": 7644,
+    "val": 1638,
+    "test": 1639
+  },
+  "split_sha256": {
+    "train": "8683c8df1abc96ed48f59f72122cdde88b59b648324660a94606032208967a54",
+    "val": "bdeecd3861fade97bfaf84fc893e0be1c667da4adcbd976ca263097185fe0534",
+    "test": "5cf64646f2ae49ed9cbf5f1acbe9da9a298516bef29e74c899a6f486a101ce75"
+  },
+  "full_stats": {
+    "sst_mean": [
+      19.15500259399414,
+      5.748350620269775
+    ],
+    "sst_anom": [
+      0.01158878207206726,
+      1.2501695156097412
+    ],
+    "u_ml": [
+      0.05767441168427467,
+      0.15284590423107147
+    ],
+    "v_ml": [
+      0.03470095247030258,
+      0.1418156623840332
+    ],
+    "mlotst": [
+      30.93623924255371,
+      27.2628173828125
+    ],
+    "ssr": [
+      165.60540771484375,
+      79.7068099975586
+    ],
+    "str": [
+      -67.92549133300781,
+      31.92447853088379
+    ],
+    "slhf": [
+      -124.02566528320312,
+      116.69366455078125
+    ],
+    "sshf": [
+      -31.51878547668457,
+      54.166236877441406
+    ],
+    "mslp": [
+      101580.5859375,
+      763.3001708984375
+    ],
+    "tcc": [
+      0.6255919337272644,
+      0.3111638128757477
+    ],
+    "Td_glorys": [
+      18.935819625854492,
+      5.573392868041992
+    ],
+    "wind10": [
+      5.982965469360352,
+      2.946239471435547
+    ],
+    "thetao_z0m_anom": [
+      -0.00044891051948070526,
+      0.9456506371498108
+    ],
+    "thetao_z16m_anom": [
+      -0.0004509058780968189,
+      0.9486063718795776
+    ],
+    "thetao_z34m_anom": [
+      -0.00045404775300994515,
+      1.0334042310714722
+    ],
+    "thetao_z78m_anom": [
+      -0.0004108260618522763,
+      1.0146085023880005
+    ],
+    "thetao_z110m_anom": [
+      -0.0007117220666259527,
+      0.9258542060852051
+    ],
+    "thetao_z156m_anom": [
+      -0.0002981493598781526,
+      0.9557914733886719
+    ],
+    "ocean_mask_static": [
+      0.0,
+      1.0
+    ],
+    "lat2d": [
+      33.5,
+      2.0916500091552734
+    ],
+    "lon2d": [
+      127.0,
+      2.3804759979248047
+    ],
+    "target": [
+      19.15500259399414,
+      5.748350620269775
+    ],
+    "observed_tendency_mse_kday2": [
+      0.024634545668959618,
+      1.0
+    ],
+    "observed_tendency_rms_kday": [
+      0.15695396034812126,
+      1.0
+    ]
+  },
+  "full_rhs_scale": 9.736722977796306,
+  "saved_rhs_scales": [
+    9.736722977796306,
+    9.736722977796306,
+    9.736722977796306
+  ],
+  "statistics_end_date": "2014-01-10",
+  "evaluation_reference_end_date": "2013-12-31",
+  "S": 956,
+  "max_steps": 76480,
+  "warmup_steps": 4780,
+  "early_stopping_patience_validations": 12,
+  "subset_checks": [
+    {
+      "seed": 42,
+      "ratio": 10,
+      "samples": 376,
+      "start_indices_sha256": "27160238630eff5f76fbf1fa81698dd2b048b37ce75b5ed3176ebffba064d89a"
+    },
+    {
+      "seed": 42,
+      "ratio": 25,
+      "samples": 987,
+      "start_indices_sha256": "8685a1ef5f390567ab9a613f2991255e1fc00e6b98657e3ad6bd055a14b95bc6"
+    },
+    {
+      "seed": 42,
+      "ratio": 50,
+      "samples": 1974,
+      "start_indices_sha256": "cbfb1058727071e8398521ad12e511c4cc3e8f916aabf35c8522e6729b6eea20"
+    },
+    {
+      "seed": 42,
+      "ratio": 100,
+      "samples": 3995,
+      "start_indices_sha256": "e727ee2d638d743346ab42e5e5ea69217ef56dcefcf2cf40d46fc462ac950c6f"
+    },
+    {
+      "seed": 7,
+      "ratio": 10,
+      "samples": 376,
+      "start_indices_sha256": "8cecdfbd5abca6bd250dbf01801fbe5d469320b37b297fae0ae39344643cda77"
+    },
+    {
+      "seed": 7,
+      "ratio": 25,
+      "samples": 987,
+      "start_indices_sha256": "001c9245ed877b230509eff526d47a5a1de39f4b8c56b9ec206191e918920d0d"
+    },
+    {
+      "seed": 7,
+      "ratio": 50,
+      "samples": 1974,
+      "start_indices_sha256": "d3b39da313cfd5ecdd3bb8917a4225cd6d7fa0a555b230d7c6570ddb3d47831b"
+    },
+    {
+      "seed": 7,
+      "ratio": 100,
+      "samples": 3995,
+      "start_indices_sha256": "e727ee2d638d743346ab42e5e5ea69217ef56dcefcf2cf40d46fc462ac950c6f"
+    },
+    {
+      "seed": 123,
+      "ratio": 10,
+      "samples": 376,
+      "start_indices_sha256": "6122c8bed00e20178b547984d53d12865702674f9008a730645ebfb055aacc95"
+    },
+    {
+      "seed": 123,
+      "ratio": 25,
+      "samples": 987,
+      "start_indices_sha256": "e6145ab110583ec9700cdb8a17a22acc1b71553d6726069daaf1f6862db6f753"
+    },
+    {
+      "seed": 123,
+      "ratio": 50,
+      "samples": 1974,
+      "start_indices_sha256": "becac57bb669ac876aef8517ac5bf772b1aba55e127aa0e34ee7a814c8370420"
+    },
+    {
+      "seed": 123,
+      "ratio": 100,
+      "samples": 3995,
+      "start_indices_sha256": "e727ee2d638d743346ab42e5e5ea69217ef56dcefcf2cf40d46fc462ac950c6f"
+    }
+  ],
+  "full_configs": [
+    {
+      "path": "outputs/main_experiment_final/jeju_hilam/lead7_seed42/jeju_hilam_config.json",
+      "sha256": "d1c7024c081f50b0083e9d1c89d208f6ea4671dc1ed4cfa4bae60c66eb2f234f",
+      "saved_rhs_scale": null
+    },
+    {
+      "path": "outputs/main_experiment_final/jeju_hilam/lead7_seed7/jeju_hilam_config.json",
+      "sha256": "f834efce535f54538aa0c48351e21fe6a333d884acc9882eb5abe3a185663fcc",
+      "saved_rhs_scale": null
+    },
+    {
+      "path": "outputs/main_experiment_final/jeju_hilam/lead7_seed123/jeju_hilam_config.json",
+      "sha256": "54ce6d8e3d04e1e6129e3810cd6e77e1d16ed547a9015e7f4235611501af1723",
+      "saved_rhs_scale": null
+    },
+    {
+      "path": "outputs/main_experiment_final/pi_jeju_hilam/lead7_seed42/jeju_hilam_config.json",
+      "sha256": "332d1dcd2d0af83fcdc356dfb453a5789992b793af5b2343f030f8af13b8dc95",
+      "saved_rhs_scale": 9.736722977796306
+    },
+    {
+      "path": "outputs/main_experiment_final/pi_jeju_hilam/lead7_seed7/jeju_hilam_config.json",
+      "sha256": "fe5a896b6fe3d736621b1c6a4b63c1297294306274831407ca29e0fe698a86cd",
+      "saved_rhs_scale": 9.736722977796306
+    },
+    {
+      "path": "outputs/main_experiment_final/pi_jeju_hilam/lead7_seed123/jeju_hilam_config.json",
+      "sha256": "7fade9e91326e3b448ef90f5f360176af961b779d8c301a6c9c0db662fc82ad2",
+      "saved_rhs_scale": 9.736722977796306
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "status": "authorized",
+  "created_utc": "2026-09-25T10:46:19.779829+00:00",
+  "authorization": "User approved 30 runs including P1, then explicitly approved the proposed ocean-neighbor derivative method and instructed completion.",
+  "total_runs": 30,
+  "lead": 7,
+  "subset_ratio": 10,
+  "train_samples": 376,
+  "seeds": [
+    42,
+    7,
+    123
+  ],
+  "arms": {
+    "matched_baseline": [
+      0.0
+    ],
+    "p0_daily": [
+      0.01,
+      0.1,
+      0.3
+    ],
+    "p0_interval": [
+      0.01,
+      0.1,
+      0.3
+    ],
+    "p1_daily": [
+      0.01,
+      0.1,
+      0.3
+    ]
+  },
+  "lambda_rres": 0.0,
+  "lambda_we_tie": 0.0,
+  "zero_rres_physics": true,
+  "batch_size": 16,
+  "slots_per_gpu": {
+    "0": 5,
+    "1": 5
+  },
+  "S": 478,
+  "max_steps": 38240,
+  "warmup_steps": 2390,
+  "stopping": "Original val_rmse best checkpoint, patience12 validations, same original physical-loss warmup and LR schedule",
+  "physics_stencil": "ocean_neighbors",
+  "physics_cells": 660,
+  "temperature_training_evaluation_cells": 661,
+  "unsupported_physics_cell": [
+    24,
+    14
+  ],
+  "derivative": "Centered with two ocean neighbors; first-order one-sided with one ocean neighbor; no derivative across land",
+  "normalization": {
+    "input_target": "unchanged original Full train statistics",
+    "physics_rhs_scale": 0.08996321398271197,
+    "physics_basis": "Full train 7644 windows, observed linear endpoints, we=0, P0 resolved RHS, valid660; common across all arms"
+  },
+  "period_mean": "Use same linear temperature path and average raw signed daily residual in K/day before legacy clip10 and common RHS normalization",
+  "boundary_limitations": "One-sided derivatives have lower order; this is not a flux-conservative ocean solver or a proof of complete coastal boundary conditions",
+  "preserved": "Original src models, original time splits, all validation/test indices, old Full/subset outputs, original normalization cache",
+  "rng": "All runs initialize P0-shaped heads identically per seed; gradient diagnostic restores CPU/CUDA RNG; initial parameter/RNG hashes and first128 batch-target hash must match across arms",
+  "selection": "For each physics family choose lambda among 0/shared matched baseline, .01,.1,.3 by 3-seed mean best validation RMSE; exact ties prefer smaller lambda",
+  "primary": "Paired SST RMSE: each new physics arm vs matched baseline, period-mean and P1 vs P0 daily at matched lambda and validation-selected settings; every arm reported",
+  "references": "Old baseline, old aux-only lambda_phys0/rres10 and old P0 lambda_phys.1/rres10 are contextual; changes in auxiliary loss/stencil/scale cannot be attributed to a single cause",
+  "secondary": [
+    "ACC",
+    "MHW pooled-grid CSI",
+    "POD",
+    "FAR"
+  ],
+  "uncertainty": {
+    "paired_seeds": 3,
+    "exact_two_sided_min_p": 0.25,
+    "conditional_bootstrap_blocks_days": [
+      30,
+      90,
+      180
+    ],
+    "main_block_days": 90,
+    "bootstrap_replicates": 4000,
+    "common_dates_across_models_seeds": true,
+    "limitations": "Conditional on fitted models; no new-seed or family-wide significance claim, no equivalence/no-harm claim"
+  },
+  "interpretation": "Exploratory follow-up informed by previous test scores; no new independent test split or automatic favorable-test expansion",
+  "output_root": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/physics_pilot_lead7_20260925",
+  "scripts_sha256": {
+    "train_physics_pilot.py": "5c6a026f5062de87e7915faaefa4e2775c5a4c6f2db9ce8b1c3ad49477d59441",
+    "physics_interval.py": "7f50f77b88b41bcbeea19c4232073c5e444c09d5e42b4af6c8cdc417b1259b16",
+    "physics_stencil.py": "3b25b8cc55e88a6cd6b2544dfa05ff42dca3776b7b1fe755549bc52e74ef28be",
+    "physics_pilot_checks.py": "29329e1b67ab48fd345b41ed6c24790c067bbe93908735e1d4a9d08b691e2a4e",
+    "launch_physics_pilot.py": "0293ab06827bf9a86b256f07aa5c5d292fd12e97b87134a104d12e2c021384d6",
+    "validate_physics_pilot.py": "f51f45e3e7d3c1f6bc09422f5971817927c3df497ea5347a6a3f0e4c49e38e25",
+    "summarize_physics_pilot.py": "c982d826a005b14d6b60d805cb3818a38290ec42fb002ecb149fa239c9e53b14",
+    "check_physics_interval.py": "a46823fdf1a0476d03b2a0693f3d534048d3a91f7ade8bf6a5e176d6b7897d10",
+    "check_ocean_neighbor_gradients.py": "171a4756b8d5285c4a5fd7e1218afe7ff7d4eddcf6e80e753308c08213e343cd",
+    "compute_valid_stencil_rhs.py": "2be52156d138379e9ffb15cd47f1be696c4dd4476291994f92e922e0de8958b7"
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "workspace": "/home/yeonwoo/mhw_subset",
+  "data_sha256": "fff22a44aeeb35fdd26f29b0d0ade7cf9549c18f5ae29aef2a415a5826708ec2",
+  "training_performed": false,
+  "leads": {
+    "7": {
+      "counts": {
+        "train": 7644,
+        "val": 1638,
+        "test": 1639
+      },
+      "split_sha256": {
+        "train": "8683c8df1abc96ed48f59f72122cdde88b59b648324660a94606032208967a54",
+        "val": "bdeecd3861fade97bfaf84fc893e0be1c667da4adcbd976ca263097185fe0534",
+        "test": "5cf64646f2ae49ed9cbf5f1acbe9da9a298516bef29e74c899a6f486a101ce75"
+      },
+      "full_stats": {
+        "sst_mean": [
+          19.15500259399414,
+          5.748350620269775
+        ],
+        "sst_anom": [
+          0.01158878207206726,
+          1.2501695156097412
+        ],
+        "u_ml": [
+          0.05767441168427467,
+          0.15284590423107147
+        ],
+        "v_ml": [
+          0.03470095247030258,
+          0.1418156623840332
+        ],
+        "mlotst": [
+          30.93623924255371,
+          27.2628173828125
+        ],
+        "ssr": [
+          165.60540771484375,
+          79.7068099975586
+        ],
+        "str": [
+          -67.92549133300781,
+          31.92447853088379
+        ],
+        "slhf": [
+          -124.02566528320312,
+          116.69366455078125
+        ],
+        "sshf": [
+          -31.51878547668457,
+          54.166236877441406
+        ],
+        "mslp": [
+          101580.5859375,
+          763.3001708984375
+        ],
+        "tcc": [
+          0.6255919337272644,
+          0.3111638128757477
+        ],
+        "Td_glorys": [
+          18.935819625854492,
+          5.573392868041992
+        ],
+        "wind10": [
+          5.982965469360352,
+          2.946239471435547
+        ],
+        "thetao_z0m_anom": [
+          -0.00044891051948070526,
+          0.9456506371498108
+        ],
+        "thetao_z16m_anom": [
+          -0.0004509058780968189,
+          0.9486063718795776
+        ],
+        "thetao_z34m_anom": [
+          -0.00045404775300994515,
+          1.0334042310714722
+        ],
+        "thetao_z78m_anom": [
+          -0.0004108260618522763,
+          1.0146085023880005
+        ],
+        "thetao_z110m_anom": [
+          -0.0007117220666259527,
+          0.9258542060852051
+        ],
+        "thetao_z156m_anom": [
+          -0.0002981493598781526,
+          0.9557914733886719
+        ],
+        "ocean_mask_static": [
+          0.0,
+          1.0
+        ],
+        "lat2d": [
+          33.5,
+          2.0916500091552734
+        ],
+        "lon2d": [
+          127.0,
+          2.3804759979248047
+        ],
+        "target": [
+          19.15500259399414,
+          5.748350620269775
+        ],
+        "observed_tendency_mse_kday2": [
+          0.024634545668959618,
+          1.0
+        ],
+        "observed_tendency_rms_kday": [
+          0.15695396034812126,
+          1.0
+        ]
+      },
+      "full_rhs_scale": 9.736722977796306,
+      "saved_rhs_scales": [
+        9.736722977796306,
+        9.736722977796306,
+        9.736722977796306
+      ],
+      "statistics_end_date": "2014-01-10",
+      "evaluation_reference_end_date": "2013-12-31",
+      "S": 956,
+      "max_steps": 76480,
+      "warmup_steps": 4780,
+      "early_stopping_patience_validations": 12,
+      "subset_checks": [
+        {
+          "seed": 42,
+          "ratio": 10,
+          "samples": 376,
+          "start_indices_sha256": "27160238630eff5f76fbf1fa81698dd2b048b37ce75b5ed3176ebffba064d89a"
+        },
+        {
+          "seed": 42,
+          "ratio": 25,
+          "samples": 987,
+          "start_indices_sha256": "8685a1ef5f390567ab9a613f2991255e1fc00e6b98657e3ad6bd055a14b95bc6"
+        },
+        {
+          "seed": 42,
+          "ratio": 50,
+          "samples": 1974,
+          "start_indices_sha256": "cbfb1058727071e8398521ad12e511c4cc3e8f916aabf35c8522e6729b6eea20"
+        },
+        {
+          "seed": 42,
+          "ratio": 100,
+          "samples": 3995,
+          "start_indices_sha256": "e727ee2d638d743346ab42e5e5ea69217ef56dcefcf2cf40d46fc462ac950c6f"
+        },
+        {
+          "seed": 7,
+          "ratio": 10,
+          "samples": 376,
+          "start_indices_sha256": "8cecdfbd5abca6bd250dbf01801fbe5d469320b37b297fae0ae39344643cda77"
+        },
+        {
+          "seed": 7,
+          "ratio": 25,
+          "samples": 987,
+          "start_indices_sha256": "001c9245ed877b230509eff526d47a5a1de39f4b8c56b9ec206191e918920d0d"
+        },
+        {
+          "seed": 7,
+          "ratio": 50,
+          "samples": 1974,
+          "start_indices_sha256": "d3b39da313cfd5ecdd3bb8917a4225cd6d7fa0a555b230d7c6570ddb3d47831b"
+        },
+        {
+          "seed": 7,
+          "ratio": 100,
+          "samples": 3995,
+          "start_indices_sha256": "e727ee2d638d743346ab42e5e5ea69217ef56dcefcf2cf40d46fc462ac950c6f"
+        },
+        {
+          "seed": 123,
+          "ratio": 10,
+          "samples": 376,
+          "start_indices_sha256": "6122c8bed00e20178b547984d53d12865702674f9008a730645ebfb055aacc95"
+        },
+        {
+          "seed": 123,
+          "ratio": 25,
+          "samples": 987,
+          "start_indices_sha256": "e6145ab110583ec9700cdb8a17a22acc1b71553d6726069daaf1f6862db6f753"
+        },
+        {
+          "seed": 123,
+          "ratio": 50,
+          "samples": 1974,
+          "start_indices_sha256": "becac57bb669ac876aef8517ac5bf772b1aba55e127aa0e34ee7a814c8370420"
+        },
+        {
+          "seed": 123,
+          "ratio": 100,
+          "samples": 3995,
+          "start_indices_sha256": "e727ee2d638d743346ab42e5e5ea69217ef56dcefcf2cf40d46fc462ac950c6f"
+        }
+      ],
+      "full_configs": [
+        {
+          "path": "outputs/main_experiment_final/jeju_hilam/lead7_seed42/jeju_hilam_config.json",
+          "sha256": "d1c7024c081f50b0083e9d1c89d208f6ea4671dc1ed4cfa4bae60c66eb2f234f",
+          "saved_rhs_scale": null
+        },
+        {
+          "path": "outputs/main_experiment_final/jeju_hilam/lead7_seed7/jeju_hilam_config.json",
+          "sha256": "f834efce535f54538aa0c48351e21fe6a333d884acc9882eb5abe3a185663fcc",
+          "saved_rhs_scale": null
+        },
+        {
+          "path": "outputs/main_experiment_final/jeju_hilam/lead7_seed123/jeju_hilam_config.json",
+          "sha256": "54ce6d8e3d04e1e6129e3810cd6e77e1d16ed547a9015e7f4235611501af1723",
+          "saved_rhs_scale": null
+        },
+        {
+          "path": "outputs/main_experiment_final/pi_jeju_hilam/lead7_seed42/jeju_hilam_config.json",
+          "sha256": "332d1dcd2d0af83fcdc356dfb453a5789992b793af5b2343f030f8af13b8dc95",
+          "saved_rhs_scale": 9.736722977796306
+        },
+        {
+          "path": "outputs/main_experiment_final/pi_jeju_hilam/lead7_seed7/jeju_hilam_config.json",
+          "sha256": "fe5a896b6fe3d736621b1c6a4b63c1297294306274831407ca29e0fe698a86cd",
+          "saved_rhs_scale": 9.736722977796306
+        },
+        {
+          "path": "outputs/main_experiment_final/pi_jeju_hilam/lead7_seed123/jeju_hilam_config.json",
+          "sha256": "7fade9e91326e3b448ef90f5f360176af961b779d8c301a6c9c0db662fc82ad2",
+          "saved_rhs_scale": 9.736722977796306
+        }
+      ]
+    },
+    "14": {
+      "counts": {
+        "train": 7639,
+        "val": 1637,
+        "test": 1638
+      },
+      "split_sha256": {
+        "train": "085b1f2b9c61e9c4234d439bfe45f04f9ddaa553655884fbdac1504070c5daba",
+        "val": "858ec07dc5285fa45ddcdabefb54a72712914c0fb5b18c2e9f514cd8fa83f431",
+        "test": "e99e10619af2df8d184cc0bdf24fcd186fd80a6a6de4f7a1e5795511d4e1ee01"
+      },
+      "full_stats": {
+        "sst_mean": [
+          19.15380859375,
+          5.7483625411987305
+        ],
+        "sst_anom": [
+          0.01158277690410614,
+          1.250184416770935
+        ],
+        "u_ml": [
+          0.05766785144805908,
+          0.15283909440040588
+        ],
+        "v_ml": [
+          0.03469254449009895,
+          0.14181026816368103
+        ],
+        "mlotst": [
+          30.945514678955078,
+          27.268390655517578
+        ],
+        "ssr": [
+          165.58221435546875,
+          79.71060943603516
+        ],
+        "str": [
+          -67.92919921875,
+          31.922748565673828
+        ],
+        "slhf": [
+          -124.03571319580078,
+          116.68438720703125
+        ],
+        "sshf": [
+          -31.52863121032715,
+          54.16501998901367
+        ],
+        "mslp": [
+          101580.953125,
+          763.5368041992188
+        ],
+        "tcc": [
+          0.6256384253501892,
+          0.3111458122730255
+        ],
+        "Td_glorys": [
+          18.934783935546875,
+          5.573275566101074
+        ],
+        "wind10": [
+          5.982875347137451,
+          2.94598650932312
+        ],
+        "thetao_z0m_anom": [
+          -0.0005206373753026128,
+          0.9456025958061218
+        ],
+        "thetao_z16m_anom": [
+          -0.0005231952527537942,
+          0.9485570788383484
+        ],
+        "thetao_z34m_anom": [
+          -0.0005291463457979262,
+          1.0333353281021118
+        ],
+        "thetao_z78m_anom": [
+          -0.0004805402422789484,
+          1.0145703554153442
+        ],
+        "thetao_z110m_anom": [
+          -0.0008275151485577226,
+          0.9258295893669128
+        ],
+        "thetao_z156m_anom": [
+          -0.00044300162699073553,
+          0.9557858109474182
+        ],
+        "ocean_mask_static": [
+          0.0,
+          1.0
+        ],
+        "lat2d": [
+          33.5,
+          2.0916500091552734
+        ],
+        "lon2d": [
+          127.0,
+          2.3804759979248047
+        ],
+        "target": [
+          19.15380859375,
+          5.7483625411987305
+        ],
+        "observed_tendency_mse_kday2": [
+          0.014090502634644508,
+          1.0
+        ],
+        "observed_tendency_rms_kday": [
+          0.11870342301148905,
+          1.0
+        ]
+      },
+      "full_rhs_scale": 9.727984318892057,
+      "saved_rhs_scales": [
+        9.727984318892057,
+        9.727984318892057,
+        9.727984318892057
+      ],
+      "statistics_end_date": "2014-01-12",
+      "evaluation_reference_end_date": "2013-12-31",
+      "S": 955,
+      "max_steps": 76400,
+      "warmup_steps": 4775,
+      "early_stopping_patience_validations": 12,
+      "subset_checks": [
+        {
+          "seed": 42,
+          "ratio": 10,
+          "samples": 376,
+          "start_indices_sha256": "27160238630eff5f76fbf1fa81698dd2b048b37ce75b5ed3176ebffba064d89a"
+        },
+        {
+          "seed": 42,
+          "ratio": 25,
+          "samples": 987,
+          "start_indices_sha256": "8685a1ef5f390567ab9a613f2991255e1fc00e6b98657e3ad6bd055a14b95bc6"
+        },
+        {
+          "seed": 42,
+          "ratio": 50,
+          "samples": 1974,
+          "start_indices_sha256": "cbfb1058727071e8398521ad12e511c4cc3e8f916aabf35c8522e6729b6eea20"
+        },
+        {
+          "seed": 42,
+          "ratio": 100,
+          "samples": 3995,
+          "start_indices_sha256": "e727ee2d638d743346ab42e5e5ea69217ef56dcefcf2cf40d46fc462ac950c6f"
+        },
+        {
+          "seed": 7,
+          "ratio": 10,
+          "samples": 376,
+          "start_indices_sha256": "8cecdfbd5abca6bd250dbf01801fbe5d469320b37b297fae0ae39344643cda77"
+        },
+        {
+          "seed": 7,
+          "ratio": 25,
+          "samples": 987,
+          "start_indices_sha256": "001c9245ed877b230509eff526d47a5a1de39f4b8c56b9ec206191e918920d0d"
+        },
+        {
+          "seed": 7,
+          "ratio": 50,
+          "samples": 1974,
+          "start_indices_sha256": "d3b39da313cfd5ecdd3bb8917a4225cd6d7fa0a555b230d7c6570ddb3d47831b"
+        },
+        {
+          "seed": 7,
+          "ratio": 100,
+          "samples": 3995,
+          "start_indices_sha256": "e727ee2d638d743346ab42e5e5ea69217ef56dcefcf2cf40d46fc462ac950c6f"
+        },
+        {
+          "seed": 123,
+          "ratio": 10,
+          "samples": 376,
+          "start_indices_sha256": "6122c8bed00e20178b547984d53d12865702674f9008a730645ebfb055aacc95"
+        },
+        {
+          "seed": 123,
+          "ratio": 25,
+          "samples": 987,
+          "start_indices_sha256": "e6145ab110583ec9700cdb8a17a22acc1b71553d6726069daaf1f6862db6f753"
+        },
+        {
+          "seed": 123,
+          "ratio": 50,
+          "samples": 1974,
+          "start_indices_sha256": "becac57bb669ac876aef8517ac5bf772b1aba55e127aa0e34ee7a814c8370420"
+        },
+        {
+          "seed": 123,
+          "ratio": 100,
+          "samples": 3995,
+          "start_indices_sha256": "e727ee2d638d743346ab42e5e5ea69217ef56dcefcf2cf40d46fc462ac950c6f"
+        }
+      ],
+      "full_configs": [
+        {
+          "path": "outputs/main_experiment_final/jeju_hilam/lead14_seed42/jeju_hilam_config.json",
+          "sha256": "891521c1b57adeeb85b3fcb0c9e27d39034a0c1068841e787f9415d1605df7d5",
+          "saved_rhs_scale": null
+        },
+        {
+          "path": "outputs/main_experiment_final/jeju_hilam/lead14_seed7/jeju_hilam_config.json",
+          "sha256": "2db3ba63a047352f5d4c6342cd00ac807b433a59f1db98236f6316e52104d4a4",
+          "saved_rhs_scale": null
+        },
+        {
+          "path": "outputs/main_experiment_final/jeju_hilam/lead14_seed123/jeju_hilam_config.json",
+          "sha256": "77774492194ef03ab2293b8b6310c0bbe9164108ad4918894ce5e7dde55ce889",
+          "saved_rhs_scale": null
+        },
+        {
+          "path": "outputs/main_experiment_final/pi_jeju_hilam/lead14_seed42/jeju_hilam_config.json",
+          "sha256": "4bb47507c52b057e8a8a033c2419bc2bcaf433c73db5bc2bd01904f8751a3e33",
+          "saved_rhs_scale": 9.727984318892057
+        },
+        {
+          "path": "outputs/main_experiment_final/pi_jeju_hilam/lead14_seed7/jeju_hilam_config.json",
+          "sha256": "96430b8476c35d549241104791a87658342003717d641de062dab3b09faefb81",
+          "saved_rhs_scale": 9.727984318892057
+        },
+        {
+          "path": "outputs/main_experiment_final/pi_jeju_hilam/lead14_seed123/jeju_hilam_config.json",
+          "sha256": "0591ec05bb932e2673a7a38f0f7aa6bf255b39b79171cf1ee8878abc7e2f7348",
+          "saved_rhs_scale": 9.727984318892057
+        }
+      ]
+    }
+  },
+  "protected_file_count": 233,
+  "protected_files_unchanged": true,
+  "status": "passed"
+}

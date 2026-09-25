@@ -1,0 +1,1 @@
+{"status": "passed", "checks": ["persistent shuffled iterator", "partial final batches", "no skipped batch at validation", "original run_epoch optimizer equivalence", "Full-step LR/physics warmup boundaries at both leads"]}

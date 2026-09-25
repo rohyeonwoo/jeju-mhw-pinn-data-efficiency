@@ -36,3 +36,9 @@ __pycache__/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Server-only runtime tree (including the Ceph symlink); publish curated summaries under docs.
+/outputs/data_efficiency
+
+# Installation and verification console logs stay on the server.
+/docs/server_preflight/*.log

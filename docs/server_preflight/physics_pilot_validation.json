@@ -1,0 +1,153 @@
+{
+  "status": "passed",
+  "scripts_sha256": {
+    "train_physics_pilot.py": "5c6a026f5062de87e7915faaefa4e2775c5a4c6f2db9ce8b1c3ad49477d59441",
+    "physics_interval.py": "7f50f77b88b41bcbeea19c4232073c5e444c09d5e42b4af6c8cdc417b1259b16",
+    "physics_stencil.py": "3b25b8cc55e88a6cd6b2544dfa05ff42dca3776b7b1fe755549bc52e74ef28be",
+    "physics_pilot_checks.py": "29329e1b67ab48fd345b41ed6c24790c067bbe93908735e1d4a9d08b691e2a4e"
+  },
+  "smoke_checks": [
+    {
+      "arm": "matched_baseline",
+      "lambda_physics": 0.0,
+      "status": "passed",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_physics_pilot_20260925_v2/runs/_smoke/matched_baseline/lambda_0/ratio_10/pi_jeju_hilam/lead7_seed42",
+      "initial_gradient": {
+        "data_loss": 1.0602244138717651,
+        "physics_loss": 8.52174186706543,
+        "data_gradient_norm": 11.261347145801976,
+        "physics_gradient_norm": 88.87254688196812,
+        "gradient_cosine": 0.9892455066005273,
+        "weighted_physics_to_data_gradient": 0.0,
+        "lambda_before_existing_warmup": 0.0,
+        "train_target_indices": [
+          216,
+          241,
+          1929,
+          1954,
+          2472,
+          2497,
+          3735,
+          3760,
+          5088,
+          5113,
+          5451,
+          5476,
+          5904,
+          5929,
+          7167,
+          7192
+        ],
+        "scope": "Initial checkpoint, 16 fixed train samples, shared parameters; diagnostic only, no policy changes"
+      }
+    },
+    {
+      "arm": "p0_daily",
+      "lambda_physics": 0.3,
+      "status": "passed",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_physics_pilot_20260925_v2/runs/_smoke/p0_daily/lambda_0p3/ratio_10/pi_jeju_hilam/lead7_seed42",
+      "initial_gradient": {
+        "data_loss": 1.0602244138717651,
+        "physics_loss": 8.52174186706543,
+        "data_gradient_norm": 11.261347145801976,
+        "physics_gradient_norm": 88.87254688196812,
+        "gradient_cosine": 0.9892455066005273,
+        "weighted_physics_to_data_gradient": 2.3675465927297563,
+        "lambda_before_existing_warmup": 0.3,
+        "train_target_indices": [
+          216,
+          241,
+          1929,
+          1954,
+          2472,
+          2497,
+          3735,
+          3760,
+          5088,
+          5113,
+          5451,
+          5476,
+          5904,
+          5929,
+          7167,
+          7192
+        ],
+        "scope": "Initial checkpoint, 16 fixed train samples, shared parameters; diagnostic only, no policy changes"
+      }
+    },
+    {
+      "arm": "p0_interval",
+      "lambda_physics": 0.3,
+      "status": "passed",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_physics_pilot_20260925_v2/runs/_smoke/p0_interval/lambda_0p3/ratio_10/pi_jeju_hilam/lead7_seed42",
+      "initial_gradient": {
+        "data_loss": 1.0602244138717651,
+        "physics_loss": 8.309889793395996,
+        "data_gradient_norm": 11.261347145801976,
+        "physics_gradient_norm": 88.40697390012201,
+        "gradient_cosine": 0.990687513443829,
+        "weighted_physics_to_data_gradient": 2.3551438230836848,
+        "lambda_before_existing_warmup": 0.3,
+        "train_target_indices": [
+          216,
+          241,
+          1929,
+          1954,
+          2472,
+          2497,
+          3735,
+          3760,
+          5088,
+          5113,
+          5451,
+          5476,
+          5904,
+          5929,
+          7167,
+          7192
+        ],
+        "scope": "Initial checkpoint, 16 fixed train samples, shared parameters; diagnostic only, no policy changes"
+      }
+    },
+    {
+      "arm": "p1_daily",
+      "lambda_physics": 0.3,
+      "status": "passed",
+      "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation_physics_pilot_20260925_v2/runs/_smoke/p1_daily/lambda_0p3/ratio_10/pi_jeju_hilam/lead7_seed42",
+      "initial_gradient": {
+        "data_loss": 1.0602244138717651,
+        "physics_loss": 8.645197868347168,
+        "data_gradient_norm": 11.261347145801976,
+        "physics_gradient_norm": 89.43287400603221,
+        "gradient_cosine": 0.9884341286832823,
+        "weighted_physics_to_data_gradient": 2.382473593473348,
+        "lambda_before_existing_warmup": 0.3,
+        "train_target_indices": [
+          216,
+          241,
+          1929,
+          1954,
+          2472,
+          2497,
+          3735,
+          3760,
+          5088,
+          5113,
+          5451,
+          5476,
+          5904,
+          5929,
+          7167,
+          7192
+        ],
+        "scope": "Initial checkpoint, 16 fixed train samples, shared parameters; diagnostic only, no policy changes"
+      }
+    }
+  ],
+  "initialization_and_batch_order_matched": true,
+  "evaluation_cells": 661,
+  "physics_cells": 660,
+  "rhs_scale": 0.08996321398271197,
+  "process_name": "yeonwoo",
+  "batch_size": 16
+}

@@ -1,0 +1,3 @@
+# Additional server requirement: GPU processes must show yeonwoo.
+-r ../requirements.txt
+setproctitle==1.3.7

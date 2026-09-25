@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "stencil": "ocean_neighbors",
+  "lead": 7,
+  "full_train_samples": 7644,
+  "physics_rhs_scale": 0.08996321398271197,
+  "legacy_rhs_scale_recomputed": 9.736722994190542,
+  "legacy_rhs_scale": 9.736722977796306,
+  "ocean_cells": 661,
+  "valid_stencil_cells": 660,
+  "split_sha256": {
+    "train": "8683c8df1abc96ed48f59f72122cdde88b59b648324660a94606032208967a54",
+    "val": "bdeecd3861fade97bfaf84fc893e0be1c667da4adcbd976ca263097185fe0534",
+    "test": "5cf64646f2ae49ed9cbf5f1acbe9da9a298516bef29e74c899a6f486a101ce75"
+  },
+  "data_sha256": "fff22a44aeeb35fdd26f29b0d0ade7cf9549c18f5ae29aef2a415a5826708ec2",
+  "stencil_sha256": "3b25b8cc55e88a6cd6b2544dfa05ff42dca3776b7b1fe755549bc52e74ef28be",
+  "basis": "Full train observed linear endpoints, we=0, P0 resolved RHS, K/day squared; same scale for P0/P1 and daily/period mean",
+  "scope": "Only physical-loss RHS scale; input/target normalization unchanged"
+}

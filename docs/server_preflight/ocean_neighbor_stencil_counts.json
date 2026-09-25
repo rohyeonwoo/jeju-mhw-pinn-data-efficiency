@@ -1,0 +1,15 @@
+{
+  "ocean": 661,
+  "central_both_axes": 520,
+  "both_axes_with_ocean_neighbor": 660,
+  "one_sided_x": 80,
+  "one_sided_y": 82,
+  "missing_x": 0,
+  "missing_y": 1,
+  "unresolved_indices": [
+    [
+      24,
+      14
+    ]
+  ]
+}

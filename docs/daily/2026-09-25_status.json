@@ -1,0 +1,316 @@
+{
+  "as_of_utc": "2026-09-25T11:00:44.074401+00:00",
+  "status": "running",
+  "counts": {
+    "running": 8,
+    "pending": 22
+  },
+  "total_runs": 30,
+  "slots_per_gpu": {
+    "0": 4,
+    "1": 4
+  },
+  "jobs": [
+    {
+      "id": 0,
+      "arm": "matched_baseline",
+      "lambda_physics": 0.0,
+      "seed": 42,
+      "lead": 7,
+      "gpu": "0",
+      "status": "running",
+      "step": 725
+    },
+    {
+      "id": 1,
+      "arm": "matched_baseline",
+      "lambda_physics": 0.0,
+      "seed": 7,
+      "lead": 7,
+      "gpu": "0",
+      "status": "running",
+      "step": 675
+    },
+    {
+      "id": 2,
+      "arm": "matched_baseline",
+      "lambda_physics": 0.0,
+      "seed": 123,
+      "lead": 7,
+      "gpu": "0",
+      "status": "running",
+      "step": 675
+    },
+    {
+      "id": 3,
+      "arm": "p0_daily",
+      "lambda_physics": 0.01,
+      "seed": 42,
+      "lead": 7,
+      "gpu": "0",
+      "status": "running",
+      "step": 675
+    },
+    {
+      "id": 4,
+      "arm": "p0_daily",
+      "lambda_physics": 0.01,
+      "seed": 7,
+      "lead": 7,
+      "gpu": "1",
+      "status": "running",
+      "step": 700
+    },
+    {
+      "id": 5,
+      "arm": "p0_daily",
+      "lambda_physics": 0.01,
+      "seed": 123,
+      "lead": 7,
+      "gpu": "1",
+      "status": "running",
+      "step": 700
+    },
+    {
+      "id": 6,
+      "arm": "p0_interval",
+      "lambda_physics": 0.01,
+      "seed": 42,
+      "lead": 7,
+      "gpu": "1",
+      "status": "running",
+      "step": 750
+    },
+    {
+      "id": 7,
+      "arm": "p0_interval",
+      "lambda_physics": 0.01,
+      "seed": 7,
+      "lead": 7,
+      "gpu": "1",
+      "status": "running",
+      "step": 700
+    },
+    {
+      "id": 8,
+      "arm": "p0_interval",
+      "lambda_physics": 0.01,
+      "seed": 123,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 9,
+      "arm": "p1_daily",
+      "lambda_physics": 0.01,
+      "seed": 42,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 10,
+      "arm": "p1_daily",
+      "lambda_physics": 0.01,
+      "seed": 7,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 11,
+      "arm": "p1_daily",
+      "lambda_physics": 0.01,
+      "seed": 123,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 12,
+      "arm": "p0_daily",
+      "lambda_physics": 0.1,
+      "seed": 42,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 13,
+      "arm": "p0_daily",
+      "lambda_physics": 0.1,
+      "seed": 7,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 14,
+      "arm": "p0_daily",
+      "lambda_physics": 0.1,
+      "seed": 123,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 15,
+      "arm": "p0_interval",
+      "lambda_physics": 0.1,
+      "seed": 42,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 16,
+      "arm": "p0_interval",
+      "lambda_physics": 0.1,
+      "seed": 7,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 17,
+      "arm": "p0_interval",
+      "lambda_physics": 0.1,
+      "seed": 123,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 18,
+      "arm": "p1_daily",
+      "lambda_physics": 0.1,
+      "seed": 42,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 19,
+      "arm": "p1_daily",
+      "lambda_physics": 0.1,
+      "seed": 7,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 20,
+      "arm": "p1_daily",
+      "lambda_physics": 0.1,
+      "seed": 123,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 21,
+      "arm": "p0_daily",
+      "lambda_physics": 0.3,
+      "seed": 42,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 22,
+      "arm": "p0_daily",
+      "lambda_physics": 0.3,
+      "seed": 7,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 23,
+      "arm": "p0_daily",
+      "lambda_physics": 0.3,
+      "seed": 123,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 24,
+      "arm": "p0_interval",
+      "lambda_physics": 0.3,
+      "seed": 42,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 25,
+      "arm": "p0_interval",
+      "lambda_physics": 0.3,
+      "seed": 7,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 26,
+      "arm": "p0_interval",
+      "lambda_physics": 0.3,
+      "seed": 123,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 27,
+      "arm": "p1_daily",
+      "lambda_physics": 0.3,
+      "seed": 42,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 28,
+      "arm": "p1_daily",
+      "lambda_physics": 0.3,
+      "seed": 7,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    },
+    {
+      "id": 29,
+      "arm": "p1_daily",
+      "lambda_physics": 0.3,
+      "seed": 123,
+      "lead": 7,
+      "gpu": null,
+      "status": "pending",
+      "step": 0
+    }
+  ],
+  "note": "Publication-time snapshot, not a live dashboard. Partial scores are not final results."
+}

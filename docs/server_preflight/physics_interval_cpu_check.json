@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "constant_budget_exact": true,
+  "alternating_forcing_exact": true,
+  "independent_forcing_gradient_identity": true,
+  "vertical_sign_and_units": true,
+  "state_dependent_gradient_max_difference": 0.004058748000000006,
+  "finite_difference_gradcheck": true,
+  "notes": "All synthetic checks use no clipping; production retains legacy clipping and fixed Full P0 scale"
+}

@@ -1,0 +1,117 @@
+{
+  "checked_utc": "2026-09-25T03:58:44.212303+00:00",
+  "status": "running",
+  "coordinator_pid": 2154557,
+  "tmux": "mhw_lambda_pilot",
+  "output_root": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/lambda_pilot_lead7_20260925",
+  "jobs": [
+    {
+      "id": 0,
+      "status": "running",
+      "pid": 2154567,
+      "gpu": "0"
+    },
+    {
+      "id": 1,
+      "status": "running",
+      "pid": 2154572,
+      "gpu": "0"
+    },
+    {
+      "id": 2,
+      "status": "running",
+      "pid": 2154573,
+      "gpu": "0"
+    },
+    {
+      "id": 3,
+      "status": "running",
+      "pid": 2154574,
+      "gpu": "0"
+    },
+    {
+      "id": 4,
+      "status": "running",
+      "pid": 2154575,
+      "gpu": "0"
+    },
+    {
+      "id": 5,
+      "status": "running",
+      "pid": 2154576,
+      "gpu": "1"
+    },
+    {
+      "id": 6,
+      "status": "running",
+      "pid": 2154580,
+      "gpu": "1"
+    },
+    {
+      "id": 7,
+      "status": "running",
+      "pid": 2154584,
+      "gpu": "1"
+    },
+    {
+      "id": 8,
+      "status": "running",
+      "pid": 2154594,
+      "gpu": "1"
+    },
+    {
+      "id": 9,
+      "status": "running",
+      "pid": 2154601,
+      "gpu": "1"
+    },
+    {
+      "id": 10,
+      "status": "pending",
+      "pid": null,
+      "gpu": null
+    },
+    {
+      "id": 11,
+      "status": "pending",
+      "pid": null,
+      "gpu": null
+    },
+    {
+      "id": 12,
+      "status": "pending",
+      "pid": null,
+      "gpu": null
+    },
+    {
+      "id": 13,
+      "status": "pending",
+      "pid": null,
+      "gpu": null
+    },
+    {
+      "id": 14,
+      "status": "pending",
+      "pid": null,
+      "gpu": null
+    },
+    {
+      "id": 15,
+      "status": "pending",
+      "pid": null,
+      "gpu": null
+    },
+    {
+      "id": 16,
+      "status": "pending",
+      "pid": null,
+      "gpu": null
+    },
+    {
+      "id": 17,
+      "status": "pending",
+      "pid": null,
+      "gpu": null
+    }
+  ]
+}

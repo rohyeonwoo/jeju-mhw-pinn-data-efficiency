@@ -1,0 +1,77 @@
+{
+  "checked_unix": 1790262794.3966048,
+  "jobs": [
+    {
+      "gpu": "0",
+      "ratio": 10,
+      "seed": 42,
+      "pid": 1381183,
+      "status": "training",
+      "step": 125
+    },
+    {
+      "gpu": "0",
+      "ratio": 10,
+      "seed": 7,
+      "pid": 1381190,
+      "status": "training",
+      "step": 125
+    },
+    {
+      "gpu": "0",
+      "ratio": 10,
+      "seed": 123,
+      "pid": 1381191,
+      "status": "training",
+      "step": 100
+    },
+    {
+      "gpu": "0",
+      "ratio": 25,
+      "seed": 42,
+      "pid": 1381193,
+      "status": "training",
+      "step": 100
+    },
+    {
+      "gpu": "0",
+      "ratio": 25,
+      "seed": 7,
+      "pid": 1381194,
+      "status": "training",
+      "step": 100
+    },
+    {
+      "gpu": "1",
+      "ratio": 25,
+      "seed": 123,
+      "pid": 1381199,
+      "status": "training",
+      "step": 125
+    },
+    {
+      "gpu": "1",
+      "ratio": 50,
+      "seed": 42,
+      "pid": 1381200,
+      "status": "training",
+      "step": 125
+    },
+    {
+      "gpu": "1",
+      "ratio": 50,
+      "seed": 7,
+      "pid": 1381201,
+      "status": "training",
+      "step": 125
+    },
+    {
+      "gpu": "1",
+      "ratio": 50,
+      "seed": 123,
+      "pid": 1381202,
+      "status": "training",
+      "step": 125
+    }
+  ]
+}

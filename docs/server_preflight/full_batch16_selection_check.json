@@ -1,0 +1,16 @@
+[
+  {
+    "lead": 7,
+    "full_samples": 7644,
+    "block100_samples": 3995,
+    "S_batch16": 478,
+    "status": "passed"
+  },
+  {
+    "lead": 14,
+    "full_samples": 7639,
+    "block100_samples": 3995,
+    "S_batch16": 478,
+    "status": "passed"
+  }
+]

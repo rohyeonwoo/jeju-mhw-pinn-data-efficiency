@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-09-25T03:52:04.062735+00:00",
+  "authorization": "User authorized trying a pilot before extending remaining conditions.",
+  "scope": {
+    "lead": [
+      7
+    ],
+    "regimes": [
+      "ratio_10",
+      "original_full"
+    ],
+    "seeds": [
+      42,
+      7,
+      123
+    ],
+    "new_lambda_physics": [
+      0,
+      0.01,
+      0.3
+    ],
+    "lambda_rres": 10,
+    "lambda_we_tie": 0,
+    "batch_size": 16,
+    "total_new_runs": 18
+  },
+  "references": {
+    "lambda_0p1": "Existing completed P0 runs at matched regime/seed/lead7",
+    "baseline": "Existing completed baseline runs; does not equal auxiliary-only lambda0"
+  },
+  "protected": "Original src, existing train_data_efficiency.py, subsets, time splits, val/test indices and all prior Full/subset outputs preserved.",
+  "rng": "New arms preserve legacy P0 initialization and loader RNG exactly; CPU parity check isolates extra-head RNG consumption with identical fixed batches.",
+  "primary_outcome": "Paired test RMSE differences, especially new lambdas versus aux-only lambda0 and old P0 lambda0.1; every arm and seed reported.",
+  "selection": "One lambda among 0,0.01,0.1,0.3 per regime minimizing mean best validation RMSE across all 3 seeds; exact ties use smaller lambda. Physics lambda0 retains auxiliary loss.",
+  "uncertainty": {
+    "exact_paired_sign_flip": "3 pairs, minimum two-sided p=0.25; no p<0.05 claim across training seeds",
+    "time_bootstrap": {
+      "circular_blocks_days": [
+        30,
+        90,
+        180
+      ],
+      "main_block_days": 90,
+      "replicates": 4000,
+      "shared_time_indices_across_models_seeds": true,
+      "scope": "Conditional on fitted models; unadjusted exploratory intervals, not new-seed inference"
+    }
+  },
+  "secondary_metrics": [
+    "test_acc",
+    "MHW pooled-grid CSI",
+    "POD",
+    "FAR"
+  ],
+  "noninferiority": "No claim of equivalence or no harm from a nonsignificant result; no prespecified application-based margin available.",
+  "expansion": "Pilot stops after all 18 runs plus evaluation and report. Broader experiment needs review of integrity, effect size and mixed/negative outcomes; no automatic favorable-test filtering.",
+  "output_root": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/lambda_pilot_lead7_20260925",
+  "scripts_sha256": {
+    "train_data_efficiency.py": "c8ccb58da5a3cba12bd410aea80959a1253afea1dcae5d5c422d71a399cd7cc9",
+    "train_lambda_pilot.py": "97ab313e5d574fefae6a0dae58ed7e5e8e4aff0d508ad08b9d72f4851b7f55c7",
+    "check_lambda_pilot.py": "8a3a8624cfe292e6eb0c0b59ad4771823631c66261cac05cda1ac464a512cfad",
+    "validate_lambda_pilot.py": "14002e069e943d6a2ebb989fb979a3c51933ce5acee0a7f3b184358f65acf1bb",
+    "launch_lambda_pilot.py": "4b0909e4241b84e32e760c85b53b64d71012a580de7b150812ebdf1e541332d1",
+    "summarize_lambda_pilot.py": "6cb29985e71fd3c06eec7d74b64a753e38d05590ed1226f1d5153024b54178a8"
+  }
+}
