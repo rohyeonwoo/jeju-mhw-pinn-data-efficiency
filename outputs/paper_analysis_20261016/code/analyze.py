@@ -326,3 +326,7 @@ savejson('reports/output_validation.json',validation)
 now=datetime.datetime.now(ZoneInfo('Asia/Seoul')).strftime('%Y-%m-%d %H:%M KST')
 with (R/'docs/research_log.md').open('a') as f:f.write(f'\n\n### {now} — Oracle120 논문 최종 분석·Figure/Table 생성\n- 대상: {O}\n- 변경: 기존120개 예측·평가/검증자료를 이용한 Table1–6, 별도Validation/seed표, Main1–5 및 S1–S6 (PNG350dpi/PDF/SVG), plot CSV, 대응통계, 주장근거/한계/재현성 보고서 생성.\n- 이유: 사용자 첨부 최종분석 프롬프트 이행. 기존 데이터/결과/체크포인트 수정·삭제·이동 없음. 모델 학습·튜닝·추론·WSDM/Oracle120 감사 전체 재실행 없음.\n- 검증: 120개 파일 완전성 및 dates/targets/mask/MHWlabel 정렬, 144개 seed대응/48개 조건대응, 기존90일 CI재사용 확인. NoAdv RMSE {nwin}/24, CSI {cwin}/24. 새 SW-Jeju 좌표상자와 observed-field 이류진단 범위 명시. output_validation.json 참조.\n')
 log('COMPLETE '+json.dumps(validation,ensure_ascii=False))
+
+# Apply the publication layout and comparison-scope revision after generation.
+import runpy
+runpy.run_path(str(Path(__file__).with_name('revise_manuscript_tables.py')), run_name='__main__')

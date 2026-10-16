@@ -34,3 +34,7 @@ readme=O/'README.md';rt=readme.read_text().replace('Table1–6 plus separate Val
 now=datetime.datetime.now(ZoneInfo('Asia/Seoul')).strftime('%Y-%m-%d %H:%M KST')
 with (O.parents[1]/'docs/research_log.md').open('a') as f:f.write(f'\n- {now} — 최종 해석 보강 및 tableS_noadv_adv 추가: SST/CSI 모두 NoAdv 우위를 양수로 통일, 기존 CSI CI 부호 반전/끝점 재정렬 검산. 7개 연구질문에 실제 수치와 비단조성/작은효과/계절 한계 명시. 기존 산출물 변경 없음; 새 분석 디렉터리 내 보고서·manifest 갱신.\n')
 print('FINDINGS COMPLETE',check,flush=True)
+
+# Apply the publication layout and comparison-scope revision after generation.
+import runpy
+runpy.run_path(str(Path(__file__).with_name('revise_manuscript_tables.py')), run_name='__main__')

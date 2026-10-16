@@ -31,7 +31,9 @@ Epoch 1/20/80의 원본 진단 batch 중앙값은 tables/auxiliary_epoch1_20_80.
 
 ## 3. NoAdv와 Adv 차이가 반복되는 조건
 
-8개 Ratio×Lead 조건 모두 평균 RMSE는 NoAdv가 낮다. 차이는 0.01252–0.06156 K다. 기존 90일 조건부 신뢰구간은 6/8 조건에서 0을 제외하지만, 50%·Lead14와 100%·Lead14는 0을 포함한다. 이는 모든 조건에서 확증된 효과라는 뜻이 아니다. CSI까지 NoAdv 우위 방향을 양수로 통일한 별도 표는 `tables/tableS_noadv_adv.csv`다.
+수평 이류항 포함 여부의 효과를 분리한 비교는 동일 구현의 NoAdv–Adv뿐이다. P0와 NoAdv·Adv의 비교는 활성 head 및 물리항 정의가 함께 달라지는 복합 비교다. P0에서만 we head가 활성화되며, 세 모델 모두 Rres head는 비활성이다. 단파 투과, 학습 연행과 MLD-deepening proxy, 산술 평균과 두께 가중 혼합층 유속 정의도 다르다. 동일한 네트워크 구조가 동일한 활성 목적함수를 뜻하지 않는다. 따라서 P0 비교를 수평 이류항만의 독립 효과로 해석하지 않으며, NoAdv–Adv 결과도 구현된 학습 제약의 예측 효용에 한정한다.
+
+8개 Ratio×Lead 조건 모두 평균 RMSE는 NoAdv가 낮다. 차이는 0.01252–0.06156 K다. 기존 90일 조건부 신뢰구간은 6/8 조건에서 0을 제외하지만, 50%·Lead14와 100%·Lead14는 0을 포함한다. 이는 모든 조건에서 확증된 효과라는 뜻이 아니다. 본문 표 `tables/table5_paired.tex`는 NoAdv–Adv 8개 조건을 6개 열로 제시한다. 전체 48개 대응 비교는 Supplementary Table S1 (`tables/tableS_paired_all.tex`)에 있으며, CSI 신뢰구간을 포함한 확장표는 `tables/tableS_noadv_adv.csv`다.
 
 NoAdv 우위: RMSE 22/24, CSI 19/24 seed 조건. 아래 ΔRMSE는 Adv−NoAdv로 양수가 NoAdv 우위다.
 

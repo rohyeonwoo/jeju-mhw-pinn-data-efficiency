@@ -700,9 +700,9 @@
     "sha256": "f4f4785c76a560a7c1b3bda0af9827d5ba2ec705056fafc7375e33e22d598979"
   },
   "/ceph_data/yeonwoo/MHW_subset/outputs/paper_analysis_20261016/code/analyze.py": {
-    "size": 54096,
-    "mtime_ns": 1792143579304936371,
-    "sha256": "882a97e376196b5d59186fd5bafddf9352fc4294c949c1425f0a45c4afd2a984"
+    "size": 54287,
+    "mtime_ns": 1792148331797007348,
+    "sha256": "ca250907fe84329c0394140e97c8fa89412fc16a9742394e04a5055c71f79d0b"
   },
   "/ceph_data/yeonwoo/MHW_subset/outputs/paper_analysis_20261016/code/refine_figures.py": {
     "size": 4852,
@@ -710,8 +710,13 @@
     "sha256": "8a8dfee2b9b948c6cf8e66927d35897cddf1a37f2a1e740a3aa0298cd66a87e3"
   },
   "/ceph_data/yeonwoo/MHW_subset/outputs/paper_analysis_20261016/code/finalize_findings.py": {
-    "size": 7293,
-    "mtime_ns": 1792143542757794093,
-    "sha256": "f3c6e35053cfa1420487f9b49469bd6dace300c8f59603cbda1be91971e43b5f"
+    "size": 7484,
+    "mtime_ns": 1792148331809007120,
+    "sha256": "7aaa8a4767bafe7f66bbfea3563b8c7cc10705a4cd3259508def123f2edb348c"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_analysis_20261016/code/revise_manuscript_tables.py": {
+    "size": 15732,
+    "mtime_ns": 1792148364276387016,
+    "sha256": "fefa0d033c8b18f8c0016d15bc91ee0a88deb4fdf499d2d5ed05e480b90855b9"
   }
 }

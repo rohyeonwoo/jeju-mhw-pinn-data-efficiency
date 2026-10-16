@@ -6,6 +6,8 @@ Figure 2. Test SST RMSE across training subsets and forecast leads. Points show 
 
 Figure 3. Paired horizontal-advection constraint comparison. Open markers identify seeds; black diamonds are means. Blue intervals reuse the existing 2,000-replicate circular 90-day temporal block bootstrap, conditional on the same three seeds. Positive Adv−NoAdv RMSE favors NoAdv. Temporal intervals and between-seed dispersion quantify different uncertainties; no multiplicity adjustment or population-of-seeds inference is implied.
 
+Only the matched NoAdv–Adv comparison isolates inclusion of the horizontal-advection term in this implemented training constraint. P0 versus either NoAdv or Adv also changes active heads and physical-term definitions: the we head is active only in P0; the Rres head is inactive in all three. Shortwave penetration, learned entrainment versus an MLD-deepening proxy, and arithmetic versus thickness-weighted mixed-layer velocity definitions also differ. Sharing the same network architecture does not imply identical active objectives. This ablation concerns predictive utility of the implemented constraint, not the independent causal role of advection in the ocean.
+
 
 Figure 4. Pooled grid-day MHW CSI, POD, and FAR across subsets and leads, with three-seed sample SD. FAR is the false-alarm ratio FP/(TP+FP), not the false-positive rate. A single fixed threshold and common observed labels are used across all ratios and models. Five-day events join predictions issued at different times at a fixed lead, rather than a single-issuance five-day alarm.
 

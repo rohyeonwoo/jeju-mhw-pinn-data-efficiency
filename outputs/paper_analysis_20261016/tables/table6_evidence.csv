@@ -1,8 +1,8 @@
-item,evidence,scope,status
-Model and protocol,/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/protocol120.csv,"120 runs, 80 epochs; prior audit",Existing evidence reused; audit not rerun
-MHW threshold,/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/mhw_reference_check.json,Prior bitwise reference check; common evaluation threshold,Existing evidence reused; audit not rerun
-Test metrics and alignment,/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/analysis_status.json,Prior 120-run metric recomputation and ground-truth check,Existing evidence reused; audit not rerun
-Stencil,/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/stencil_tests.csv,Prior 88 tests; regular-grid scope,Existing evidence reused; audit not rerun
-Coordinates / support,/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/dataset_metadata.json,Actual ascending coordinates; 661 ocean / 660 support,Existing evidence reused; audit not rerun
-Auxiliary diagnostics,/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/aux_diagnostics_rechecked.csv,Saved diagnostic gradients; no new optimizer updates,Existing evidence reused; audit not rerun
-Physics units,/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/horizontal_advection_audit.md,K/day conversion and coordinate conventions; upstream limitations,Existing evidence reused; audit not rerun
+evidence_id,item,evidence,verification_method,status
+E1,Model and protocol,outputs/paper_final_verification_20261015/protocol120.csv,"Inspect all 120 run configurations, epoch counts and selected-checkpoint records.",Existing evidence reused; audit not rerun
+E2,MHW threshold,outputs/paper_final_verification_20261015/mhw_reference_check.json,Inspect the prior bitwise reference comparison and shared evaluation-threshold check.,Existing evidence reused; audit not rerun
+E3,Test metrics and alignment,outputs/paper_final_verification_20261015/analysis_status.json,Inspect the prior 120-run metric recomputation and target/mask/label alignment status.,Existing evidence reused; audit not rerun
+E4,Stencil,outputs/paper_final_verification_20261015/stencil_tests.csv,Inspect the 88 recorded regular-grid numerical tests and their outcomes.,Existing evidence reused; audit not rerun
+E5,Coordinates / support,outputs/paper_final_verification_20261015/dataset_metadata.json,Check ascending coordinates and recorded ocean/support counts of 661/660.,Existing evidence reused; audit not rerun
+E6,Auxiliary diagnostics,outputs/paper_final_verification_20261015/aux_diagnostics_rechecked.csv,Inspect the saved diagnostic-batch outputs and gradients; no optimizer update is performed.,Existing evidence reused; audit not rerun
+E7,Physics units,outputs/paper_final_verification_20261015/horizontal_advection_audit.md,"Inspect the K/day conversion, coordinate conventions and recorded upstream limitations.",Existing evidence reused; audit not rerun

@@ -1,17 +1,17 @@
 \begin{table}
-\caption{Existing numerical and reproducibility evidence. Status is attributed to the prior report, not a fresh full audit.}
+\caption{Existing numerical and reproducibility evidence. E1–E7 identify repository files listed in table6\_evidence.csv and reports/public\_evidence\_index.md. All entries reuse the prior audit; the listed checks were not rerun for this manuscript revision.}
 \label{tab:table6_evidence}
-\begin{tabular}{llll}
+\begin{tabular}{lp{0.23\linewidth}p{0.58\linewidth}}
 \toprule
-item & evidence & scope & status \\
+ID & Evidence & Verification method \\
 \midrule
-Model and protocol & /ceph\_data/yeonwoo/MHW\_subset/outputs/paper\_final\_verification\_20261015/protocol120.csv & 120 runs, 80 epochs; prior audit & Existing evidence reused; audit not rerun \\
-MHW threshold & /ceph\_data/yeonwoo/MHW\_subset/outputs/paper\_final\_verification\_20261015/mhw\_reference\_check.json & Prior bitwise reference check; common evaluation threshold & Existing evidence reused; audit not rerun \\
-Test metrics and alignment & /ceph\_data/yeonwoo/MHW\_subset/outputs/paper\_final\_verification\_20261015/analysis\_status.json & Prior 120-run metric recomputation and ground-truth check & Existing evidence reused; audit not rerun \\
-Stencil & /ceph\_data/yeonwoo/MHW\_subset/outputs/paper\_final\_verification\_20261015/stencil\_tests.csv & Prior 88 tests; regular-grid scope & Existing evidence reused; audit not rerun \\
-Coordinates / support & /ceph\_data/yeonwoo/MHW\_subset/outputs/paper\_final\_verification\_20261015/dataset\_metadata.json & Actual ascending coordinates; 661 ocean / 660 support & Existing evidence reused; audit not rerun \\
-Auxiliary diagnostics & /ceph\_data/yeonwoo/MHW\_subset/outputs/paper\_final\_verification\_20261015/aux\_diagnostics\_rechecked.csv & Saved diagnostic gradients; no new optimizer updates & Existing evidence reused; audit not rerun \\
-Physics units & /ceph\_data/yeonwoo/MHW\_subset/outputs/paper\_final\_verification\_20261015/horizontal\_advection\_audit.md & K/day conversion and coordinate conventions; upstream limitations & Existing evidence reused; audit not rerun \\
+E1 & Model and protocol & Inspect all 120 run configurations, epoch counts and selected-checkpoint records. \\
+E2 & MHW threshold & Inspect the prior bitwise reference comparison and shared evaluation-threshold check. \\
+E3 & Test metrics and alignment & Inspect the prior 120-run metric recomputation and target/mask/label alignment status. \\
+E4 & Stencil & Inspect the 88 recorded regular-grid numerical tests and their outcomes. \\
+E5 & Coordinates / support & Check ascending coordinates and recorded ocean/support counts of 661/660. \\
+E6 & Auxiliary diagnostics & Inspect the saved diagnostic-batch outputs and gradients; no optimizer update is performed. \\
+E7 & Physics units & Inspect the K/day conversion, coordinate conventions and recorded upstream limitations. \\
 \bottomrule
 \end{tabular}
 \end{table}
