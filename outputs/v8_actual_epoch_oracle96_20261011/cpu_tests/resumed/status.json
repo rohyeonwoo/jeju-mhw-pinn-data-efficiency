@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETED",
+  "epochs": 80,
+  "validation_selection_calls": 80,
+  "steps": 160,
+  "best_epoch": 79,
+  "best_val_rmse": 0.5784241140582255,
+  "post_warmup_best_epoch": 79,
+  "post_warmup_best_val_rmse": 0.5784241140582255,
+  "post_minus_overall_rmse": 0.0,
+  "early_stopping": false,
+  "checkpoint_roundtrip": "PASS",
+  "checkpoint_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/cpu_tests/resumed/checkpoints",
+  "timestamp": "2026-10-11 17:51 KST"
+}

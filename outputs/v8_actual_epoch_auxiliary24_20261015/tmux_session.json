@@ -1,0 +1,12 @@
+{
+  "socket": "/ceph_data/yeonwoo/aux24_20261015.sock",
+  "session": "aux24_gpu567",
+  "controller_pid": 379319,
+  "gpus": [
+    5,
+    6,
+    7
+  ],
+  "max_processes_per_gpu": 2,
+  "timestamp": "2026-10-15 01:56 KST"
+}

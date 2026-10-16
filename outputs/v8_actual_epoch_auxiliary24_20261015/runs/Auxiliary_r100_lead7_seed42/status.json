@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETED",
+  "epochs": 80,
+  "steps": 20000,
+  "best_epoch": 19,
+  "best_val_rmse": 0.8171921677697905,
+  "early_stopping": false,
+  "checkpoint_roundtrip": "PASS",
+  "test_evaluation": "NOT_RUN",
+  "timestamp": "2026-10-15 06:02 KST"
+}

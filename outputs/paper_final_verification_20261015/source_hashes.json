@@ -1,0 +1,373 @@
+[
+  {
+    "family": "Oracle96",
+    "path": "scripts/mixed_budget_common.py",
+    "expected": "98dd18f352a62abeb76933681ec3f504267685f67b05215ea01cf06e1da0375b",
+    "actual": "98dd18f352a62abeb76933681ec3f504267685f67b05215ea01cf06e1da0375b",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/mixed_budget_physics.py",
+    "expected": "4c4f8473f72eb7597fec1bc97328ff2e63518a12de664ad207e7f281081b849b",
+    "actual": "4c4f8473f72eb7597fec1bc97328ff2e63518a12de664ad207e7f281081b849b",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/prepare_mixed_budget_features.py",
+    "expected": "ca559e2e2d9251e52bdf3e07e1b52bf5074e81c981e111e8a19e57300314aa7a",
+    "actual": "ca559e2e2d9251e52bdf3e07e1b52bf5074e81c981e111e8a19e57300314aa7a",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/validate_mixed_budget_training.py",
+    "expected": "ae4c869aebed8825012305773d14c61316d89ba18fcd56c8601d2f19b61d17f8",
+    "actual": "ae4c869aebed8825012305773d14c61316d89ba18fcd56c8601d2f19b61d17f8",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/train_mixed_budget_gpu.py",
+    "expected": "f06de5781552f0a37503dd114bdb3d62c7771cd4b918868da6cbe23a76395b74",
+    "actual": "f06de5781552f0a37503dd114bdb3d62c7771cd4b918868da6cbe23a76395b74",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/run_mixed_budget_stage.py",
+    "expected": "a5998afd2763c80115d850eca01caa9fed6da90c09cf3b5e925142a4e5593d74",
+    "actual": "a5998afd2763c80115d850eca01caa9fed6da90c09cf3b5e925142a4e5593d74",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/summarize_mixed_budget_gpu.py",
+    "expected": "55e976aad2dda6b652d977539a759df29e2eb24861e96385907e251822932afd",
+    "actual": "55e976aad2dda6b652d977539a759df29e2eb24861e96385907e251822932afd",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/train_v3_study.py",
+    "expected": "e2ab6f3782d67fcc019f7fc7d417249eadee49642d855c322c03d5dcc56a8586",
+    "actual": "e2ab6f3782d67fcc019f7fc7d417249eadee49642d855c322c03d5dcc56a8586",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/experiment_mixed_layer_budget_cpu.py",
+    "expected": "68db71659037e8acb30b08a9ec85aa47d586cc1951107a36d9dc924b77c3dbc9",
+    "actual": "68db71659037e8acb30b08a9ec85aa47d586cc1951107a36d9dc924b77c3dbc9",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/train_jeju_hilam.py",
+    "expected": "2994fe13fc2f563d5bb7d9cda616e735ee6d6942e8e5b2f460a00b06609a4105",
+    "actual": "2994fe13fc2f563d5bb7d9cda616e735ee6d6942e8e5b2f460a00b06609a4105",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/summarize_hybrid_fields_mhw_skill.py",
+    "expected": "05cedd2a09b96319659a7070c2469d61340d3e2edbd4a6ee5925bdadbd88a5a4",
+    "actual": "05cedd2a09b96319659a7070c2469d61340d3e2edbd4a6ee5925bdadbd88a5a4",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/train_hybrid_jeju_forecast.py",
+    "expected": "f346b1042bbb595277b06293816a9a4dad5c7c2d0a28719d9f053951a1659183",
+    "actual": "f346b1042bbb595277b06293816a9a4dad5c7c2d0a28719d9f053951a1659183",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/summarize_jeju_hilam_mhw_skill.py",
+    "expected": "076f2a0e6d793a217d6e7d3d8f801f5042dc6fe590d146762e8767d9e0f02c09",
+    "actual": "076f2a0e6d793a217d6e7d3d8f801f5042dc6fe590d146762e8767d9e0f02c09",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/summarize_main_experiment_final.py",
+    "expected": "4104b9db0f89eac4dbe3be6527c5de53e656aa9c6b8e0244287af5caca1dca7b",
+    "actual": "4104b9db0f89eac4dbe3be6527c5de53e656aa9c6b8e0244287af5caca1dca7b",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/preflight_main_experiment_final.py",
+    "expected": "da53d18cfa7915d5225ce50c8b98f73de89f718a05d9099ad0aa817e5a4f4331",
+    "actual": "da53d18cfa7915d5225ce50c8b98f73de89f718a05d9099ad0aa817e5a4f4331",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/subset_climatology.py",
+    "expected": "c7befda40891280a0d0a86afea24ff82d5f9a86921fcc0bc4ad14ff6417265ed",
+    "actual": "c7befda40891280a0d0a86afea24ff82d5f9a86921fcc0bc4ad14ff6417265ed",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/mhw_skill.py",
+    "expected": "9b1864ca94724c641cca7786562c73c62dea8add3b0a28fdc47f1e5fed143853",
+    "actual": "9b1864ca94724c641cca7786562c73c62dea8add3b0a28fdc47f1e5fed143853",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/__init__.py",
+    "expected": "9e407a12750a0f70a23fa3b596066d9f27867be3d7010848ce3a64bfb2d3da2b",
+    "actual": "9e407a12750a0f70a23fa3b596066d9f27867be3d7010848ce3a64bfb2d3da2b",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/jeju_hilam_graph.py",
+    "expected": "aef1b0f59c9600e9c724cf4b8ae31a6e1ada1ff098a77ed89a1ba5f0d4752d6d",
+    "actual": "aef1b0f59c9600e9c724cf4b8ae31a6e1ada1ff098a77ed89a1ba5f0d4752d6d",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/train_utils.py",
+    "expected": "4dff606014dd2bdcc7538d2759b17ede713386272a95f71cdf974733e79fa651",
+    "actual": "4dff606014dd2bdcc7538d2759b17ede713386272a95f71cdf974733e79fa651",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/eval_metrics.py",
+    "expected": "31b04665c4b766282da0ce50411b41b97bab10514e7de3851497d0a4f587ee60",
+    "actual": "31b04665c4b766282da0ce50411b41b97bab10514e7de3851497d0a4f587ee60",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/jeju_hilam_dataset.py",
+    "expected": "d8d73a167a2336ee8b37e26d50d04d36c03b01e2f5481108eef204091215a676",
+    "actual": "d8d73a167a2336ee8b37e26d50d04d36c03b01e2f5481108eef204091215a676",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/process_title.py",
+    "expected": "7c32332b09cd9e7866523c1654f7639ab36223c3d37b63ca586a3057e6da2af6",
+    "actual": "7c32332b09cd9e7866523c1654f7639ab36223c3d37b63ca586a3057e6da2af6",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/subset_preprocessing.py",
+    "expected": "b2eaab2632cd9f5c2276bfa4b18cf6c51f035d1335dd615aec3cc0e3c35f20a0",
+    "actual": "b2eaab2632cd9f5c2276bfa4b18cf6c51f035d1335dd615aec3cc0e3c35f20a0",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/ocean_stencil.py",
+    "expected": "e66651007489a6ff3022c06f739751bd5ed76f60758b4c119d109f82539bebd3",
+    "actual": "e66651007489a6ff3022c06f739751bd5ed76f60758b4c119d109f82539bebd3",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/datasets.py",
+    "expected": "feb4b9bb2ad4f45fbbfb979c738d7d2ff17a502d3b8869916fce130ba4cfe108",
+    "actual": "feb4b9bb2ad4f45fbbfb979c738d7d2ff17a502d3b8869916fce130ba4cfe108",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/models/pinn_model_alpha.py",
+    "expected": "6630349e3cfb1f24f1454cd7117981f6756d5a2bd8050f55aedfb9424f6df670",
+    "actual": "6630349e3cfb1f24f1454cd7117981f6756d5a2bd8050f55aedfb9424f6df670",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/models/__init__.py",
+    "expected": "5e60b7c73f05c5012a2c106cae511f812bd7b0e9cc036bb54f69e20f0fbcc3ad",
+    "actual": "5e60b7c73f05c5012a2c106cae511f812bd7b0e9cc036bb54f69e20f0fbcc3ad",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/models/jeju_hilam.py",
+    "expected": "ad7205e9c6e311124886fe8d4eb1df5054148fa594bf6c2735da4b243563b087",
+    "actual": "ad7205e9c6e311124886fe8d4eb1df5054148fa594bf6c2735da4b243563b087",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/models/convlstm.py",
+    "expected": "309901d63927af47b08707eb63f53bbaf0f7e730507b14e6442d9dc94ca593c7",
+    "actual": "309901d63927af47b08707eb63f53bbaf0f7e730507b14e6442d9dc94ca593c7",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "src/mhw/models/pinn_mt_model.py",
+    "expected": "c57bb50834474e2e1b34bf33333d4e475c00367ea167a375de092058540e8ac9",
+    "actual": "c57bb50834474e2e1b34bf33333d4e475c00367ea167a375de092058540e8ac9",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/run_mixed_budget_tmux.sh",
+    "expected": "452fd56699e164b744eecef75ef0c89cfa43d0abeab9b85542b5a6acd5fa94ec",
+    "actual": "452fd56699e164b744eecef75ef0c89cfa43d0abeab9b85542b5a6acd5fa94ec",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/README_mixed_budget_gpu_ko.md",
+    "expected": "e8ea87cf79428508f9887af203b1006f9f334abe5eb16b0e3b9d06e3df4f25c0",
+    "actual": "e8ea87cf79428508f9887af203b1006f9f334abe5eb16b0e3b9d06e3df4f25c0",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96/summarize_mixed_budget_gpu.py",
+    "expected": "880b0a0c044b99d1af4d06149dae5ac11e8cf59112fac69a2a72e3e2f66b8753",
+    "actual": "880b0a0c044b99d1af4d06149dae5ac11e8cf59112fac69a2a72e3e2f66b8753",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96/mixed_budget_physics.py",
+    "expected": "bacbdc4698aecc9bf372058ca204bdd7e9f9fda1d796b39a0f42119955444539",
+    "actual": "bacbdc4698aecc9bf372058ca204bdd7e9f9fda1d796b39a0f42119955444539",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96/prepare.py",
+    "expected": "4cd8b058b66e389257850bcf3aacb55e37ea93738b4e40b75142ca817a2327e4",
+    "actual": "4cd8b058b66e389257850bcf3aacb55e37ea93738b4e40b75142ca817a2327e4",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96/run_all.py",
+    "expected": "4680984b78017901ef57fa22caa6a4bf831c877d34ded50e08a830e52efa748c",
+    "actual": "4680984b78017901ef57fa22caa6a4bf831c877d34ded50e08a830e52efa748c",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96/train_mixed_budget_gpu.py",
+    "expected": "ed95ca5241a0286a0b1a398edf98cf429cb57e5ae898d0f9714ac02a91b2ee7d",
+    "actual": "ed95ca5241a0286a0b1a398edf98cf429cb57e5ae898d0f9714ac02a91b2ee7d",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96/mixed_budget_common.py",
+    "expected": "907a382a05f6febe9a89487a97e1a23955b1c5b468c630bbfed3506048914ed6",
+    "actual": "907a382a05f6febe9a89487a97e1a23955b1c5b468c630bbfed3506048914ed6",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96/README_ko.md",
+    "expected": "a93834a2d2fd4b52a00134ae838eab53911b0e40dbf65802514c4d7de18605a3",
+    "actual": "a93834a2d2fd4b52a00134ae838eab53911b0e40dbf65802514c4d7de18605a3",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96_actual/preflight.py",
+    "expected": "e3266b0992746793aa1f5ec3e2098365992210d009764656acf296dd49984e24",
+    "actual": "e3266b0992746793aa1f5ec3e2098365992210d009764656acf296dd49984e24",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96_actual/summarize.py",
+    "expected": "2a3869df78d29caa39e869aced61bec2a4c59a3198b631c95bc00787f302556c",
+    "actual": "2a3869df78d29caa39e869aced61bec2a4c59a3198b631c95bc00787f302556c",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96_actual/controller.py",
+    "expected": "ae9130d4b86d008a6a30783740cc46ef684e2ebf4cb862b30f2a87e93ba770f1",
+    "actual": "ae9130d4b86d008a6a30783740cc46ef684e2ebf4cb862b30f2a87e93ba770f1",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96_actual/mixed_budget_common.py",
+    "expected": "5f5cdbae1413e882179216f9789dae76af3d4291ab9ae6f30a241a8d4d6e756d",
+    "actual": "5f5cdbae1413e882179216f9789dae76af3d4291ab9ae6f30a241a8d4d6e756d",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96_actual/worker.py",
+    "expected": "fc21c56cc7ca827aab01eddd159ac54fe2661f9e4e3df2c406797eb3dc4670b5",
+    "actual": "fc21c56cc7ca827aab01eddd159ac54fe2661f9e4e3df2c406797eb3dc4670b5",
+    "match": true
+  },
+  {
+    "family": "Oracle96",
+    "path": "scripts/oracle96_actual/finalize_preflight.py",
+    "expected": "3c9405f419d2a3732159d28138fdf8e535fe4631b3bff5210ccd98845d63042a",
+    "actual": "3c9405f419d2a3732159d28138fdf8e535fe4631b3bff5210ccd98845d63042a",
+    "match": true
+  },
+  {
+    "family": "Aux24",
+    "path": "scripts/oracle96_auxiliary24/queue_training.py",
+    "expected": "d23e811aa4c98f2472ef8b9c44995f438a3b6e49bdd4fffc45d11105a4b2cdbc",
+    "actual": "d23e811aa4c98f2472ef8b9c44995f438a3b6e49bdd4fffc45d11105a4b2cdbc",
+    "match": true
+  },
+  {
+    "family": "Aux24",
+    "path": "scripts/oracle96_auxiliary24/summarize_training.py",
+    "expected": "e217c1b7e2c4bd24b8bddf1607067486a7b07ad2a12290535faac6ca59dc942c",
+    "actual": "e217c1b7e2c4bd24b8bddf1607067486a7b07ad2a12290535faac6ca59dc942c",
+    "match": true
+  },
+  {
+    "family": "Aux24",
+    "path": "scripts/oracle96_auxiliary24/audit.py",
+    "expected": "963250f3a3e64f1f727a3d514b7f94e8a91843cf763902c2881b09bc566021fd",
+    "actual": "963250f3a3e64f1f727a3d514b7f94e8a91843cf763902c2881b09bc566021fd",
+    "match": true
+  },
+  {
+    "family": "Aux24",
+    "path": "scripts/oracle96_auxiliary24/aux_common.py",
+    "expected": "b8dc87fa1b2c4606ffa3a983e4e2ae95c0e0ce26f20cbb9726c8fc9d22a8ab86",
+    "actual": "b8dc87fa1b2c4606ffa3a983e4e2ae95c0e0ce26f20cbb9726c8fc9d22a8ab86",
+    "match": true
+  },
+  {
+    "family": "Aux24",
+    "path": "scripts/oracle96_auxiliary24/report_audit.py",
+    "expected": "461dfc451169fbb0d70ca9b046fc4648dc8f7a8562a89bff63328f92477d396e",
+    "actual": "461dfc451169fbb0d70ca9b046fc4648dc8f7a8562a89bff63328f92477d396e",
+    "match": true
+  },
+  {
+    "family": "Aux24",
+    "path": "scripts/oracle96_auxiliary24/prepare_training.py",
+    "expected": "103d0f8d674699abb32ed06b1b0d71bd68f04ad828d4424c670c8f5f540d97cd",
+    "actual": "103d0f8d674699abb32ed06b1b0d71bd68f04ad828d4424c670c8f5f540d97cd",
+    "match": true
+  },
+  {
+    "family": "Aux24",
+    "path": "scripts/oracle96_auxiliary24/aux_worker.py",
+    "expected": "2ceb5d2d9ac0578d3a0d726eed78105857ec17ef5a2cd79939d5e277294696a7",
+    "actual": "2ceb5d2d9ac0578d3a0d726eed78105857ec17ef5a2cd79939d5e277294696a7",
+    "match": true
+  }
+]

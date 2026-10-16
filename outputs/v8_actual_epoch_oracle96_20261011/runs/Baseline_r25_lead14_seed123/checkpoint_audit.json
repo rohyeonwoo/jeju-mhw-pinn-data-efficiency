@@ -1,0 +1,16 @@
+{
+  "post_warmup_best": {
+    "epoch": 12,
+    "expected_val_rmse": 1.1022230738556364,
+    "reloaded_val_rmse": 1.1022230738556364,
+    "sha256": "29ca53761898a755c76ced2dd138730aa41853ac760d432cb3b3828d2740fdfa",
+    "status": "PASS"
+  },
+  "best": {
+    "epoch": 12,
+    "expected_val_rmse": 1.1022230738556364,
+    "reloaded_val_rmse": 1.1022230738556364,
+    "sha256": "0d06cb82d282894c07a32bbca6025d245c49a68f294c6b2cd5f994f4b9adb62f",
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "sampling": "PASS",
+  "loop_resume": {
+    "status": "PASS",
+    "epochs": 80,
+    "updates": 160,
+    "resume_after_epoch": 3,
+    "weights_bitwise_equal": true,
+    "history_and_sampler_equal": true,
+    "both_checkpoint_reload": true,
+    "nonfinite_guard": true
+  },
+  "physics_entrypoint": "PASS",
+  "boundary": "PASS",
+  "protected_files": 654,
+  "protocol_sha256": "8adba95bb0c78a79d13dea7f0e04a3946e6c4f3a0957b5d411bda2ad1ed59a6e",
+  "gpu_smoke": "PENDING",
+  "timestamp": "2026-10-11 17:52 KST",
+  "launch_metadata_finalized": true,
+  "resource_policy": "PASS"
+}

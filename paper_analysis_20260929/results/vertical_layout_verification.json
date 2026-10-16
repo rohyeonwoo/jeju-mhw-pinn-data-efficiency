@@ -1,0 +1,13 @@
+{
+  "figures": [
+    "fig_csi_vs_fraction",
+    "fig_pod_vs_fraction",
+    "fig_far_vs_fraction",
+    "fig_paired_error_ecdf"
+  ],
+  "layout": "2x1",
+  "csv_files_unchanged": 39,
+  "plot_values_match_saved_csv": true,
+  "cpu_only": true,
+  "training": false
+}

@@ -1,0 +1,7 @@
+reference,candidate,n,sst_and_csi_better,sst_better_csi_not_better,descriptive_delta_correlation
+Auxiliary,NoAdv,24,7,4,-0.01414652951580956
+Baseline,Adv,24,4,1,-0.40670013456073106
+Baseline,Auxiliary,24,14,1,-0.6912965398304775
+Baseline,NoAdv,24,10,2,-0.371559111255111
+Baseline,P0,24,4,4,-0.642123310853062
+NoAdv,Adv,24,1,1,-0.6077547824839683

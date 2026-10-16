@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "full Test split",
+  "n_targets": 1638,
+  "modes": [
+    "removed",
+    "oracle_present",
+    "NaN_poisoned"
+  ],
+  "prediction_bitwise_identical": true,
+  "targets_and_masks_identical": true,
+  "SST_MHW_metrics_identical": true,
+  "model_state_unchanged": true,
+  "checkpoint_sha256": "3007f05b0baae721dbb7df2245a9a35fb2f66125fdc6df69b062c837d4095949"
+}

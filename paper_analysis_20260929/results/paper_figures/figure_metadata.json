@@ -1,0 +1,137 @@
+[
+  {
+    "figure": "fig_rmse_vs_fraction_lead7",
+    "caption": "Seed mean ± sample SD (n=3). 100% block subset is not Full. Original batch16 P0 includes auxiliary Rres loss.",
+    "source_csv": "sst_and_mhw_seed_summary.csv",
+    "plot_data_csv": "fig_rmse_vs_fraction_lead7_plot_data.csv",
+    "png_dpi": 320
+  },
+  {
+    "figure": "fig_rmse_vs_fraction_lead14",
+    "caption": "Seed mean ± sample SD (n=3). 100% block subset is not Full. Original batch16 P0 includes auxiliary Rres loss.",
+    "source_csv": "sst_and_mhw_seed_summary.csv",
+    "plot_data_csv": "fig_rmse_vs_fraction_lead14_plot_data.csv",
+    "png_dpi": 320
+  },
+  {
+    "figure": "fig_seedwise_improvement_lead7",
+    "caption": "Dots: paired seed-relative improvements. Black ticks: arithmetic mean of seed-relative improvements, distinct from ratio of means in Figure B.",
+    "source_csv": "paired_model_differences.csv",
+    "plot_data_csv": "fig_seedwise_improvement_lead7_plot_data.csv",
+    "png_dpi": 320
+  },
+  {
+    "figure": "fig_seedwise_improvement_lead14",
+    "caption": "Dots: paired seed-relative improvements. Black ticks: arithmetic mean of seed-relative improvements, distinct from ratio of means in Figure B.",
+    "source_csv": "paired_model_differences.csv",
+    "plot_data_csv": "fig_seedwise_improvement_lead14_plot_data.csv",
+    "png_dpi": 320
+  },
+  {
+    "figure": "fig_csi_vs_fraction",
+    "caption": "Existing MHW evaluation, mean ± sample SD across 3 seeds; pooled grid-time contingency within each seed. No threshold recomputation.",
+    "source_csv": "mhw_metrics_summary.csv",
+    "plot_data_csv": "fig_csi_vs_fraction_plot_data.csv",
+    "png_dpi": 320,
+    "panel_layout": "2 rows x 1 column; lead7 above lead14",
+    "figure_size_inches": [
+      4.8,
+      6.4
+    ]
+  },
+  {
+    "figure": "fig_pod_vs_fraction",
+    "caption": "Existing MHW evaluation, mean ± sample SD across 3 seeds; pooled grid-time contingency within each seed. No threshold recomputation.",
+    "source_csv": "mhw_metrics_summary.csv",
+    "plot_data_csv": "fig_pod_vs_fraction_plot_data.csv",
+    "png_dpi": 320,
+    "panel_layout": "2 rows x 1 column; lead7 above lead14",
+    "figure_size_inches": [
+      4.8,
+      6.4
+    ]
+  },
+  {
+    "figure": "fig_far_vs_fraction",
+    "caption": "Existing MHW evaluation, mean ± sample SD across 3 seeds; pooled grid-time contingency within each seed. No threshold recomputation.",
+    "source_csv": "mhw_metrics_summary.csv",
+    "plot_data_csv": "fig_far_vs_fraction_plot_data.csv",
+    "png_dpi": 320,
+    "panel_layout": "2 rows x 1 column; lead7 above lead14",
+    "figure_size_inches": [
+      4.8,
+      6.4
+    ]
+  },
+  {
+    "figure": "fig_bootstrap_delta_rmse",
+    "caption": "20,000 paired circular 90-day block resamples, common to cells/models/seeds. ΔRMSE<0 favors PINN. Conditional test-period uncertainty, not training-seed uncertainty. 1/30/180-day alternatives in CSV.",
+    "source_csv": "bootstrap_ci.csv",
+    "plot_data_csv": "fig_bootstrap_delta_rmse_plot_data.csv",
+    "png_dpi": 320
+  },
+  {
+    "figure": "fig_spatial_delta_rmse_10pct_lead7",
+    "caption": "Grid-index map only; no geographic coordinates. Mean of 3 per-seed cell RMSEs, PINN−baseline; blue/negative favors PINN. Common symmetric scale ±0.231367 K across all four maps.",
+    "source_csv": "spatial_cell_rmse.csv",
+    "plot_data_csv": "fig_spatial_delta_rmse_10pct_lead7_plot_data.csv",
+    "png_dpi": 320
+  },
+  {
+    "figure": "fig_spatial_delta_rmse_10pct_lead14",
+    "caption": "Grid-index map only; no geographic coordinates. Mean of 3 per-seed cell RMSEs, PINN−baseline; blue/negative favors PINN. Common symmetric scale ±0.231367 K across all four maps.",
+    "source_csv": "spatial_cell_rmse.csv",
+    "plot_data_csv": "fig_spatial_delta_rmse_10pct_lead14_plot_data.csv",
+    "png_dpi": 320
+  },
+  {
+    "figure": "fig_spatial_delta_rmse_100pct_lead7",
+    "caption": "Grid-index map only; no geographic coordinates. Mean of 3 per-seed cell RMSEs, PINN−baseline; blue/negative favors PINN. Common symmetric scale ±0.231367 K across all four maps.",
+    "source_csv": "spatial_cell_rmse.csv",
+    "plot_data_csv": "fig_spatial_delta_rmse_100pct_lead7_plot_data.csv",
+    "png_dpi": 320
+  },
+  {
+    "figure": "fig_spatial_delta_rmse_100pct_lead14",
+    "caption": "Grid-index map only; no geographic coordinates. Mean of 3 per-seed cell RMSEs, PINN−baseline; blue/negative favors PINN. Common symmetric scale ±0.231367 K across all four maps.",
+    "source_csv": "spatial_cell_rmse.csv",
+    "plot_data_csv": "fig_spatial_delta_rmse_100pct_lead14_plot_data.csv",
+    "png_dpi": 320
+  },
+  {
+    "figure": "fig_paired_error_ecdf",
+    "caption": "Descriptive grid-time error distribution, represented at 201 exact empirical quantiles per seed. Not an independent-sample inferential test. Negative error differences favor PINN.",
+    "source_csv": "paired_error_ecdf.csv",
+    "plot_data_csv": "fig_paired_error_ecdf_plot_data.csv",
+    "png_dpi": 320,
+    "panel_layout": "2 rows x 1 column; lead7 above lead14",
+    "figure_size_inches": [
+      4.8,
+      6.4
+    ]
+  },
+  {
+    "figure": "fig_relative_improvement",
+    "caption": "Relative reduction in seed-mean SST RMSE across controlled training-window allocations. Error bars denote 95% percentile intervals from the paired 90-day moving-block bootstrap. Positive values favor the physics-informed configuration. Panels stacked: 7-day above 14-day.",
+    "source_csv": "bootstrap_ci.csv",
+    "plot_data_csv": "fig_relative_improvement_plot_data.csv",
+    "png_dpi": 320,
+    "panel_layout": "2x1; 7-day above 14-day",
+    "figure_size_inches": [
+      3.6,
+      4.4
+    ]
+  },
+  {
+    "figure": "fig_rmse_vs_fraction",
+    "caption": "Absolute SST RMSE across controlled training-window allocations. Seed mean ± sample SD (n=3), separate y scales per lead as in supplied reference. Baseline versus P0 PINN (original P0 includes auxiliary loss). Panels stacked: 7-day above 14-day.",
+    "source_csv": "sst_and_mhw_seed_summary.csv",
+    "plot_data_csv": "fig_rmse_vs_fraction_plot_data.csv",
+    "png_dpi": 320,
+    "panel_layout": "2x1; 7-day above 14-day",
+    "figure_size_inches": [
+      3.6,
+      4.4
+    ]
+  }
+]

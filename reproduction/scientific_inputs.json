@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/ceph_data/yeonwoo/MHW_subset/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+    "exists": true,
+    "bytes": 1300083528,
+    "sha256_prior": "fff22a44aeeb35fdd26f29b0d0ade7cf9549c18f5ae29aef2a415a5826708ec2",
+    "hash_source": "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/manifest.json"
+  },
+  {
+    "path": "/ceph_data/yeonwoo/MHW/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d.nc",
+    "exists": true,
+    "bytes": 3422593265,
+    "sha256_prior": "96ad0c153a2a797b01ecb2abc0cb3404336c325006cb562ef9536635a1dc83cc",
+    "hash_source": "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/manifest.json"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "training_runs": 96,
+  "epoch_rows": 7680,
+  "checkpoint_reload_records": 192,
+  "max_reload_rmse_difference": 0.0,
+  "best_epoch_range": [
+    7,
+    54
+  ],
+  "best_epoch_median": 22.0,
+  "before_full_warmup": 0,
+  "all_overall_and_post_warmup_best_equal": true,
+  "matched_initialization_statistics_order": true,
+  "sampling_and_schedules": true,
+  "full_validation_forcing_invariance": true,
+  "only_gpu789_max2": true,
+  "remaining_leases": 0,
+  "test_evaluation": "NOT_RUN",
+  "scope": "existing logs; no checkpoint deserialization or new prediction"
+}

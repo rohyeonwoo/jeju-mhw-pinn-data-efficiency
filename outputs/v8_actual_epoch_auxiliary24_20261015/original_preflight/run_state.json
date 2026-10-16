@@ -1,0 +1,16 @@
+{
+  "status": "BLOCKED_PREFLIGHT",
+  "completed": 0,
+  "total": 24,
+  "running": [],
+  "reason": "Existing zero-target disconnected Rres head admits exact zero auxiliary loss and zero shared auxiliary gradient without changing SST prediction; user requested stop on this degeneracy.",
+  "gpus": [
+    5,
+    6,
+    7
+  ],
+  "max_processes_per_gpu": 2,
+  "training_started": false,
+  "test_evaluation": "NOT_RUN",
+  "timestamp": "2026-10-15 01:44 KST"
+}

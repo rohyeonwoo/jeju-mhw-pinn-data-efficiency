@@ -1,0 +1,9 @@
+lead_day,corner,row,column,latitude,longitude,in_ocean_mask,delta_rmse
+7,SW,0,0,30.0,123.0,False,NaN
+7,SE,0,32,30.0,131.0,False,NaN
+7,NW,28,0,37.0,123.0,False,NaN
+7,NE,28,32,37.0,131.0,False,NaN
+14,SW,0,0,30.0,123.0,False,NaN
+14,SE,0,32,30.0,131.0,False,NaN
+14,NW,28,0,37.0,123.0,False,NaN
+14,NE,28,32,37.0,131.0,False,NaN

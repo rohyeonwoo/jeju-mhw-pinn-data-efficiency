@@ -1,0 +1,60 @@
+[
+  {
+    "keys": [
+      "ocean_mask",
+      "grid_to_node",
+      "ocean_flat_indices",
+      "node_to_grid",
+      "sw_node_indices",
+      "g2m_edge_index",
+      "g2m_edge_attr",
+      "m2g_edge_index",
+      "m2g_edge_attr",
+      "level_0_node_features",
+      "level_0_node_rc",
+      "level_0_same_edge_index",
+      "level_0_same_edge_attr",
+      "level_1_node_features",
+      "level_1_node_rc",
+      "level_1_same_edge_index",
+      "level_1_same_edge_attr",
+      "level_2_node_features",
+      "level_2_node_rc",
+      "level_2_same_edge_index",
+      "level_2_same_edge_attr",
+      "level_0_up_edge_index",
+      "level_0_up_edge_attr",
+      "level_0_down_edge_index",
+      "level_0_down_edge_attr",
+      "level_1_up_edge_index",
+      "level_1_up_edge_attr",
+      "level_1_down_edge_index",
+      "level_1_down_edge_attr"
+    ],
+    "count": 154,
+    "example": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation/_smoke/ratio_10/jeju_hilam/lead14_seed42/jeju_hilam_graph.npz"
+  },
+  {
+    "keys": [
+      "pred_raw",
+      "target_raw",
+      "mask",
+      "target_index"
+    ],
+    "count": 36,
+    "example": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation/_smoke/ratio_10/jeju_hilam/lead14_seed42/jeju_hilam_lead_14_history_30_test_fields.npz"
+  },
+  {
+    "keys": [
+      "pred_raw",
+      "target_raw",
+      "mask",
+      "target_index",
+      "we_raw",
+      "rres_raw",
+      "rres_kday"
+    ],
+    "count": 96,
+    "example": "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency/_validation/_smoke/ratio_10/pi_jeju_hilam/lead14_seed42/pi_jeju_hilam_lead_14_history_30_test_fields.npz"
+  }
+]

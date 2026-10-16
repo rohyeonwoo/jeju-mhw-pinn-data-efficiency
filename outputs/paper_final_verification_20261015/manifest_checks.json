@@ -1,0 +1,266 @@
+[
+  {
+    "condition": [
+      10,
+      7,
+      42
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      10,
+      7,
+      7
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      10,
+      7,
+      123
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      10,
+      14,
+      42
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      10,
+      14,
+      7
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      10,
+      14,
+      123
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      25,
+      7,
+      42
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      25,
+      7,
+      7
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      25,
+      7,
+      123
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      25,
+      14,
+      42
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      25,
+      14,
+      7
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      25,
+      14,
+      123
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      50,
+      7,
+      42
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      50,
+      7,
+      7
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      50,
+      7,
+      123
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      50,
+      14,
+      42
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      50,
+      14,
+      7
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      50,
+      14,
+      123
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      100,
+      7,
+      42
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      100,
+      7,
+      7
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      100,
+      7,
+      123
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      100,
+      14,
+      42
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      100,
+      14,
+      7
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  },
+  {
+    "condition": [
+      100,
+      14,
+      123
+    ],
+    "stats_same": true,
+    "clim_same": true,
+    "indices_same": true,
+    "clim_hash_valid": true
+  }
+]

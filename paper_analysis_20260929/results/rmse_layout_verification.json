@@ -1,0 +1,5 @@
+{
+  "fig_relative_improvement": "plotted means and all error-bar endpoints match source CSV; 2x1 layout",
+  "fig_rmse_vs_fraction": "plotted means and all error-bar endpoints match source CSV; 2x1 layout",
+  "source_metrics_and_bootstrap_unchanged": true
+}

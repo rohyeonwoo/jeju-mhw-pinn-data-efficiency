@@ -1,0 +1,603 @@
+{
+  "status": "COMPLETE",
+  "timestamp": "2026-10-15 14:01 KST",
+  "current_oracle120_verdict": "PASS WITH LIMITATIONS",
+  "historical_WSDM_P1_P3": "UNVERIFIED",
+  "confirmed_retrain_required_runs": [],
+  "new_training_runs": 0,
+  "optimizer_steps": 0,
+  "auxiliary_test_checks": [
+    {
+      "name": "Auxiliary_r10_lead7_seed42",
+      "gpu": 5,
+      "pid": 949334,
+      "status": "PASS",
+      "checkpoint_sha256": "cff8d107520d387a36ba55902bd9e4773e9f08e5fb1235a60e9e0477fb2808fc",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 44.250308117014356,
+      "gpu_identity": {
+        "pid": 949334,
+        "nvml": [
+          [
+            "GPU-2a1fc5e5-245d-a3f9-9fbc-1cd16185cbc4",
+            " 949334",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r10_lead7_seed7",
+      "gpu": 6,
+      "pid": 949337,
+      "status": "PASS",
+      "checkpoint_sha256": "e27c56dffba878ff50f3e803858dbe89c7b467dc916f2f2f0ab14e1599c9cd84",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 44.043490262003615,
+      "gpu_identity": {
+        "pid": 949337,
+        "nvml": [
+          [
+            "GPU-e8d01c2b-094d-8669-2624-ea29eba35709",
+            " 949337",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r10_lead7_seed123",
+      "gpu": 7,
+      "pid": 949341,
+      "status": "PASS",
+      "checkpoint_sha256": "8b831f6e17b59f99a61b1acc5835770492010281d7416e7feca44f1a9d786185",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 44.35387819696916,
+      "gpu_identity": {
+        "pid": 949341,
+        "nvml": [
+          [
+            "GPU-76c80055-411b-1994-f310-83cead2ddd57",
+            " 949341",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r10_lead14_seed42",
+      "gpu": 5,
+      "pid": 954169,
+      "status": "PASS",
+      "checkpoint_sha256": "0712452ee192c19819113bbe4d2b71761ad6f17f9e343842135c0efbc697b4a8",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 42.016321834002156,
+      "gpu_identity": {
+        "pid": 954169,
+        "nvml": [
+          [
+            "GPU-2a1fc5e5-245d-a3f9-9fbc-1cd16185cbc4",
+            " 954169",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r10_lead14_seed7",
+      "gpu": 6,
+      "pid": 954170,
+      "status": "PASS",
+      "checkpoint_sha256": "3db154f3a0d277a46d03be020c12e659de7105dafca11ea046cc94f3f4d769fb",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 43.450220233004075,
+      "gpu_identity": {
+        "pid": 954170,
+        "nvml": [
+          [
+            "GPU-e8d01c2b-094d-8669-2624-ea29eba35709",
+            " 954170",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r10_lead14_seed123",
+      "gpu": 7,
+      "pid": 954174,
+      "status": "PASS",
+      "checkpoint_sha256": "20f0936af8ebe451af59e8c63b13c59d6004459c7c67bc49261370ea107d7242",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 43.35641140100779,
+      "gpu_identity": {
+        "pid": 954174,
+        "nvml": [
+          [
+            "GPU-76c80055-411b-1994-f310-83cead2ddd57",
+            " 954174",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r25_lead7_seed42",
+      "gpu": 5,
+      "pid": 956112,
+      "status": "PASS",
+      "checkpoint_sha256": "7cf35187003b553cb011303a57447a83ac259e7bcbba18f3d3599d4bd16752ba",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 42.92615637101699,
+      "gpu_identity": {
+        "pid": 956112,
+        "nvml": [
+          [
+            "GPU-2a1fc5e5-245d-a3f9-9fbc-1cd16185cbc4",
+            " 956112",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r25_lead7_seed7",
+      "gpu": 6,
+      "pid": 956226,
+      "status": "PASS",
+      "checkpoint_sha256": "43c38691553c9135b893b92d1a2f3c17894a4b52ac53747507e3e6d8d03e98de",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 43.7891598129645,
+      "gpu_identity": {
+        "pid": 956226,
+        "nvml": [
+          [
+            "GPU-e8d01c2b-094d-8669-2624-ea29eba35709",
+            " 956226",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r25_lead7_seed123",
+      "gpu": 7,
+      "pid": 956149,
+      "status": "PASS",
+      "checkpoint_sha256": "4ef7ce0c8219c6c6daa5f37a261fd274e3d3bfa5ef4b00614ca261ebe98cd278",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 43.067677917017136,
+      "gpu_identity": {
+        "pid": 956149,
+        "nvml": [
+          [
+            "GPU-76c80055-411b-1994-f310-83cead2ddd57",
+            " 956149",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r25_lead14_seed42",
+      "gpu": 5,
+      "pid": 958158,
+      "status": "PASS",
+      "checkpoint_sha256": "878c4df4aad1ea904bd3e065c8322925e2531a8ce29bc6827875bd7ba2b3607d",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 45.184479026996996,
+      "gpu_identity": {
+        "pid": 958158,
+        "nvml": [
+          [
+            "GPU-2a1fc5e5-245d-a3f9-9fbc-1cd16185cbc4",
+            " 958158",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r25_lead14_seed7",
+      "gpu": 6,
+      "pid": 958171,
+      "status": "PASS",
+      "checkpoint_sha256": "3c7e4ada1bab40ac3eb4cdab82d13a4f75296c33290d0d4a4a320455a1b2d419",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 44.670324006001465,
+      "gpu_identity": {
+        "pid": 958171,
+        "nvml": [
+          [
+            "GPU-e8d01c2b-094d-8669-2624-ea29eba35709",
+            " 958171",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r25_lead14_seed123",
+      "gpu": 7,
+      "pid": 958160,
+      "status": "PASS",
+      "checkpoint_sha256": "3c1fff2f1bc24c0069c1494b57d82557f0511b642bdb485b23ef17ca134daf30",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 41.99014620197704,
+      "gpu_identity": {
+        "pid": 958160,
+        "nvml": [
+          [
+            "GPU-76c80055-411b-1994-f310-83cead2ddd57",
+            " 958160",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r50_lead7_seed42",
+      "gpu": 5,
+      "pid": 960354,
+      "status": "PASS",
+      "checkpoint_sha256": "939aa5f9f4e2970be0d5f09e6634783845d3db953f8e2369ddc0eb900e92496e",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 43.38926031399751,
+      "gpu_identity": {
+        "pid": 960354,
+        "nvml": [
+          [
+            "GPU-2a1fc5e5-245d-a3f9-9fbc-1cd16185cbc4",
+            " 960354",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r50_lead7_seed7",
+      "gpu": 6,
+      "pid": 960330,
+      "status": "PASS",
+      "checkpoint_sha256": "e5012647c9e134dec316d253f733338b87150681d588ade763377ee48fe6a19d",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 41.55412531399634,
+      "gpu_identity": {
+        "pid": 960330,
+        "nvml": [
+          [
+            "GPU-e8d01c2b-094d-8669-2624-ea29eba35709",
+            " 960330",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r50_lead7_seed123",
+      "gpu": 7,
+      "pid": 960306,
+      "status": "PASS",
+      "checkpoint_sha256": "f689e389674c303b3c391a7144ca6ddc1f8a0a057db3562041f73b94dc61ed6b",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 42.951877946965396,
+      "gpu_identity": {
+        "pid": 960306,
+        "nvml": [
+          [
+            "GPU-76c80055-411b-1994-f310-83cead2ddd57",
+            " 960306",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r50_lead14_seed42",
+      "gpu": 5,
+      "pid": 962308,
+      "status": "PASS",
+      "checkpoint_sha256": "67788c7b40ed2cd4e763abe36ce7f966ffd21f03d606d00b3d1dcc7b5ba96d30",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 44.09461235301569,
+      "gpu_identity": {
+        "pid": 962308,
+        "nvml": [
+          [
+            "GPU-2a1fc5e5-245d-a3f9-9fbc-1cd16185cbc4",
+            " 962308",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r50_lead14_seed7",
+      "gpu": 6,
+      "pid": 962195,
+      "status": "PASS",
+      "checkpoint_sha256": "cdfd5b0efcf7b330723adad58a43c5f16f657ba2bdd164dca23eb31b3ec8cd00",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 44.71762242598925,
+      "gpu_identity": {
+        "pid": 962195,
+        "nvml": [
+          [
+            "GPU-e8d01c2b-094d-8669-2624-ea29eba35709",
+            " 962195",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r50_lead14_seed123",
+      "gpu": 7,
+      "pid": 962280,
+      "status": "PASS",
+      "checkpoint_sha256": "f75dac9affa08a650f98e1d05e06815223dbabc87798d98c79dbe3c9b5101d8c",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 43.985547479009256,
+      "gpu_identity": {
+        "pid": 962280,
+        "nvml": [
+          [
+            "GPU-76c80055-411b-1994-f310-83cead2ddd57",
+            " 962280",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r100_lead7_seed42",
+      "gpu": 5,
+      "pid": 964146,
+      "status": "PASS",
+      "checkpoint_sha256": "cd491efa350779a93218f6fe10fb18320cb07b7e47a24bdc90c0ef5d7cc37355",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 41.237985009967815,
+      "gpu_identity": {
+        "pid": 964146,
+        "nvml": [
+          [
+            "GPU-2a1fc5e5-245d-a3f9-9fbc-1cd16185cbc4",
+            " 964146",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r100_lead7_seed7",
+      "gpu": 6,
+      "pid": 963938,
+      "status": "PASS",
+      "checkpoint_sha256": "7022dd84a2d64174edf8b0c20372d8cd537ad1159b2834f9277089f1d3483b67",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 42.821824826998636,
+      "gpu_identity": {
+        "pid": 963938,
+        "nvml": [
+          [
+            "GPU-e8d01c2b-094d-8669-2624-ea29eba35709",
+            " 963938",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r100_lead7_seed123",
+      "gpu": 7,
+      "pid": 964040,
+      "status": "PASS",
+      "checkpoint_sha256": "b6b3ff21769053a3c8a4d6150983fd564b64b31bb28cc62c0e81baa74341f5b4",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 42.22189296898432,
+      "gpu_identity": {
+        "pid": 964040,
+        "nvml": [
+          [
+            "GPU-76c80055-411b-1994-f310-83cead2ddd57",
+            " 964040",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r100_lead14_seed42",
+      "gpu": 5,
+      "pid": 965985,
+      "status": "PASS",
+      "checkpoint_sha256": "8e0b693a5789ea07ab612fb3b786a20a860dfb3780bcc9e29da3248e4a91ed13",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 44.39614203100791,
+      "gpu_identity": {
+        "pid": 965985,
+        "nvml": [
+          [
+            "GPU-2a1fc5e5-245d-a3f9-9fbc-1cd16185cbc4",
+            " 965985",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r100_lead14_seed7",
+      "gpu": 6,
+      "pid": 965878,
+      "status": "PASS",
+      "checkpoint_sha256": "7d5940e0ea7b5198728f40b093d72c5be73bd8b11fdd13d413705591f767a7a5",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 43.450143400987145,
+      "gpu_identity": {
+        "pid": 965878,
+        "nvml": [
+          [
+            "GPU-e8d01c2b-094d-8669-2624-ea29eba35709",
+            " 965878",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    },
+    {
+      "name": "Auxiliary_r100_lead14_seed123",
+      "gpu": 7,
+      "pid": 965986,
+      "status": "PASS",
+      "checkpoint_sha256": "204530b09fedc08fdd580d0e581dcae15b3386997720a8fe4bb12532560ec950",
+      "peak_reserved_mib": 3146.0,
+      "inference_seconds": 42.46434128499823,
+      "gpu_identity": {
+        "pid": 965986,
+        "nvml": [
+          [
+            "GPU-76c80055-411b-1994-f310-83cead2ddd57",
+            " 965986",
+            " yeonwoo",
+            " 306"
+          ]
+        ],
+        "title": "yeonwoo",
+        "comm": "yeonwoo"
+      }
+    }
+  ],
+  "code_hash_records_verified": 53,
+  "protected_hashes_verified": 654,
+  "protocol_runs_verified": 120,
+  "stencil_checks_passed": 88,
+  "rhs_scales_verified": 24,
+  "test_predictions_recomputed": 120,
+  "report_files": [
+    "model_definition_audit.md",
+    "physics_equation_audit.md",
+    "horizontal_advection_audit.md",
+    "coastal_stencil_tests.md",
+    "experiment_protocol_audit.md",
+    "mhw_evaluation_audit.md",
+    "auxiliary_ablation_audit.md",
+    "statistical_comparison.md",
+    "verification_summary_ko.md",
+    "retraining_decision.md"
+  ],
+  "artifact_sha256": {
+    "outputs/paper_final_verification_20261015/rhs_scale_recomputed.csv": "884079bd6ea5c102143498e7746e05dba41d9f1c6c52a9f90411e2cc8c36299b",
+    "outputs/paper_final_verification_20261015/statistical_comparison.md": "c3e3be1e3226db7d6a35f624b3a11d7b14dee4db9555618b18bc24993d6384f5",
+    "outputs/paper_final_verification_20261015/source_hashes.json": "6fcf4b9f3480165e1a2cd03da5cd377bf8bba7f2b884c620cd9c24f2c3a12c1a",
+    "outputs/paper_final_verification_20261015/aux_gpu5.sh": "721359d768f2a86c8c6d64ad53958b5378eb88470bfe09a9d7eb64dc1f8730aa",
+    "outputs/paper_final_verification_20261015/mhw_evaluation_audit.md": "e3dcc87b1a8d6904dd0411f43ad677834547d627bf45698fc933c854c4c46e92",
+    "outputs/paper_final_verification_20261015/comparison_summary.csv": "1888473b0b3790cf04241dd4ca10c1469bf4821ae408ecb95de2d6f4e7c2c6e7",
+    "outputs/paper_final_verification_20261015/dataset_metadata.json": "cfe4e54b77ab7fc5fe6191ebc3f38e820a011848d230ed750779720a9e61530a",
+    "outputs/paper_final_verification_20261015/model_definition_audit.md": "3a03236005f3d3accb209dca8c333f3920d83f1ca146fcfd958c52d0f0172c84",
+    "outputs/paper_final_verification_20261015/auxiliary_ablation_audit.md": "d1b33f58c11d268120f923e4435fec60e9719ea2d9d089fabd4e64a69a218b13",
+    "outputs/paper_final_verification_20261015/retraining_decision.md": "f5bd9f907259988a949ee31745ff09a36d20e30b57290ac9e77201d9ac0a7642",
+    "outputs/paper_final_verification_20261015/paired_seed_results.csv": "5425f119678580596ecbfbc27b50500be9916a83324651cf5eaa1138253e4ca5",
+    "outputs/paper_final_verification_20261015/verification_summary_ko.md": "0db3655cc3ce0453fbb92342cca705c16555d2954ce4f100b4620913fc1a9e39",
+    "outputs/paper_final_verification_20261015/mhw_reference_check.json": "2cd94694c29f0af1213def9e22bdce152bd6e67dc922117a60532d49abc83622",
+    "outputs/paper_final_verification_20261015/audit_cpu.py": "6dbbd5387469cf1ed1febd3175322260fd110deec29364551fd6ba25d17207be",
+    "outputs/paper_final_verification_20261015/protected_integrity.json": "d41fa93f536660b11ece73cbac38bf8ff8ed038585510cfa7a04fc6b798e297b",
+    "outputs/paper_final_verification_20261015/block_bootstrap.csv": "fb7e9bee71143676e36e603c4e6683f5d82efdf540b57313dbe10cedaef925a6",
+    "outputs/paper_final_verification_20261015/write_reports.py": "3af9b635b3e2ac19c9563ad8870305fd5c27889e50c1903e18948e61f096e708",
+    "outputs/paper_final_verification_20261015/verification_matrix.csv": "ab8e30e7752100024cd511d7935debd52b70b2ea4e613e568297893fa845325a",
+    "outputs/paper_final_verification_20261015/coastal_stencil_tests.md": "928aaed04da5b2f711a3e895e5252a1a118fcc724af76a6e444c30915a416582",
+    "outputs/paper_final_verification_20261015/aux_gpu6.sh": "773c40c2932112ecefe122c2af74a120e5eb9e3c772ab8fd30958cbc423977ce",
+    "outputs/paper_final_verification_20261015/horizontal_advection_audit.md": "141322ca84a42d0483f2425b53a14d4f52335c4643fead517893222e4752d237",
+    "outputs/paper_final_verification_20261015/reanalyze.py": "b367279653f28c0292d52b6da765270970a793ccdbf2fb069c76e5e4866045de",
+    "outputs/paper_final_verification_20261015/write_results.py": "ec782acd908298051a3a829de06b3d177b5d0ba413080feb30fc3ac75b80406e",
+    "outputs/paper_final_verification_20261015/primary_comparisons.csv": "f6a2904e9c5cae11b8c9f363f3a31e691771ec14e2a665066f4c9db137e88321",
+    "outputs/paper_final_verification_20261015/aux_diagnostics_rechecked.csv": "146e8747505ddc1991e7ff7310c63588d822c8be99009bcf24e38afb3e48e87d",
+    "outputs/paper_final_verification_20261015/physics_numerical_checks.json": "d04e74bc18a4c978d410fcac727a31a51d3ab542dc27954e9ff00e675546bf5a",
+    "outputs/paper_final_verification_20261015/finalize.py": "3a24914b8daf6d0caa9e64070a15e10df30ddcba7cd57528b129f71d76da4aa6",
+    "outputs/paper_final_verification_20261015/paired_summary.csv": "99dd9ca30192dc59ed592189d6d8e4121ce397f6eaebd2cc8a2da7854fd14b82",
+    "outputs/paper_final_verification_20261015/test_results120.csv": "02d359c285c73bf177fdf6739af6ad0c06c983d66c9db8888f5f86482f3e4598",
+    "outputs/paper_final_verification_20261015/manifest_checks.json": "6803098423a6da23bef6d1b19a1eeaed8ecaf2b52d6a90083962bdee7a08b7df",
+    "outputs/paper_final_verification_20261015/protocol120.csv": "dcbad32ff2e00d111ab033a58beab5685211136924b8b007e87f97f2f916f5fa",
+    "outputs/paper_final_verification_20261015/stencil_tests.json": "ba4eaa1a79e1c03dbc688c537be37b1b69011c369312d147617c0007a689aee4",
+    "outputs/paper_final_verification_20261015/experiment_protocol_audit.md": "48dc7029fb77a6aee3130dd69cda5ab664dd3795d62cb2733f3867fd00346700",
+    "outputs/paper_final_verification_20261015/physics_equation_audit.md": "7830461c385d84eec1c9983feb512bf21294fd2b3886be9087e9c9e2984d8a1a",
+    "outputs/paper_final_verification_20261015/analysis_status.json": "8154218ad650b87b78b67f030ffcf0c6dd411980890d28a99b2f25b19ed6913b",
+    "outputs/paper_final_verification_20261015/audit_status.json": "8fd0c9b82404839b182618ebb62accce94b8172bbbb176c21e7f8448b0323bae",
+    "outputs/paper_final_verification_20261015/check_rhs.py": "b753404ce6d73c15455b2ea0c937b20a52918017fe22e16c6e90101de53f011c",
+    "outputs/paper_final_verification_20261015/aux_test.py": "5868c6bcff15ede6145872b25ef738d3eb7aa1d61ae0c5543ed40455bbc734bc",
+    "outputs/paper_final_verification_20261015/stencil_tests.csv": "ccbf3eba731f10519a9e104a4a87131a2dfd8fe2d22c9d552b4d672a385cc365",
+    "outputs/paper_final_verification_20261015/legacy_inventory.json": "aef684075576aec81e3332c4cf0a559f68a37a70ea86f565f2754a7b609213d5",
+    "outputs/paper_final_verification_20261015/aux_gpu7.sh": "24ecc03f9d395e40614691c3d92d819bb0f78dd8ea879854f01ec53d710ecb70",
+    "outputs/paper_final_verification_20261015/noadv_adv_spatial_seasonal.csv": "67b224dc6f97864715d3754f202648d51de3f69f5a420704dfbfc5aa5190e9b4",
+    "outputs/paper_final_verification_20261015/launch_aux_test.py": "139b6afaf68b9f23f8fae7fcd754a9eacd319b4eca169d03a33c5734e800ec29",
+    "outputs/paper_final_verification_20261015/provenance.py": "9093690b4fad0e093cb93a6f740aa199e74034e442c6374ed30173300d12a7e6"
+  }
+}

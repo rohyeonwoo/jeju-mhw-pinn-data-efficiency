@@ -1,0 +1,12 @@
+# Limitations
+
+- Exploratory Test: the fixed Test period has been inspected previously; these are not independent confirmatory results. No new training, tuning, inference, checkpoint selection or full verification audit was run.
+- Three fixed seeds and a single fixed period do not support seed-population or geographic generalization. The reused 90-day bootstrap intervals are conditional on these seeds; temporal autocorrelation is handled by paired circular blocks, with all grid cells kept together. No multiplicity adjustment was applied. Grid cells are spatially dependent, not independent sample replicates.
+- 100% means 3,995 windows inside retained 90-day blocks, not all original training windows. Actual epochs imply different optimizer-update counts by ratio; the last epoch has zero learning rate.
+- Oracle future physical forcing is used by specified training constraints, not the predictor inputs at Test; this is not an operational proof for forecast forcing.
+- One common fixed MHW reference is used across ratios/models, so changing thresholds do not confound ratio comparisons here. Skill still depends on the fixed period, subset statistics, and model calibration. MHW events use raw day-of-year, five-day runs, no smoothing/gap merging, zero scores at zero denominators, and edge-censored series. Fixed-lead series join different issuance dates.
+- SST metrics use equal ocean-grid weights, not area weighting. The historical SW-Korea box is not SW Jeju. The new SW-Jeju box is exploratory and geographically motivated; no optimized region selection was performed.
+- Observed-field advection diagnostics use target-day SST and velocity to describe physical magnitude; they are distinct from model-interpolated training-path terms. Spatial associations and physical residual correlations reuse related variables and cannot establish an independent oceanographic cause.
+- A large advective term does not guarantee a beneficial fixed discrete constraint. NoAdv outperforming Adv does not imply ocean advection is unimportant. P0 and Adv differ in flux, entrainment and velocity definitions; only NoAdv–Adv isolates this constraint toggle.
+- Auxiliary diagnostic batches are fixed training subsets and sampled at irregular epochs. Declining output/gradient is observed; complete zeroing or a unique causal explanation is not established.
+- Existing WSDM results remain separate and were neither revalidated nor mixed with Oracle120. Prior-report audit caveats are attributed rather than converted into new PASS claims.

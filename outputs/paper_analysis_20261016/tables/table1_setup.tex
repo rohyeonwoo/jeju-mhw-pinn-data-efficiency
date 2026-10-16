@@ -1,0 +1,28 @@
+\begin{table}
+\caption{Dataset, study domain and Oracle120 experimental configuration.}
+\label{tab:table1_setup}
+\begin{tabular}{ll}
+\toprule
+Item & Configuration \\
+\midrule
+Study domain & 30–37°N, 123–131°E; 29 × 33; 0.25° \\
+Ocean/support cells & 661 / 660 \\
+Data period & 1993-01-01 to 2022-12-31 \\
+Sources & NOAA OISST; ERA5 wind/flux; GLORYS mixed-layer variables \\
+History / leads & 30 days / 7 and 14 days \\
+Nested training windows & 10\%: 376; 25\%: 987; 50\%: 1974; 100\%: 3995 \\
+Training blocks & 8, 21, 42, 85 nonoverlapping 90-day blocks \\
+100\% definition & 3995 retained windows; not all 7639 common training candidates \\
+Seeds / conditions & 42, 7, 123 / 4 ratios × 2 leads × 5 models = 120 \\
+Training / selection & 80 actual epochs; validation-minimum checkpoint; final-epoch LR=0 \\
+Model & SeaCast-inspired JejuHiLAM; 15,019,779 parameters \\
+Training forcing & Oracle future physical forcing in constraint loss only \\
+Test targets, lead 7 & 2018-07-07 to 2022-12-31 (1639 days) \\
+Test targets, lead 14 & 2018-07-08 to 2022-12-31 (1638 days) \\
+MHW reference & 1993-01-01 to 2013-12-31; shared across all ratios/models \\
+MHW definition & DOY ±5 days; 90th percentile; ≥5 consecutive days; no gap merging \\
+Uncertainty & 3-seed sample SD; existing paired circular 90-day blocks, 2000 draws \\
+Interpretation & Exploratory Test; fixed period and seeds; no independent confirmation \\
+\bottomrule
+\end{tabular}
+\end{table}

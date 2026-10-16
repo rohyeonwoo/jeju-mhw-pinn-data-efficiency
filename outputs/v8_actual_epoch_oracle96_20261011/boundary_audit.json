@@ -1,0 +1,218 @@
+[
+  {
+    "ratio": 10,
+    "lead": 7,
+    "seed": 42,
+    "last_train_target": 7192,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 10,
+    "lead": 7,
+    "seed": 7,
+    "last_train_target": 7552,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 10,
+    "lead": 7,
+    "seed": 123,
+    "last_train_target": 6292,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 10,
+    "lead": 14,
+    "seed": 42,
+    "last_train_target": 7199,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 10,
+    "lead": 14,
+    "seed": 7,
+    "last_train_target": 7559,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 10,
+    "lead": 14,
+    "seed": 123,
+    "last_train_target": 6299,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 25,
+    "lead": 7,
+    "seed": 42,
+    "last_train_target": 7372,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 25,
+    "lead": 7,
+    "seed": 7,
+    "last_train_target": 7552,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 25,
+    "lead": 7,
+    "seed": 123,
+    "last_train_target": 6382,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 25,
+    "lead": 14,
+    "seed": 42,
+    "last_train_target": 7379,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 25,
+    "lead": 14,
+    "seed": 7,
+    "last_train_target": 7559,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 25,
+    "lead": 14,
+    "seed": 123,
+    "last_train_target": 6389,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 50,
+    "lead": 7,
+    "seed": 42,
+    "last_train_target": 7372,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 50,
+    "lead": 7,
+    "seed": 7,
+    "last_train_target": 7552,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 50,
+    "lead": 7,
+    "seed": 123,
+    "last_train_target": 7642,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 50,
+    "lead": 14,
+    "seed": 42,
+    "last_train_target": 7379,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 50,
+    "lead": 14,
+    "seed": 7,
+    "last_train_target": 7559,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 50,
+    "lead": 14,
+    "seed": 123,
+    "last_train_target": 7649,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 100,
+    "lead": 7,
+    "seed": 42,
+    "last_train_target": 7642,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 100,
+    "lead": 7,
+    "seed": 7,
+    "last_train_target": 7642,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 100,
+    "lead": 7,
+    "seed": 123,
+    "last_train_target": 7642,
+    "train_end": 7679,
+    "first_val_target": 7680,
+    "status": "PASS"
+  },
+  {
+    "ratio": 100,
+    "lead": 14,
+    "seed": 42,
+    "last_train_target": 7649,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 100,
+    "lead": 14,
+    "seed": 7,
+    "last_train_target": 7649,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  },
+  {
+    "ratio": 100,
+    "lead": 14,
+    "seed": 123,
+    "last_train_target": 7649,
+    "train_end": 7681,
+    "first_val_target": 7682,
+    "status": "PASS"
+  }
+]

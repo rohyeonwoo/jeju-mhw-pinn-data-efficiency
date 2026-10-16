@@ -1,0 +1,130 @@
+{
+  "path": "/ceph_data/yeonwoo/MHW_subset/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+  "coords": {
+    "latitude": {
+      "first": 30.0,
+      "last": 37.0,
+      "steps": [
+        0.25
+      ],
+      "attrs": {
+        "units": "degrees_north",
+        "standard_name": "latitude",
+        "long_name": "latitude",
+        "stored_direction": "decreasing"
+      }
+    },
+    "longitude": {
+      "first": 123.0,
+      "last": 131.0,
+      "steps": [
+        0.25
+      ],
+      "attrs": {}
+    }
+  },
+  "variables": {
+    "sst_mean": {
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "attrs": {
+        "long_name": "Daily Sea Surface Temperature",
+        "units": "degC",
+        "valid_range": "[-3. 45.]",
+        "precision": "2.0",
+        "dataset": "NOAA High-resolution Blended Analysis",
+        "var_desc": "Sea Surface Temperature",
+        "level_desc": "Surface",
+        "statistic": "Mean",
+        "parent_stat": "Individual Observations",
+        "actual_range": "[-1.8  35.35]"
+      }
+    },
+    "qnet": {
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "attrs": {
+        "units": "W m-2",
+        "long_name": "Net surface heat flux (ERA5 sign convention retained)",
+        "note": "qnet = ssr + str + slhf + sshf; sign convention not altered"
+      }
+    },
+    "ssr": {
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "attrs": {
+        "units": "W m-2",
+        "note": "Converted from J m-2 day-1 to W m-2"
+      }
+    },
+    "u_ml": {
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "attrs": {
+        "units": "m s-1",
+        "long_name": "ML-averaged GLORYS eastward velocity"
+      }
+    },
+    "v_ml": {
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "attrs": {
+        "units": "m s-1",
+        "long_name": "ML-averaged GLORYS northward velocity"
+      }
+    },
+    "mlotst": {
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "attrs": {
+        "units": "m",
+        "long_name": "GLORYS mixed layer thickness interpolated to MHW grid",
+        "land_handling": "GLORYS source NaNs are not used as valid data. Remaining target-grid NaNs are filled from nearest finite GLORYS values to keep this filled training dataset numerically usable; exclude land with ocean_mask or ocean_mask_static."
+      }
+    }
+  },
+  "attrs": {
+    "Conventions": "CF-1.5",
+    "title": "NOAA High-resolution Blended Analysis: Daily Values using AVHRR only",
+    "institution": "NOAA/NCDC",
+    "source": "NOAA/NCDC  ftp://eclipse.ncdc.noaa.gov/pub/OI-daily-v2/",
+    "dataset_title": "NOAA Daily Optimum Interpolation Sea Surface Temperature",
+    "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html",
+    "comment": "Reynolds, et al.(2007) Daily High-Resolution-Blended Analyses for Sea Surface Temperature (available at https://doi.org/10.1175/2007JCLI1824.1). Banzon, et al.(2016) A long-term record of blended satellite and in situ sea-surface temperature for climate monitoring, modeling and environmental studies (available at https://doi.org/10.5194/essd-8-165-2016). Huang, B., C. Liu, V. Banzon, E. Freeman, G. Graham, B. Hankins, T. Smith, and H.-M. Zhang, 2021: Improvements of the Daily Optimum Interpolation Sea Surface Temperature (DOISST) Version 2.1 (available at https://doi.org/10.1175/JCLI-D-20-0166.1). Anomaly is based on 1971-2000 OI.v2 SST. Satellite data: multi-satellite sensor (AVHRR+VIIRS) data. Ice data: NCEP Ice and GSFC Ice. Data less than 15 days old may be subject to revision.",
+    "neighbor_fill_method": "8-neighbor mean on static ocean cells",
+    "neighbor_fill_min_neighbors": "3",
+    "neighbor_fill_target_vars": "u_mld, v_mld, mlotst",
+    "history": "Thu Aug 24 13:41:19 2017: ncatted -O -a References,global,d,, sst.day.mean.1993.v2.nc\nVersion 1.0\nReplaced mlotst with GLORYS mlotst; appended thetao/uo/vo and continuity-derived wo.",
+    "glorys_thetao_source": "D:\\Lab\\MarineHeatwave\\Dataset\\cmems_out\\thetao_30_37N_123_131E_0_350m_1993_2022.nc",
+    "glorys_uovo_source": "D:\\Lab\\MarineHeatwave\\Dataset\\cmems_out\\uovo_30_37N_123_131E_1993_2022.nc",
+    "glorys_mlotst_source": "D:\\Lab\\MarineHeatwave\\Dataset\\cmems_out\\mlotst_30_37N_123_131E_1993_2022.nc",
+    "budget_conditioning": "w: smooth 1 box-pass + edge-taper 2 cells; vadv=+w*dTdz clipped |.|<=2.0 K/day",
+    "subsurface_note": "*_anom = per-depth day-of-year anomaly from leading 0.70 (train-only)"
+  },
+  "ocean_cells": 661,
+  "support_cells": 660,
+  "unsupported_ocean_indices": [
+    [
+      24,
+      14
+    ]
+  ]
+}

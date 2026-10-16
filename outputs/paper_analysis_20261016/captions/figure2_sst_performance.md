@@ -1,0 +1,1 @@
+Figure 2. Test SST RMSE across training subsets and forecast leads. Points show means of three matched seeds; bars show sample SD (not confidence intervals). The 100% subset comprises 3,995 windows. All values are from fixed Validation-best checkpoints on the previously inspected Test period.

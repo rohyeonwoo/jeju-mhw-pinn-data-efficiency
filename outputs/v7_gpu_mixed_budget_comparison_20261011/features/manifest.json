@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "created": "2026-10-11 13:28 KST",
+  "shape": [
+    10957,
+    29,
+    33
+  ],
+  "valid_ocean_cell_days": 7242577,
+  "source": {
+    "/ceph_data/yeonwoo/MHW_subset/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc": "fff22a44aeeb35fdd26f29b0d0ade7cf9549c18f5ae29aef2a415a5826708ec2",
+    "/ceph_data/yeonwoo/MHW/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d.nc": "96ad0c153a2a797b01ecb2abc0cb3404336c325006cb562ef9536635a1dc83cc"
+  },
+  "code": {
+    "/ceph_data/yeonwoo/MHW_subset/scripts/prepare_mixed_budget_features.py": "ca559e2e2d9251e52bdf3e07e1b52bf5074e81c981e111e8a19e57300314aa7a",
+    "/ceph_data/yeonwoo/MHW_subset/scripts/experiment_mixed_layer_budget_cpu.py": "68db71659037e8acb30b08a9ec85aa47d586cc1951107a36d9dc924b77c3dbc9"
+  },
+  "sha256": {
+    "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/h.npy": "06f651a45f32ff75c1d6ffd767a0c3d3c9439d2599310919bbb6c81155db00aa",
+    "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/qnet.npy": "53898835a79b94f4d0c7380fdbb73b5e1e76c946ea91e77854932f8fcdc34e67",
+    "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/ssr.npy": "8cc2e644f8b26047c027ab85739d3b88f98da3e5061b733245974338d9452f3b",
+    "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/u.npy": "0f83ff0529e26f29e0f5045da43ea2f85d3ff3a90f7e693448113090d42878a7",
+    "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/v.npy": "9e7b388c2e04ed6df7d58be0688eaef321b6409e1bfecb2bb847b44045f6becf",
+    "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/tb.npy": "d0028bd749582a9f687e5a23c73fa4327fcc2d1ae99a3bc70c80ea62af76c04e",
+    "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/we.npy": "4db187bb80a3cf46d0bfbcd149debd59324f79a5850144a69be0332cc28654b3",
+    "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/tm.npy": "cb8777480122df805a4198f98db153ea911197a2eaec77695cc1678185217b51",
+    "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/valid.npy": "644772f505cd32446b7504e48403bfe4967f68c3fb24a2d37971867dd4434b2f"
+  },
+  "we": "max(0,max(H[t],5)-max(H[t-1],5))/86400; first day0 unused by training",
+  "Tb": "first finite thetao level center strictly deeper than max(H,5)",
+  "Tm": "v6 midpoint-interface weighted layer mean; NOAA is training proxy instead",
+  "difference_from_CPU_v6": "backward MLD difference at forcing t, not forward t+1 minus t; explicitly requested GPU proxy",
+  "future_forcing": "oracle; no future SST or derived fields in x_nodes",
+  "fit_statistics": false
+}

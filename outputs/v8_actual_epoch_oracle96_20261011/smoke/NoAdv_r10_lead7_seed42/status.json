@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "config_sha256": "f39c3d8210b0d5cdc96715c3b20dad9fc45b9eaeb868f2dc3d36988baa72930d",
+  "forward": true,
+  "backward": true,
+  "optimizer_steps": 2,
+  "checkpoint_roundtrip": true,
+  "metrics": {
+    "loss": 0.9379622882144715,
+    "total_loss": 1.1599755883216858,
+    "data_loss": 0.9379622638225555,
+    "physics_loss": 11.100666046142578,
+    "rres_l2": 0.0,
+    "we_tie_loss": 0.0,
+    "lambda_physics_effective": 0.020000000000000004,
+    "rmse": 5.4519776028135825,
+    "mae": 4.638925988086233,
+    "bias": -1.5155177960417454,
+    "mixed_flux_rms_kday": 0.1933203965383145,
+    "mixed_penetration_rms_kday": 0.12455088533754816,
+    "mixed_entrainment_rms_kday": 0.39195139727331785,
+    "mixed_advection_rms_kday": 0.14567394806310563,
+    "mixed_flux_mean_kday": -0.007391425851103547,
+    "mixed_penetration_mean_kday": 0.07834978640337527,
+    "mixed_entrainment_mean_kday": 0.033161834617713826,
+    "mixed_advection_mean_kday": 0.010351147176899436,
+    "common_res_absmean_kday": 0.7676928763781791,
+    "common_res_rmse_kday": 0.9709740259400993
+  },
+  "gradient_norms": [
+    12.41537857055664,
+    13.355259895324707
+  ],
+  "predictor_gradients": [
+    {
+      "data_norm": 10.196845779850271,
+      "physics_norm": 116.5121014218923,
+      "lambda_physics_effective": 0.020000000000000004,
+      "weighted_ratio": 0.22852576951223277,
+      "cosine": 0.9413689481156577
+    },
+    {
+      "data_norm": 11.349335210575514,
+      "physics_norm": 102.02550473797241,
+      "lambda_physics_effective": 0.020000000000000004,
+      "weighted_ratio": 0.1797911557725482,
+      "cosine": 0.9800290158892765
+    }
+  ],
+  "peak_reserved_mib": 11242.0,
+  "timestamp": "2026-10-11 17:55 KST"
+}

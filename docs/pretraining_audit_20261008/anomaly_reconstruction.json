@@ -1,0 +1,59 @@
+{
+  "source": "/ceph_data/yeonwoo/server_backups/node1_20260928T054310Z/home/lab/MHW/preprocess_glorys3d_budget_terms.py",
+  "source_sha256": "726c5a66de098d3ac69bcf84bdd9e861602a3a435c3172eed366103622f346ce",
+  "precursor": "/ceph_data/yeonwoo/MHW/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d.nc",
+  "depths": [
+    {
+      "variable": "thetao_z0m_anom",
+      "depth_index": 0,
+      "depth_m": 0.49402499198913574,
+      "exact_equal": true,
+      "max_abs_error": 0.0,
+      "finite_pattern_equal": true
+    },
+    {
+      "variable": "thetao_z16m_anom",
+      "depth_index": 10,
+      "depth_m": 15.810070037841797,
+      "exact_equal": true,
+      "max_abs_error": 0.0,
+      "finite_pattern_equal": true
+    },
+    {
+      "variable": "thetao_z34m_anom",
+      "depth_index": 15,
+      "depth_m": 34.43415069580078,
+      "exact_equal": true,
+      "max_abs_error": 0.0,
+      "finite_pattern_equal": true
+    },
+    {
+      "variable": "thetao_z78m_anom",
+      "depth_index": 20,
+      "depth_m": 77.85385131835938,
+      "exact_equal": true,
+      "max_abs_error": 0.0,
+      "finite_pattern_equal": true
+    },
+    {
+      "variable": "thetao_z110m_anom",
+      "depth_index": 22,
+      "depth_m": 109.72930145263672,
+      "exact_equal": true,
+      "max_abs_error": 0.0,
+      "finite_pattern_equal": true
+    },
+    {
+      "variable": "thetao_z156m_anom",
+      "depth_index": 24,
+      "depth_m": 155.85069274902344,
+      "exact_equal": true,
+      "max_abs_error": 0.0,
+      "finite_pattern_equal": true
+    }
+  ],
+  "sst_anom_preserved_from_precursor_exactly": true,
+  "ntrain": 7670,
+  "reference_start": "1993-01-01",
+  "reference_end": "2013-12-31"
+}

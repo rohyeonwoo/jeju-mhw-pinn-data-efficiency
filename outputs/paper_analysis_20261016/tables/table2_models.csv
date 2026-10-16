@@ -1,0 +1,6 @@
+Model,Active loss,Physics RHS,we head active,Rres head active
+Baseline,D,None,OFF,OFF
+Auxiliary-only,D + 0.0001 U,None,OFF,ON
+P0,D + λ(e) P0,Surface flux + advection + learned entrainment,ON,OFF
+NoAdv,D + λ(e) PA,Flux − shortwave penetration + MLD entrainment proxy,OFF,OFF
+Adv,D + λ(e) PB,NoAdv RHS + horizontal advection,OFF,OFF

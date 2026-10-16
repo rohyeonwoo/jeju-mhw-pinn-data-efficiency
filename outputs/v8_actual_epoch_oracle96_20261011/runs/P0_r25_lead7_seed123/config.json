@@ -1,0 +1,249 @@
+{
+  "job": {
+    "id": 33,
+    "name": "P0_r25_lead7_seed123",
+    "model": "B1",
+    "label": "P0",
+    "arm": "p0",
+    "ratio": 25,
+    "lead": 7,
+    "seed": 123,
+    "manifest": "/ceph_data/yeonwoo/MHW_subset/data/subsets/preprocessing_subset_v3/ratio_25_lead7_seed123.json",
+    "manifest_sha256": "b8919c44ced720791bc3dc98fd000f7c1be56f3a2dc67475a66141b9ce5339e4",
+    "run_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r25_lead7_seed123",
+    "lambda_physics": 0.1,
+    "n_train": 987,
+    "updates_per_epoch": 62,
+    "total_updates": 4960,
+    "warmup_steps": 310
+  },
+  "protocol_sha256": "8adba95bb0c78a79d13dea7f0e04a3946e6c4f3a0957b5d411bda2ad1ed59a6e",
+  "argv": [
+    "--subset-manifest",
+    "/ceph_data/yeonwoo/MHW_subset/data/subsets/preprocessing_subset_v3/ratio_25_lead7_seed123.json",
+    "--lead",
+    "7",
+    "--seed",
+    "123",
+    "--physics-mode",
+    "p0_original",
+    "--lambda-physics",
+    "0.1",
+    "--lambda-rres",
+    "0",
+    "--lambda-we-tie",
+    "0",
+    "--batch-size",
+    "16",
+    "--epochs",
+    "80",
+    "--patience",
+    "81",
+    "--physics-warmup-epochs",
+    "5",
+    "--warmup-epochs",
+    "5",
+    "--lr",
+    "0.0002",
+    "--initial-lr",
+    "0.00002",
+    "--no-residual-feature",
+    "--device",
+    "cuda:0",
+    "--precision",
+    "fp32",
+    "--output-root",
+    "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r25_lead7_seed123"
+  ],
+  "settings": {
+    "data_path": "D:/MHW/data/merged_sst_cmems_era5_wind10_qnet_jeju_1993_2022_FINAL_staticmask_filled_glorys3d_budget2d.nc",
+    "subset_manifest": "/ceph_data/yeonwoo/MHW_subset/data/subsets/preprocessing_subset_v3/ratio_25_lead7_seed123.json",
+    "residual_map": "D:/MHW/outputs/newphys_inverse_feature_map/f_theta_maps.npy",
+    "output_root": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r25_lead7_seed123",
+    "history": 30,
+    "lead": 7,
+    "seed": 123,
+    "epochs": 80,
+    "virtual_epoch_steps": null,
+    "patience": 81,
+    "batch_size": 16,
+    "num_workers": 0,
+    "hidden_dim": 256,
+    "temporal_hidden_dim": 256,
+    "processor_layers": 3,
+    "mlp_hidden_layers": 1,
+    "lr": 0.0002,
+    "initial_lr": 2e-05,
+    "weight_decay": 0.1,
+    "warmup_epochs": 5,
+    "selection_metric": "val_rmse",
+    "device": "cuda:0",
+    "precision": "fp32",
+    "prediction_mode": "direct",
+    "physics_mode": "p0_original",
+    "lambda_physics": 0.1,
+    "physics_warmup_epochs": 5,
+    "physics_rhs_scale": 0.07934067119201405,
+    "physics_normalize_eps": 1e-08,
+    "physics_clip": 10.0,
+    "lambda_rres": 0.0,
+    "rres_penalty_normalize": "rhs",
+    "lambda_we_tie": 0.0,
+    "entrainment_dt": 1.0,
+    "hm_min": 5.0,
+    "we_scale": 1e-05,
+    "rres_scale": 0.0001,
+    "we_softplus_shift": 1.0,
+    "zero_rres_physics": true,
+    "include_residual_feature": false,
+    "max_train_batches": null,
+    "max_val_batches": null,
+    "smoke_test": false,
+    "tiny_overfit": false,
+    "tiny_samples": 32,
+    "tiny_overfit_steps": 20,
+    "plot_graph": false
+  },
+  "manifest_sha256": "b8919c44ced720791bc3dc98fd000f7c1be56f3a2dc67475a66141b9ce5339e4",
+  "stats": {
+    "sst_mean": [
+      19.083272960344846,
+      6.045976000475159
+    ],
+    "sst_anom": [
+      -1.1749667215969419e-09,
+      0.8276121072018995
+    ],
+    "u_ml": [
+      0.055207104732568825,
+      0.15356972920783518
+    ],
+    "v_ml": [
+      0.03316985610346696,
+      0.1428148162771168
+    ],
+    "mlotst": [
+      34.27346366461265,
+      28.579007210307072
+    ],
+    "ssr": [
+      159.72129793628315,
+      76.9605341806852
+    ],
+    "str": [
+      -70.80423540069403,
+      31.437247381300033
+    ],
+    "slhf": [
+      -138.09896940584338,
+      117.98288268045766
+    ],
+    "sshf": [
+      -37.75795508636168,
+      58.468470201858395
+    ],
+    "mslp": [
+      101675.69989666631,
+      776.268449800158
+    ],
+    "tcc": [
+      0.6082900736557577,
+      0.31101114938459473
+    ],
+    "Td_glorys": [
+      18.980242808594557,
+      5.803761988071798
+    ],
+    "wind10": [
+      6.186667140849775,
+      2.9916833416509756
+    ],
+    "thetao_z0m_anom": [
+      -1.4802908302481189e-09,
+      0.8148242948960706
+    ],
+    "thetao_z16m_anom": [
+      -8.687386185456135e-10,
+      0.7866951254509046
+    ],
+    "thetao_z34m_anom": [
+      -5.1075683608561044e-11,
+      0.8141743101317033
+    ],
+    "thetao_z78m_anom": [
+      3.2414979203433232e-09,
+      0.803123329023499
+    ],
+    "thetao_z110m_anom": [
+      -1.2018605550014498e-09,
+      0.8029727162617543
+    ],
+    "thetao_z156m_anom": [
+      -2.3324997699378365e-09,
+      0.8762364740838161
+    ],
+    "target": [
+      18.745551375653967,
+      6.087600836500711
+    ],
+    "observed_tendency_mse_kday2": [
+      0.021771200001239777,
+      1.0
+    ],
+    "observed_tendency_rms_kday": [
+      0.1475506692673394,
+      1.0
+    ],
+    "ocean_mask_static": [
+      0.0,
+      1.0
+    ],
+    "lat2d": [
+      33.5,
+      2.091650066335189
+    ],
+    "lon2d": [
+      127.0,
+      2.3804761428476167
+    ]
+  },
+  "rhs_scale": 0.07934067119201405,
+  "applied_rhs_scale": 0.07934067119201405,
+  "physics_stencil": "ocean_neighbors_v1",
+  "shared_initial_sha256": "bbbe5302ad97042001a6d866205688231d6085d912d837794a809c19fa5bdbaf",
+  "parameters": {
+    "shared": 14887681,
+    "we_head": 66049,
+    "rres_head": 66049
+  },
+  "trainable_parameters": 15019779,
+  "split_sha256": {
+    "train": "4050b654c047d8fb87e08d577296024fe29044225bd5201ac448fd3a13b13f31",
+    "val": "d5b7db34ac42ceb11289ec3fe0ca6d52f4fd694b665197372b7f475c842e9c77",
+    "test": "0dbc70b4d469dd9a7eb7a2291638792653f979ae60abe604efb4129633d07ec6"
+  },
+  "tensor_fingerprints": {
+    "train": "9d703134d7d6504420ff73916e311399656dd580eaac7d178e0bb92edabd8388",
+    "val": "d7d09fc54c2eb9ccc7cb4416b57144579e40566094def3217b94c9a66e802c5f",
+    "test": "516e0f4f0b1176483aaff6c7d0f5fa72ba7cd1de56124182a56e0a359d4fc357"
+  },
+  "evaluation_mask_cells": 661,
+  "physics_mask_cells": 660,
+  "selection": "minimum full Validation SST RMSE over 80 actual epochs",
+  "test_evaluation": "disabled; separate plan after all96 completed",
+  "architecture": "Identical native predictor/we/rres heads in all arms; no extra head",
+  "normalization": "unchanged v3 selected-training statistics and common P0 mean-square RHS scale",
+  "temperature": "NOAA SST proxy, not prognostic GLORYS mixed-layer temperature",
+  "forcing": "Training-only Oracle Physics Supervision; val/test prediction has no forcing fields",
+  "feature_manifest_sha256": "f4f4785c76a560a7c1b3bda0af9827d5ba2ec705056fafc7375e33e22d598979",
+  "lambda_schedule": "config lambda * min(epoch/5,1), constant within actual epoch",
+  "active_objective_parameters": 14953730,
+  "training_calendar_end_index": 7679,
+  "early_stopping_enabled": false,
+  "epoch_type": "actual",
+  "updates_per_epoch": 62,
+  "total_updates": 4960,
+  "post_warmup_selection": "epoch >= 5, first epoch at full physics weight",
+  "checkpoint_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/checkpoints/P0_r25_lead7_seed123",
+  "config_sha256": "b6b145a20aabd942648c40be4665e409716ea0942a714e4d0e2f278283da935f"
+}

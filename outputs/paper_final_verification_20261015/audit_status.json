@@ -1,0 +1,283 @@
+{
+  "protocol_pass": 120,
+  "total": 120,
+  "source_hashes": 53,
+  "source_hash_mismatch": [],
+  "stencil_pass": 88,
+  "stencil_total": 88,
+  "manifest_checks": [
+    {
+      "condition": [
+        10,
+        7,
+        42
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        10,
+        7,
+        7
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        10,
+        7,
+        123
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        10,
+        14,
+        42
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        10,
+        14,
+        7
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        10,
+        14,
+        123
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        25,
+        7,
+        42
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        25,
+        7,
+        7
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        25,
+        7,
+        123
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        25,
+        14,
+        42
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        25,
+        14,
+        7
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        25,
+        14,
+        123
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        50,
+        7,
+        42
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        50,
+        7,
+        7
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        50,
+        7,
+        123
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        50,
+        14,
+        42
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        50,
+        14,
+        7
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        50,
+        14,
+        123
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        100,
+        7,
+        42
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        100,
+        7,
+        7
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        100,
+        7,
+        123
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        100,
+        14,
+        42
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        100,
+        14,
+        7
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    },
+    {
+      "condition": [
+        100,
+        14,
+        123
+      ],
+      "stats_same": true,
+      "clim_same": true,
+      "indices_same": true,
+      "clim_hash_valid": true
+    }
+  ],
+  "aux_diag_count": 247,
+  "aux_diagnostics_preserved": true,
+  "aux_median_gradient_ratio": {
+    "1": 0.017587760478396452,
+    "5": 0.005135661947330656,
+    "10": 0.005338465296257837,
+    "20": 0.0019850709611112533,
+    "80": 0.00040710017213397946
+  }
+}

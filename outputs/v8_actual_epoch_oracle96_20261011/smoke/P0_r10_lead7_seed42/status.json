@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "config_sha256": "56b6f696a531ceddf7475a8d666bc3a620525abae7218180b76a5e72554324f4",
+  "forward": true,
+  "backward": true,
+  "optimizer_steps": 2,
+  "checkpoint_roundtrip": true,
+  "metrics": {
+    "loss": 0.9372406698391406,
+    "total_loss": 1.0962326526641846,
+    "data_loss": 0.9372406303882599,
+    "physics_loss": 7.949602842330933,
+    "rres_l2": 0.0,
+    "we_tie_loss": 0.0,
+    "lambda_physics_effective": 0.020000000000000004,
+    "rmse": 5.449880049929842,
+    "mae": 4.6371287289618,
+    "bias": -1.5014533015494989,
+    "budget_flux_absmean_kday": 0.14623848390785646,
+    "budget_adv_absmean_kday": 0.07218481286779627,
+    "budget_entrain_absmean_kday": 0.017046415650999392,
+    "budget_hdiff_absmean_kday": 0.0,
+    "budget_vadv_absmean_kday": 0.0,
+    "budget_rres_absmean_kday": 0.0,
+    "budget_dTdt_absmean_kday": 0.6900344914688177,
+    "budget_rres_l2_kday": 0.0,
+    "budget_dTdt_l2_kday": 0.8007016527460742,
+    "budget_flux_std_kday": 0.1931790427100768,
+    "budget_adv_std_kday": 0.145492531977717,
+    "budget_entrain_std_kday": 0.01157259247724439,
+    "budget_hdiff_std_kday": 0.0,
+    "budget_vadv_std_kday": 0.0,
+    "budget_rres_std_kday": 0.0,
+    "rres_frac_of_tendency": 0.0,
+    "rres_frac_of_physics": 0.0,
+    "rres_l2_frac_of_tendency": 0.0,
+    "rres_l2_frac_of_physics": 0.0,
+    "share_flux": 0.6210500807122239,
+    "share_adv": 0.3065566782406529,
+    "share_entrain": 0.07239324104712314,
+    "share_hdiff": 0.0,
+    "share_vadv": 0.0,
+    "share_rres": 0.0,
+    "rres_crest_factor": 0.0,
+    "dtdt_crest_factor": 1.1603791732811628,
+    "common_res_absmean_kday": 0.6845208766656521,
+    "common_res_rmse_kday": 0.8216858414816761
+  },
+  "gradient_norms": [
+    11.726868629455566,
+    13.124288558959961
+  ],
+  "predictor_gradients": [
+    {
+      "data_norm": 10.196845779850271,
+      "physics_norm": 77.22120683566132,
+      "lambda_physics_effective": 0.020000000000000004,
+      "weighted_ratio": 0.15146096842664072,
+      "cosine": 0.9892637591000644
+    },
+    {
+      "data_norm": 11.242425555336567,
+      "physics_norm": 95.08543443262893,
+      "lambda_physics_effective": 0.020000000000000004,
+      "weighted_ratio": 0.16915466144669056,
+      "cosine": 0.9877776204527583
+    }
+  ],
+  "peak_reserved_mib": 11242.0,
+  "timestamp": "2026-10-11 17:55 KST"
+}

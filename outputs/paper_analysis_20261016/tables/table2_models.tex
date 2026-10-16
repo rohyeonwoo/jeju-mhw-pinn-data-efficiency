@@ -1,0 +1,15 @@
+\begin{table}
+\caption{Five models share architecture. λ(e)=0.1 min(e/5,1); P0 and Adv differ in more than advection. U penalizes Rres toward zero.}
+\label{tab:table2_models}
+\begin{tabular}{lllll}
+\toprule
+Model & Active loss & Physics RHS & we head active & Rres head active \\
+\midrule
+Baseline & D & None & OFF & OFF \\
+Auxiliary-only & D + 0.0001 U & None & OFF & ON \\
+P0 & D + λ(e) P0 & Surface flux + advection + learned entrainment & ON & OFF \\
+NoAdv & D + λ(e) PA & Flux − shortwave penetration + MLD entrainment proxy & OFF & OFF \\
+Adv & D + λ(e) PB & NoAdv RHS + horizontal advection & OFF & OFF \\
+\bottomrule
+\end{tabular}
+\end{table}

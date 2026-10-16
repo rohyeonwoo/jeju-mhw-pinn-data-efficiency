@@ -1,0 +1,9 @@
+ratio,lead,descriptive_spatial_pearson,n_cells,inference
+10,7,0.6890200586790322,660,No p-value; spatially dependent cells; association not causality
+10,14,0.638905006324165,660,No p-value; spatially dependent cells; association not causality
+25,7,0.6570710309172733,660,No p-value; spatially dependent cells; association not causality
+25,14,0.608005992559,660,No p-value; spatially dependent cells; association not causality
+50,7,0.6358326359612447,660,No p-value; spatially dependent cells; association not causality
+50,14,0.42616184546870073,660,No p-value; spatially dependent cells; association not causality
+100,7,0.5660590929141092,660,No p-value; spatially dependent cells; association not causality
+100,14,0.5343529920957674,660,No p-value; spatially dependent cells; association not causality

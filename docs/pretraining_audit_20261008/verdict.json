@@ -1,0 +1,19 @@
+{
+  "timestamp_kst": "2026-10-08 14:03",
+  "overall": "FAIL",
+  "training_ready": false,
+  "training_executed": false,
+  "gpu_used": false,
+  "checks": {
+    "1": "FAIL: SST origin algorithm not fully traced; thetao reconstruction PASS",
+    "2": "FAIL: non-subset training observations in thetao climatology",
+    "3": "PASS",
+    "4": "PASS",
+    "5": "PASS for subset-manifest/default P0 path",
+    "6": "PASS"
+  },
+  "additional_blockers": [
+    "GPU process-title enforcement missing in direct trainer",
+    "Ceph output-root enforcement missing in direct trainer"
+  ]
+}

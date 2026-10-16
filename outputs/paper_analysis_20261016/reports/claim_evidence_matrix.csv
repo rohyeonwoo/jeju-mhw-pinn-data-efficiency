@@ -1,0 +1,9 @@
+category,claim,evidence,limitation
+Directly supported,NoAdv has lower Test RMSE than Adv in 22/24 paired seed conditions and higher CSI in 19/24.,statistics/paired_seed_results.csv; statistics/paired_summary.csv,"Exploratory Test, fixed period and three seeds."
+Directly supported,P0 improves RMSE over Baseline in 8/24 seeds; mean seed improvement -1.836%.,tables/test_seed_metrics.csv,"Cross-condition average is descriptive, not an equally weighted new scientific endpoint."
+Directly supported,NoAdv improves RMSE over Baseline in 12/24 seeds; mean seed improvement 0.306%.,tables/test_seed_metrics.csv,"Cross-condition average is descriptive, not an equally weighted new scientific endpoint."
+Directly supported,Adv improves RMSE over Baseline in 5/24 seeds; mean seed improvement -3.173%.,tables/test_seed_metrics.csv,"Cross-condition average is descriptive, not an equally weighted new scientific endpoint."
+Directly supported,Auxiliary-only improves Test RMSE in 15/24 seed conditions.,tables/test_seed_metrics.csv; tables/validation_seed_metrics.csv,Small and heterogeneous changes; validation and Test separated.
+Limited interpretation,"The utility of the fixed constraints depends on term selection, training ratio and lead.",tables/table5_paired.csv; figures/main/figure2_sst_performance.png,No universal monotonic scarcity benefit or operational generalization.
+Not supported,"Advection is physically unimportant, or a physical causal mechanism has been identified.",statistics/observed_advection_season_region.csv; statistics/advection_spatial_correlations.csv,Predictive constraint utility does not establish physical-process importance; descriptive dependence only.
+Not supported,Physics constraints universally improve forecasts or Test is independent confirmation.,tables/table3_sst.csv; reports/limitations.md,Failures and small effects must be retained.

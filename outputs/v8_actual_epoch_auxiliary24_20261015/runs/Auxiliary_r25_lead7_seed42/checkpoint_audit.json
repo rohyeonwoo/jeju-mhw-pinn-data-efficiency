@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "epoch": 28,
+  "expected_val_rmse": 0.8926174985873988,
+  "reloaded_val_rmse": 0.8926174985873988,
+  "sha256": "7cf35187003b553cb011303a57447a83ac259e7bcbba18f3d3599d4bd16752ba"
+}

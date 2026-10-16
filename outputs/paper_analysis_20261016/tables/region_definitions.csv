@@ -1,0 +1,6 @@
+region,n_cells,definition
+All,661,All
+SW_Jeju_exploratory,40,"New exploratory SW-Jeju box: 32.0–33.25°N, 125.0–126.5°E, inclusive, intersected with the saved ocean mask. Chosen geographically south/west of Jeju (approx.33.4°N,126.5°E), before inspecting model errors; not independently validated as a coastal dynamical region. Historical SW-Korea box:33.5–35°N,125.5–127.5°E. Coast: ocean cells with a cardinal land neighbor; domain exterior is not land. Case rule: for each lead choose the earliest June–August day in the final complete Test year (2022); fixed ratio100/seed42 for all models. No skill-based selection."
+Coast,141,Coast
+Offshore,520,Offshore
+Historical_SW_Korea,36,Historical_SW_Korea

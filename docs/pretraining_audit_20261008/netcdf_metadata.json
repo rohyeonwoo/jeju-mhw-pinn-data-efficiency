@@ -1,0 +1,59 @@
+{
+  "global": {
+    "Conventions": "CF-1.5",
+    "title": "NOAA High-resolution Blended Analysis: Daily Values using AVHRR only",
+    "institution": "NOAA/NCDC",
+    "source": "NOAA/NCDC  ftp://eclipse.ncdc.noaa.gov/pub/OI-daily-v2/",
+    "dataset_title": "NOAA Daily Optimum Interpolation Sea Surface Temperature",
+    "References": "https://www.psl.noaa.gov/data/gridded/data.noaa.oisst.v2.highres.html",
+    "comment": "Reynolds, et al.(2007) Daily High-Resolution-Blended Analyses for Sea Surface Temperature (available at https://doi.org/10.1175/2007JCLI1824.1). Banzon, et al.(2016) A long-term record of blended satellite and in situ sea-surface temperature for climate monitoring, modeling and environmental studies (available at https://doi.org/10.5194/essd-8-165-2016). Huang, B., C. Liu, V. Banzon, E. Freeman, G. Graham, B. Hankins, T. Smith, and H.-M. Zhang, 2021: Improvements of the Daily Optimum Interpolation Sea Surface Temperature (DOISST) Version 2.1 (available at https://doi.org/10.1175/JCLI-D-20-0166.1). Anomaly is based on 1971-2000 OI.v2 SST. Satellite data: multi-satellite sensor (AVHRR+VIIRS) data. Ice data: NCEP Ice and GSFC Ice. Data less than 15 days old may be subject to revision.",
+    "neighbor_fill_method": "8-neighbor mean on static ocean cells",
+    "neighbor_fill_min_neighbors": "3",
+    "neighbor_fill_target_vars": "u_mld, v_mld, mlotst",
+    "history": "Thu Aug 24 13:41:19 2017: ncatted -O -a References,global,d,, sst.day.mean.1993.v2.nc\nVersion 1.0\nReplaced mlotst with GLORYS mlotst; appended thetao/uo/vo and continuity-derived wo.",
+    "glorys_thetao_source": "D:\\Lab\\MarineHeatwave\\Dataset\\cmems_out\\thetao_30_37N_123_131E_0_350m_1993_2022.nc",
+    "glorys_uovo_source": "D:\\Lab\\MarineHeatwave\\Dataset\\cmems_out\\uovo_30_37N_123_131E_1993_2022.nc",
+    "glorys_mlotst_source": "D:\\Lab\\MarineHeatwave\\Dataset\\cmems_out\\mlotst_30_37N_123_131E_1993_2022.nc",
+    "budget_conditioning": "w: smooth 1 box-pass + edge-taper 2 cells; vadv=+w*dTdz clipped |.|<=2.0 K/day",
+    "subsurface_note": "*_anom = per-depth day-of-year anomaly from leading 0.70 (train-only)"
+  },
+  "anomalies": {
+    "sst_anom": {
+      "long_name": "Daily Sea Surface Temperature Anomalies",
+      "units": "degC",
+      "precision": "2.0",
+      "dataset": "NOAA High-resolution Blended Analysis",
+      "var_desc": "Sea Surface Temperature Anomalies",
+      "level_desc": "Surface",
+      "statistic": "Anomaly",
+      "parent_stat": "Other",
+      "actual_range": "[-10.4   9.5]",
+      "valid_range": "[-25.  25.]"
+    },
+    "thetao_z0m_anom": {
+      "units": "degrees_C",
+      "long_name": "thetao at 0.5 m, per-depth train-only day-of-year anomaly"
+    },
+    "thetao_z16m_anom": {
+      "units": "degrees_C",
+      "long_name": "thetao at 15.8 m, per-depth train-only day-of-year anomaly"
+    },
+    "thetao_z34m_anom": {
+      "units": "degrees_C",
+      "long_name": "thetao at 34.4 m, per-depth train-only day-of-year anomaly"
+    },
+    "thetao_z78m_anom": {
+      "units": "degrees_C",
+      "long_name": "thetao at 77.9 m, per-depth train-only day-of-year anomaly"
+    },
+    "thetao_z110m_anom": {
+      "units": "degrees_C",
+      "long_name": "thetao at 109.7 m, per-depth train-only day-of-year anomaly"
+    },
+    "thetao_z156m_anom": {
+      "units": "degrees_C",
+      "long_name": "thetao at 155.9 m, per-depth train-only day-of-year anomaly"
+    }
+  },
+  "data_sha256": "fff22a44aeeb35fdd26f29b0d0ade7cf9549c18f5ae29aef2a415a5826708ec2"
+}

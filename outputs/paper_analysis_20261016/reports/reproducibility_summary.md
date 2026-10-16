@@ -1,0 +1,13 @@
+# Reproducibility summary
+
+- Analysis: `/ceph_data/yeonwoo/MHW_subset/outputs/paper_analysis_20261016/code/analyze.py`; CPU only, CUDA hidden; no model/checkpoint loading.
+- Run: `PYTHONDONTWRITEBYTECODE=1 CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 /ceph_data/yeonwoo/conda_envs/mhw_subset/bin/python -B /ceph_data/yeonwoo/MHW_subset/outputs/paper_analysis_20261016/code/analyze.py`
+- All new outputs and runtime caches are under `/ceph_data/yeonwoo/MHW_subset/outputs/paper_analysis_20261016`. Existing inputs are opened read-only.
+- Tables are recalculated from test_results120.csv and fixed validation metrics, with sample SD (ddof=1). Seedwise percentages precede averaging.
+- All six pairs join identical ratio, lead, seed. NoAdv ΔRMSE=Adv−NoAdv and ΔCSI=NoAdv−Adv.
+- Existing 90-day bootstrap: 2,000 paired circular temporal draws, common times across models and fixed three seeds; all grid cells together. No bootstrap rerun was needed.
+- Input presence/alignment for all120: reports/input_completeness.csv. New checks do not rerun the full prior audit.
+- Input SHA-256 for small analysis files and documented original field hashes: reports/source_inventory.json and input_completeness.csv. Current large inputs use stat metadata during this analysis; prior hashes are attributed, not claimed freshly recalculated.
+- Figures:350dpi PNG,vector PDF/SVG; numeric plot data and English captions. Companion plot-data files contain maps, regional results, cases and histograms.
+- Final epoch gradients and RMS must be distinguished between epoch training aggregates and the saved fixed diagnostic batch.
+- Supplemental observed-advection equations duplicate the documented stencil on the actual regular grid; not a re-audit of the physics implementation.

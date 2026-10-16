@@ -1,0 +1,12 @@
+검증 항목,판정,근거,논문에 미치는 영향
+수평 이류항 수식,PASS,"−86400(uTx+vTy), 선형장/속도반전 통과",현재 Adv 이류 구현 사용 가능
+단위 및 부호,PASS WITH LIMITATIONS,미터·cos(lat)·86400 확인; upstream 원자료 처리 일부 미확인,K/day 서술 가능; 저장 방향 attrs 오류와 원자료 한계 명시
+해안 경계 계산,PASS WITH LIMITATIONS,88/88; 661 ocean/660 support; 비균일 편측 한계,실제 균일 격자에서 유효; 일반 불균일 격자로 확대 금지
+물리 RHS Scale,PASS,24/24 재계산 일치; subset P0 mean-square,공통 RMS normalization으로 정확히 기술
+모델별 손실 구성,PASS,전체 구조 동일; Aux만 Rres; NoAdv/Adv 이류만 차이,Adv를 physics+aux Full PINN으로 부르지 않음
+120개 학습 프로토콜,PASS,120/120; 9600epoch; 동일 pairing; best SHA,"100%=3995, actual epoch, 마지막 LR0 명시"
+SST 평가,PASS,120개 raw 예측 재검산 및 dates/targets 일치,고정 Validation-best의 탐색적 Test 비교
+MHW 평가,PASS WITH LIMITATIONS,동일고정threshold 재생성일치; rawDOY·5일,윤년/경계/고정lead사후사건 정의 한계
+Auxiliary 기여,PASS WITH LIMITATIONS,"Val16/24,Test15/24; gradient 점차약화",보편적 큰효과 주장불가;25%·L14조건 개선
+NoAdv–Adv 비교,PASS WITH LIMITATIONS,"RMSE22/24,CSI19/24;시간blockCI",해당조건에서 이류제외 예측우위;물리법칙 부정아님
+기존 WSDM과의 정합성,UNVERIFIED,P0–P3 매핑있으나 정확한실행source/checkpoint미확보,현재120과별도실험군;기존물리감소율확정금지

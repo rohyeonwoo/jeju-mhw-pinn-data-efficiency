@@ -1,0 +1,717 @@
+{
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/test_results120.csv": {
+    "size": 198193,
+    "mtime_ns": 1792040169582470933,
+    "sha256": "02d359c285c73bf177fdf6739af6ad0c06c983d66c9db8888f5f86482f3e4598"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/protocol120.csv": {
+    "size": 19860,
+    "mtime_ns": 1792039656465837988,
+    "sha256": "dcbad32ff2e00d111ab033a58beab5685211136924b8b007e87f97f2f916f5fa"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/block_bootstrap.csv": {
+    "size": 62042,
+    "mtime_ns": 1792040172306421923,
+    "sha256": "fb7e9bee71143676e36e603c4e6683f5d82efdf540b57313dbe10cedaef925a6"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/all_models_validation_by_seed.csv": {
+    "size": 16815,
+    "mtime_ns": 1792012214401391473,
+    "sha256": "d5e6de83cafe650fdfc57042cb7b482bd79b74c351d08007668d8aa1871e77a3"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/aux_diagnostics_rechecked.csv": {
+    "size": 93491,
+    "mtime_ns": 1792039658141822346,
+    "sha256": "146e8747505ddc1991e7ff7310c63588d822c8be99009bcf24e38afb3e48e87d"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/epoch_metrics.csv": {
+    "size": 1270041,
+    "mtime_ns": 1792012214289393662,
+    "sha256": "7f816f45eb0e08d85f987b4576f5982b9a03851983a21d92e307aed82890d580"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/analysis_status.json": {
+    "size": 418,
+    "mtime_ns": 1792040172306421923,
+    "sha256": "8154218ad650b87b78b67f030ffcf0c6dd411980890d28a99b2f25b19ed6913b"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/mhw_reference_check.json": {
+    "size": 431,
+    "mtime_ns": 1792039654429856888,
+    "sha256": "2cd94694c29f0af1213def9e22bdce152bd6e67dc922117a60532d49abc83622"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/verification_matrix.csv": {
+    "size": 1626,
+    "mtime_ns": 1792040377954537872,
+    "sha256": "ab8e30e7752100024cd511d7935debd52b70b2ea4e613e568297893fa845325a"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/dataset_metadata.json": {
+    "size": 4789,
+    "mtime_ns": 1792039650589892234,
+    "sha256": "cfe4e54b77ab7fc5fe6191ebc3f38e820a011848d230ed750779720a9e61530a"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/model_definition_audit.md": {
+    "size": 5527,
+    "mtime_ns": 1792040377130554067,
+    "sha256": "3a03236005f3d3accb209dca8c333f3920d83f1ca146fcfd958c52d0f0172c84"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/experiment_protocol_audit.md": {
+    "size": 5991,
+    "mtime_ns": 1792040377458547621,
+    "sha256": "48dc7029fb77a6aee3130dd69cda5ab664dd3795d62cb2733f3867fd00346700"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/horizontal_advection_audit.md": {
+    "size": 3970,
+    "mtime_ns": 1792040377186552967,
+    "sha256": "141322ca84a42d0483f2425b53a14d4f52335c4643fead517893222e4752d237"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/auxiliary_ablation_audit.md": {
+    "size": 6853,
+    "mtime_ns": 1792040377802540859,
+    "sha256": "d1b33f58c11d268120f923e4435fec60e9719ea2d9d089fabd4e64a69a218b13"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/mhw_evaluation_audit.md": {
+    "size": 3915,
+    "mtime_ns": 1792040377750541881,
+    "sha256": "e3dcc87b1a8d6904dd0411f43ad677834547d627bf45698fc933c854c4c46e92"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/physics_equation_audit.md": {
+    "size": 10993,
+    "mtime_ns": 1792040491404268590,
+    "sha256": "7830461c385d84eec1c9983feb512bf21294fd2b3886be9087e9c9e2984d8a1a"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/stencil_tests.csv": {
+    "size": 10363,
+    "mtime_ns": 1792039650905889343,
+    "sha256": "ccbf3eba731f10519a9e104a4a87131a2dfd8fe2d22c9d552b4d672a385cc365"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/physics_numerical_checks.json": {
+    "size": 1480,
+    "mtime_ns": 1792039826419908579,
+    "sha256": "d04e74bc18a4c978d410fcac727a31a51d3ab542dc27954e9ff00e675546bf5a"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_final_verification_20261015/manifest_checks.json": {
+    "size": 3956,
+    "mtime_ns": 1792039658133822421,
+    "sha256": "6803098423a6da23bef6d1b19a1eeaed8ecaf2b52d6a90083962bdee7a08b7df"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r10_lead7_seed42/history.csv": {
+    "size": 42131,
+    "mtime_ns": 1791711042770922185,
+    "sha256": "35073b242daef34716036a9d4590b69c26a17f0f36716378e713b28057e14a65"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r10_lead7_seed42/history.csv": {
+    "size": 98841,
+    "mtime_ns": 1791710583331883013,
+    "sha256": "83430b738df5c783ef1803a3385c29c3eb1ff1e144b07b775e8f9e99f30bc7ca"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r10_lead7_seed42/history.csv": {
+    "size": 87665,
+    "mtime_ns": 1791710546916946436,
+    "sha256": "ef0d19d5a6563eae09b8fc3e90a2518cac33b5d57527b8f53b0b2c817e2f2360"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r10_lead7_seed42/history.csv": {
+    "size": 87512,
+    "mtime_ns": 1791711162311643423,
+    "sha256": "94424c470a463e7c3a80705edb1be91342ddf72132b08726e8bd6095109f1ddf"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r10_lead7_seed7/history.csv": {
+    "size": 42236,
+    "mtime_ns": 1791713748480856026,
+    "sha256": "90c5306a8951bc41627ee5706cf6cddf502ce966cf4601af5d230bd18be5bdbc"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r10_lead7_seed7/history.csv": {
+    "size": 98689,
+    "mtime_ns": 1791713941087381532,
+    "sha256": "e282afc8301f491a943c29d9b632da458982dcc43e7cab5e9ce0ccd15e81f6e9"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r10_lead7_seed7/history.csv": {
+    "size": 87584,
+    "mtime_ns": 1791713927879505311,
+    "sha256": "3fd3cb6d5135cdd5212e9fbf6acf6b54e8fecf603bf552100fd5c639f0de6aaa"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r10_lead7_seed7/history.csv": {
+    "size": 87713,
+    "mtime_ns": 1791713973811062487,
+    "sha256": "37f532cc1ec074fc4180bb5930ce3a7fa4e1691d3b6c1003876cbb3ec3644855"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r10_lead7_seed123/history.csv": {
+    "size": 42362,
+    "mtime_ns": 1791713794384574845,
+    "sha256": "7e202027cc8d97f015c315cb1f863763b3c9a599b0de330f88dce4fb83ad9ce1"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r10_lead7_seed123/history.csv": {
+    "size": 98934,
+    "mtime_ns": 1791713991302885012,
+    "sha256": "5aa77109b67d7d1c6521a4a38ee829c4b9c3dc995a4f754295ce04911e79e6f3"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r10_lead7_seed123/history.csv": {
+    "size": 87746,
+    "mtime_ns": 1791716492584681630,
+    "sha256": "81cc603a3e993683be2d56e7cc04ad1ba7da480a7f77794e901d1f1dc0a244de"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r10_lead7_seed123/history.csv": {
+    "size": 87717,
+    "mtime_ns": 1791716418889893759,
+    "sha256": "2f883760f1b6d44e9afb3ad4a1950167ef07eea8873f147d7bb4b4d653c35d34"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r10_lead14_seed42/history.csv": {
+    "size": 42292,
+    "mtime_ns": 1791716226609005596,
+    "sha256": "56381988c80f8ddcfe3bb361355f41fafd46902abfae6cbb8181f3a92adaf018"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r10_lead14_seed42/history.csv": {
+    "size": 98856,
+    "mtime_ns": 1791716579735237166,
+    "sha256": "2ca66626ad58181f59c58ebf0b9a8467993726c1802cc3b8bd9eca971aa4c7d1"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r10_lead14_seed42/history.csv": {
+    "size": 87837,
+    "mtime_ns": 1791716687209442038,
+    "sha256": "f08a893a7f32b7a1cd0163fdb8727e24b0b2e8384f75dcf0fa16add1d5f14f5d"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r10_lead14_seed42/history.csv": {
+    "size": 87507,
+    "mtime_ns": 1791716490536715436,
+    "sha256": "949c7e4ada3059f1c3f9a6d9fabd4f9000451ca16319f9dd43c7ca12ad7f957e"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r10_lead14_seed7/history.csv": {
+    "size": 42179,
+    "mtime_ns": 1791718453718823714,
+    "sha256": "882bba6c700fd83fb3aa82057302876ee853c21926d5d303f37d004481df604b"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r10_lead14_seed7/history.csv": {
+    "size": 98900,
+    "mtime_ns": 1791718822894044983,
+    "sha256": "36e6a4686d6f6beb73ca91eb049633f401bd2f42730b166f01468a3ac7e4e212"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r10_lead14_seed7/history.csv": {
+    "size": 87607,
+    "mtime_ns": 1791718757079563958,
+    "sha256": "0ae6f058e4272b1353e3a5df29bd14057ab7135d3c3423b7d012a8a8962e89f1"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r10_lead14_seed7/history.csv": {
+    "size": 87435,
+    "mtime_ns": 1791718930595590532,
+    "sha256": "ae8bd58ef30a009124cfae077dc084ff076ae24bee56eb0c80adbe1e789c70d4"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r10_lead14_seed123/history.csv": {
+    "size": 42190,
+    "mtime_ns": 1791718846525503305,
+    "sha256": "a90b83d8b2887de4e88a3208a06ba70366f3537d6dae74ce05021a00d93a0c3f"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r10_lead14_seed123/history.csv": {
+    "size": 98816,
+    "mtime_ns": 1791718987826299865,
+    "sha256": "a582f500f6903f13b0afca5bc5099b4566afa2c074364d032d61c6ad1e476642"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r10_lead14_seed123/history.csv": {
+    "size": 87582,
+    "mtime_ns": 1791720748177804182,
+    "sha256": "bc6c6765a8536af22943594868c410202255976c87fc4f078bcc065f7624bc05"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r10_lead14_seed123/history.csv": {
+    "size": 87622,
+    "mtime_ns": 1791721007848051944,
+    "sha256": "906a409068567d6027708f7dd07ae0b1817c6ff0ccfd7beb1c5d53e335a6969f"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r25_lead7_seed42/history.csv": {
+    "size": 42355,
+    "mtime_ns": 1791721630946380944,
+    "sha256": "fdc134cb6c6742d197becc70d516208e705eff5bd48ab26e4214ae4820eb67ee"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r25_lead7_seed42/history.csv": {
+    "size": 99251,
+    "mtime_ns": 1791721862513947994,
+    "sha256": "92432843773f3f71c8abaa97a8d89a9ed0d28f43afe28a8a884f6e31979aa7bb"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r25_lead7_seed42/history.csv": {
+    "size": 88164,
+    "mtime_ns": 1791721935448532861,
+    "sha256": "87e74aa37d79068561331115b23f2332cd788503ce12a538ee365b9eda2f850b"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r25_lead7_seed42/history.csv": {
+    "size": 88083,
+    "mtime_ns": 1791722059002096563,
+    "sha256": "2297c616b2a599cb866709659fa234b370734889ae14a0688aa01edf6a6fb917"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r25_lead7_seed7/history.csv": {
+    "size": 42367,
+    "mtime_ns": 1791723688552164147,
+    "sha256": "d098e03ce67cc908ef628ca9d0acf6342710b586eaf2fd04b89437dbb6f8af62"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r25_lead7_seed7/history.csv": {
+    "size": 99295,
+    "mtime_ns": 1791724211150594497,
+    "sha256": "839741f7586106bf49f76b3f865b19b07c174995c99b3b07bf304c84c8c3efee"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r25_lead7_seed7/history.csv": {
+    "size": 88039,
+    "mtime_ns": 1791724838947902082,
+    "sha256": "5a4d79b8a9cd9ec4d6e252f9e712bcc842ff0f7873bbbee730270dcbe930b705"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r25_lead7_seed7/history.csv": {
+    "size": 88025,
+    "mtime_ns": 1791725159864666259,
+    "sha256": "264597b3457988cfafec42e668f10151f51eb2d554bfe5e1ea4dc667cb942b3a"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r25_lead7_seed123/history.csv": {
+    "size": 42518,
+    "mtime_ns": 1791724835367983454,
+    "sha256": "e2c2871e2df232711587074e8ecd03858720c59dfdfda957c98feddce0b5126c"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r25_lead7_seed123/history.csv": {
+    "size": 99167,
+    "mtime_ns": 1791725152948821200,
+    "sha256": "4ff4af44711ed52a6728184d1f01d303cf68ea5bea4c5d193d584eb5e7171fe1"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r25_lead7_seed123/history.csv": {
+    "size": 88196,
+    "mtime_ns": 1791726699729755824,
+    "sha256": "6a0bb085b2617bebf9ee4b4912cdaf0c4747f76e46a1629dd246a0a68aa19f08"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r25_lead7_seed123/history.csv": {
+    "size": 88163,
+    "mtime_ns": 1791727378120664408,
+    "sha256": "88266580734cd52d4ec82da01d72af7bd2f0c44bc33c4a5e016d1e56112ea4ec"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r25_lead14_seed42/history.csv": {
+    "size": 42432,
+    "mtime_ns": 1791727802302172787,
+    "sha256": "18f50a3a57b2fddf361df680d11c30bc3c03db37c27e79a539f6d9877879ea20"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r25_lead14_seed42/history.csv": {
+    "size": 99215,
+    "mtime_ns": 1791728251709374929,
+    "sha256": "a0673d70a149313aca08bb990223b782bd77746683a3dbadee95007f174f1b9f"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r25_lead14_seed42/history.csv": {
+    "size": 87798,
+    "mtime_ns": 1791728245513527434,
+    "sha256": "a0e864c592fb508ff6be1209da54ee00b35520f5ea0f3787ecdfc2f09560d9d2"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r25_lead14_seed42/history.csv": {
+    "size": 87696,
+    "mtime_ns": 1791728616829077436,
+    "sha256": "050a347a63cf7224f067a947414eab4b1737306ffe1f7622c43b6009fbbca778"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r25_lead14_seed7/history.csv": {
+    "size": 42326,
+    "mtime_ns": 1791729624197455104,
+    "sha256": "52a7ad566123dc704ab3eb6320810e00e58995c11cbcb5efd829282064161eb9"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r25_lead14_seed7/history.csv": {
+    "size": 99149,
+    "mtime_ns": 1791730562593168306,
+    "sha256": "742f8be325c2d5307ae7b64787289b8ea00b533e1e7f38c118c4d453713c7d2e"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r25_lead14_seed7/history.csv": {
+    "size": 87966,
+    "mtime_ns": 1791730899701490958,
+    "sha256": "3b40746acc54c6ab6485fa4f03a34d033d3025e0fe89e3bedbd8d941e5043c52"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r25_lead14_seed7/history.csv": {
+    "size": 87844,
+    "mtime_ns": 1791731546458246137,
+    "sha256": "1585a89111231e7210860b9fb16e6d4baa6491db4d650d3959fa4197413fc171"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r25_lead14_seed123/history.csv": {
+    "size": 42438,
+    "mtime_ns": 1791731166997212052,
+    "sha256": "1b8ed0988a75c21a787c0b13a50201aa21afc36306a59c418421702c9c14e5da"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r25_lead14_seed123/history.csv": {
+    "size": 99209,
+    "mtime_ns": 1791731885716856665,
+    "sha256": "cf29684c1d42599cfeb06de58d08a69b2ea0a0cf5cae51a3c5f1ca618ef06ebf"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r25_lead14_seed123/history.csv": {
+    "size": 87835,
+    "mtime_ns": 1791732758365391498,
+    "sha256": "69113b62a5c580fb870f81d1b1294120c7f74fa774b643ba770a1a5ca5ec6ff1"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r25_lead14_seed123/history.csv": {
+    "size": 87776,
+    "mtime_ns": 1791733625394362368,
+    "sha256": "eb2fe3827a261dfeea6bed25b8cda69db5236dae1d38a62a9f0b39371ec58f30"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r50_lead7_seed42/history.csv": {
+    "size": 42533,
+    "mtime_ns": 1791734972464809030,
+    "sha256": "c063b94962d79280c002d383384af4d63943921935c74774dac06672c153bdf4"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r50_lead7_seed42/history.csv": {
+    "size": 99377,
+    "mtime_ns": 1791735660511753471,
+    "sha256": "e71c6a71306d6f8f4343bdd14463e11194e025cefd3f718bd1aff0188531be96"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r50_lead7_seed42/history.csv": {
+    "size": 88283,
+    "mtime_ns": 1791735844393720717,
+    "sha256": "9aa594e9950e0524f4fa0013d94b79174558ab5b3937710449ee2f431937b6b9"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r50_lead7_seed42/history.csv": {
+    "size": 88260,
+    "mtime_ns": 1791736443559540630,
+    "sha256": "377e07be024cc6fc6df857021eb2d8b2ec772aed398a6d01bfd0709cad4885b7"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r50_lead7_seed7/history.csv": {
+    "size": 42530,
+    "mtime_ns": 1791736741869160321,
+    "sha256": "27eebf80ffa9774c519d9ac8be8604d26c906b54aff30e264f53b7d6fca135e9"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r50_lead7_seed7/history.csv": {
+    "size": 99519,
+    "mtime_ns": 1791738014887169530,
+    "sha256": "a1173ee8deb8e53b418fd2e52a703aea48c5750a22a2d62d64a6af14b09c2594"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r50_lead7_seed7/history.csv": {
+    "size": 88241,
+    "mtime_ns": 1791739250068677340,
+    "sha256": "5ce1ec4c3ac1b8e12b465441b27d2f91899e48ae6dca4944d7534141e8f71799"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r50_lead7_seed7/history.csv": {
+    "size": 88282,
+    "mtime_ns": 1791740428718279052,
+    "sha256": "69cd2f0a2b2038e710292742e668797cef3a9f93ba6da988cc6969410453ebb5"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r50_lead7_seed123/history.csv": {
+    "size": 42642,
+    "mtime_ns": 1791739584284547471,
+    "sha256": "c8177af9fd74dff73ec5ebecab6c080e805cfa8160b0a4f4f0abc8f1d018d03c"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r50_lead7_seed123/history.csv": {
+    "size": 99716,
+    "mtime_ns": 1791741147703290989,
+    "sha256": "d92c5cbc6c49a4b3eb947390d6ba642e87aeba88739d132eb6540eaa209527f6"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r50_lead7_seed123/history.csv": {
+    "size": 88467,
+    "mtime_ns": 1791741068405263193,
+    "sha256": "ccab5a8bb0460a722ac3fc536f186837fe3e20afe7c1e9932abf3adba2bb2d84"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r50_lead7_seed123/history.csv": {
+    "size": 88269,
+    "mtime_ns": 1791742402580268224,
+    "sha256": "81098f2e6297e8b8d79af801fdb4731d5defb6c972772ba03fcbe70b6a140900"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r50_lead14_seed42/history.csv": {
+    "size": 42533,
+    "mtime_ns": 1791743182328550251,
+    "sha256": "d4ac6a1556bee42b65df21a6e9f708638e16f6ba7999458bbfe6a5beb19f6b0f"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r50_lead14_seed42/history.csv": {
+    "size": 99415,
+    "mtime_ns": 1791744230374380228,
+    "sha256": "fc13f5e87c5585e87e03eb0c0d531f5291b80e734c70fb3d6c8c24e3b8294e04"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r50_lead14_seed42/history.csv": {
+    "size": 87996,
+    "mtime_ns": 1791744820938438043,
+    "sha256": "191ae8765875949b3548429c10d1e4854ca3a21f8c19ef3ca1e523c9785702d6"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r50_lead14_seed42/history.csv": {
+    "size": 88183,
+    "mtime_ns": 1791745751554307790,
+    "sha256": "ddfe7317192c71a2c10cdaa6d86bcff0e6e4ff28191f91ed38503fd7031de17b"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r50_lead14_seed7/history.csv": {
+    "size": 42528,
+    "mtime_ns": 1791744956499291902,
+    "sha256": "a3c88578d4623d17f8180c2887e333ccca23f39f1cf5942580fd3f82c0b77764"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r50_lead14_seed7/history.csv": {
+    "size": 99143,
+    "mtime_ns": 1791747029318928993,
+    "sha256": "6c49d3a53c5c1df2812aa96254ab3cae7222847a78f631eb97c36cb3c29ea698"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r50_lead14_seed7/history.csv": {
+    "size": 88090,
+    "mtime_ns": 1791747806632679678,
+    "sha256": "4c25a6c276a2f74061276e2215ed06a8757451dc3b78c22fdd1d93f07db367c9"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r50_lead14_seed7/history.csv": {
+    "size": 88055,
+    "mtime_ns": 1791748758784165952,
+    "sha256": "7916b5edfe3e6e1105ae61ec29cf3c91487ca28993a0c19926b8811bbab82e28"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r50_lead14_seed123/history.csv": {
+    "size": 42577,
+    "mtime_ns": 1791748559366119942,
+    "sha256": "8e8951b4ab08edeaab347962c6ce327d60936b45833e4c0c78c7ec79cbb33e8e"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r50_lead14_seed123/history.csv": {
+    "size": 99273,
+    "mtime_ns": 1791749333425013253,
+    "sha256": "d14ab0c99a8b22b20eb3eafa7da99afd46b2453f3cb7c768f2c7d124e085fa2e"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r50_lead14_seed123/history.csv": {
+    "size": 88102,
+    "mtime_ns": 1791750115808124891,
+    "sha256": "3c0902887baf3bfbf0ea353a67334a56111906fd04064117ccdaa43f8889a560"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r50_lead14_seed123/history.csv": {
+    "size": 88146,
+    "mtime_ns": 1791751457496271327,
+    "sha256": "eac5f930d504f80037c253eef5ea8eb58ce4cd06c2f8f384bc5dee811b10381d"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r100_lead7_seed42/history.csv": {
+    "size": 42219,
+    "mtime_ns": 1791754141708092748,
+    "sha256": "1a24b56245679dfd4ab47244d01577fb8d3baebf04d382652087cab9006f6958"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r100_lead7_seed42/history.csv": {
+    "size": 98906,
+    "mtime_ns": 1791756062131476670,
+    "sha256": "7a094f7ac2e48f6c247fa142d09bc1e09570d545a0ed29fddeb3a41459698baf"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r100_lead7_seed42/history.csv": {
+    "size": 87744,
+    "mtime_ns": 1791755750100861845,
+    "sha256": "ac6f9c0ea4a28c8c2d4673401b04c88d638ba6d3ddbe3871a767986b6a2acc67"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r100_lead7_seed42/history.csv": {
+    "size": 87639,
+    "mtime_ns": 1791756822562786386,
+    "sha256": "65e91201524ae347374783f8c4b26ea40bf95e360a72e45933e911345b31db1c"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r100_lead7_seed7/history.csv": {
+    "size": 42267,
+    "mtime_ns": 1791756551597893232,
+    "sha256": "80f5e863eeb2b85a366b7706dc502522c982d26f0c91e84a40f761eb9c49374d"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r100_lead7_seed7/history.csv": {
+    "size": 98927,
+    "mtime_ns": 1791758891385592457,
+    "sha256": "047abca90e03954356715b19543383ca5e9b7bb97cde70689bc172a1dea616ff"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r100_lead7_seed7/history.csv": {
+    "size": 87601,
+    "mtime_ns": 1791761182739037215,
+    "sha256": "918bae96d9b6074e3c0281b4510536bf4d964efdb9538d6fca26a1d6457b2c37"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r100_lead7_seed7/history.csv": {
+    "size": 87608,
+    "mtime_ns": 1791763128018935029,
+    "sha256": "66437743d30e42735c4d84d332444cf2213bde9feb0dd6710303e4d8c1d89ede"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r100_lead7_seed123/history.csv": {
+    "size": 42388,
+    "mtime_ns": 1791761956720349944,
+    "sha256": "a70589e5c48b083dfb6c3feaeed599d79daeef70c9e65d53e77c0e7e1dfb646e"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r100_lead7_seed123/history.csv": {
+    "size": 98958,
+    "mtime_ns": 1791763662416726070,
+    "sha256": "f286cced975904c9d38993526c86590d170766048722364cc5b0e9ce370c729d"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r100_lead7_seed123/history.csv": {
+    "size": 87701,
+    "mtime_ns": 1791763122802917663,
+    "sha256": "80c7b37070f609d8c876e758a76d67be64c4e34fbebd43bdf7dd4c89c415f52a"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r100_lead7_seed123/history.csv": {
+    "size": 87685,
+    "mtime_ns": 1791766192999031071,
+    "sha256": "6b1a9835065fdf14e14478f273cb10dbff114f85223cd8b5634925c78e54a7ad"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r100_lead14_seed42/history.csv": {
+    "size": 42279,
+    "mtime_ns": 1791767553681230446,
+    "sha256": "4a9bdf6dc69ab034bf728e6fac4bcb88d4efeadf7f5d46d136f54fd882b614e4"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r100_lead14_seed42/history.csv": {
+    "size": 98997,
+    "mtime_ns": 1791769278063509127,
+    "sha256": "35622d5c3d2a9b0f029ce18b692c78f940d77d3fec5a7ecbb7842c361e6f55c5"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r100_lead14_seed42/history.csv": {
+    "size": 87693,
+    "mtime_ns": 1791770456821857211,
+    "sha256": "9d196ce816224333000b7cc9df9db62e7199b8c360b4b760e9ce2494ab3e8c66"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r100_lead14_seed42/history.csv": {
+    "size": 87642,
+    "mtime_ns": 1791770777615659599,
+    "sha256": "f2d94812e16b57e02ca238000e1bbcb48eabffea12ac62ec0b48b96348f19870"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r100_lead14_seed7/history.csv": {
+    "size": 42292,
+    "mtime_ns": 1791770010404066674,
+    "sha256": "d846b80fd8ac86b9bd17fa00799e78a03cd62a61afe9c469ebadfc2698f84dd3"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r100_lead14_seed7/history.csv": {
+    "size": 98924,
+    "mtime_ns": 1791773633816756826,
+    "sha256": "daeecd64e664ad04ec659f0d7733ed6dbb72135f92db79f2c93bf40f935bd9b2"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r100_lead14_seed7/history.csv": {
+    "size": 87638,
+    "mtime_ns": 1791774182307847960,
+    "sha256": "42132c533d11c1ed382e80f3c08259547869d4efec739fe37c17dd0aec6a2314"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r100_lead14_seed7/history.csv": {
+    "size": 87635,
+    "mtime_ns": 1791777184814624690,
+    "sha256": "561e3ef0e402df000d08712c0f8de17c1ef7c4e9d9c26deb05cd467bd50c5394"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Baseline_r100_lead14_seed123/history.csv": {
+    "size": 42147,
+    "mtime_ns": 1791775599094020358,
+    "sha256": "cf922400ce943de0a16d5b10bab2a05990ddc87257f479d34ae58798e4e46867"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/P0_r100_lead14_seed123/history.csv": {
+    "size": 98972,
+    "mtime_ns": 1791777915274649773,
+    "sha256": "d72866f3e6058a3df3457bc660b8c4d58b2f0ee9589347724752c9daac3b5b84"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/NoAdv_r100_lead14_seed123/history.csv": {
+    "size": 87656,
+    "mtime_ns": 1791777570651041888,
+    "sha256": "08b27d364eb39b0daf674eabebe41ab945edf6cfdd4f622ab493a03c3bbcebba"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runs/Adv_r100_lead14_seed123/history.csv": {
+    "size": 87462,
+    "mtime_ns": 1791780368950731188,
+    "sha256": "baefad50b30db08ef9249a9fdf2330853df4be9eaa020b9615a32e1fa26c2f28"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r10_lead7_seed42/history.csv": {
+    "size": 50502,
+    "mtime_ns": 1791998998101810962,
+    "sha256": "4b18ffa64de893de782dca4d04962cd81ccea3d5538555fd36baba0fcd5100b0"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r10_lead7_seed7/history.csv": {
+    "size": 50534,
+    "mtime_ns": 1791999032349325159,
+    "sha256": "609a86830470a713a3858dd116065e82cb8ffb169bec359cf0734afc2786c138"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r10_lead7_seed123/history.csv": {
+    "size": 50577,
+    "mtime_ns": 1791998998381807054,
+    "sha256": "338e9697de9d0029ef5e8e6783626fd57b7a3be32583db3f15bdc5fc3faaf965"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r10_lead14_seed42/history.csv": {
+    "size": 50456,
+    "mtime_ns": 1791999041001199955,
+    "sha256": "a9fa109e95b7298454eed427f87dfbfad202bbe28583ea8023e4d186aa52c2a9"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r10_lead14_seed7/history.csv": {
+    "size": 50370,
+    "mtime_ns": 1791999055396989494,
+    "sha256": "269d559e76230931bbd5ba5a6937f70b782beea7bc2fb9c6a421c02b90ff42be"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r10_lead14_seed123/history.csv": {
+    "size": 50429,
+    "mtime_ns": 1791999025785419494,
+    "sha256": "92c7180dd4ed19726fc0b859f2528e8b0136faf055ba10f626aba39e5ea71f04"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r25_lead7_seed42/history.csv": {
+    "size": 50853,
+    "mtime_ns": 1792001757583542221,
+    "sha256": "c390b3193379c139b658d616c07dc0a9f70fdfa161a48937f28baafe7f44b1fc"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r25_lead7_seed7/history.csv": {
+    "size": 50773,
+    "mtime_ns": 1792001822153699954,
+    "sha256": "21163dcbd9fe6a93cc0583994b461b2a49faeac5660f50ed9f378c9638f82c67"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r25_lead7_seed123/history.csv": {
+    "size": 50941,
+    "mtime_ns": 1792001850596892500,
+    "sha256": "99137013b5148d0b3674fcbf2b0c629f24290d906f3bad008191d256018f03d2"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r25_lead14_seed42/history.csv": {
+    "size": 50781,
+    "mtime_ns": 1792001797066414151,
+    "sha256": "20f8c6845c8c48b0bcbfe568b03cc42e137a91ef6f5c8f17d4c47386aa272a4e"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r25_lead14_seed7/history.csv": {
+    "size": 50615,
+    "mtime_ns": 1792001810630027776,
+    "sha256": "e5b19d26d646414d7f9aedfa08c19102e4206bf43505eaf2d162dcab51b0e9b3"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r25_lead14_seed123/history.csv": {
+    "size": 50743,
+    "mtime_ns": 1792001829041504204,
+    "sha256": "fbedea5089ce319cefbceacbe181020be752fe685928d6a7aea7253e83144b2a"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r50_lead7_seed42/history.csv": {
+    "size": 50992,
+    "mtime_ns": 1792005388421880996,
+    "sha256": "9ce7004596dcaa95d3780ac5d242f84457ddd4b28dbe35f5eb60592cef18f896"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r50_lead7_seed7/history.csv": {
+    "size": 51014,
+    "mtime_ns": 1792005601811166118,
+    "sha256": "33a85802f57c89b582ba08c7cd1f23d15d917f6339ada339fa8da8703fabd98d"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r50_lead7_seed123/history.csv": {
+    "size": 51133,
+    "mtime_ns": 1792005444528085071,
+    "sha256": "b20b09c26346e5c8ed88e7a6d0d87e93c9c0e2ddc1781ffc017d17508c450eb6"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r50_lead14_seed42/history.csv": {
+    "size": 50954,
+    "mtime_ns": 1792005638982024750,
+    "sha256": "7146753375c2db1266ab96166ad8196c05c7746e3436820db90487d2632b2d10"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r50_lead14_seed7/history.csv": {
+    "size": 50977,
+    "mtime_ns": 1792005666509183994,
+    "sha256": "51ca8765c2996f2cb7dd4b1a1d9ed9b4253205989f313a2264b8d0533b2445c8"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r50_lead14_seed123/history.csv": {
+    "size": 51066,
+    "mtime_ns": 1792005746862749677,
+    "sha256": "d86658c7111dc3187a610f14997f65cfffc9d477ca4c34c0aa825fc258e1a072"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r100_lead7_seed42/history.csv": {
+    "size": 50899,
+    "mtime_ns": 1792011753058157983,
+    "sha256": "6de2c9f78a512b430770094595fe1f03a7b203030db0c8015ab3d17a0777cb1c"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r100_lead7_seed7/history.csv": {
+    "size": 50913,
+    "mtime_ns": 1792011753222154987,
+    "sha256": "cdd5614ec48074e5542e0303db371fa794730c2b13e4a684723cbff59944e809"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r100_lead7_seed123/history.csv": {
+    "size": 50938,
+    "mtime_ns": 1792011878355838879,
+    "sha256": "0db77d5ad59cb0855d43b90e08269fedd00f571a660e24a234c08cee3d2cee9f"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r100_lead14_seed42/history.csv": {
+    "size": 50789,
+    "mtime_ns": 1792011965906186709,
+    "sha256": "69906cf52301955af6e3f965ec5f189a5795ab8176836b6eb923e9545982048d"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r100_lead14_seed7/history.csv": {
+    "size": 50808,
+    "mtime_ns": 1792012132782981036,
+    "sha256": "5a001ffbe11be1ac8ca2d80bca8947775a05c84bd5dfcc648e68034574de2f3b"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/runs/Auxiliary_r100_lead14_seed123/history.csv": {
+    "size": 50686,
+    "mtime_ns": 1792012189197883633,
+    "sha256": "4f3dcdb02dd826fe11688e99a3c6dd2c6016794ea52078b320304dabbce0b13a"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/v7_gpu_mixed_budget_comparison_20261011/features/manifest.json": {
+    "size": 2874,
+    "mtime_ns": 1791692903480227188,
+    "sha256": "f4f4785c76a560a7c1b3bda0af9827d5ba2ec705056fafc7375e33e22d598979"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_analysis_20261016/code/analyze.py": {
+    "size": 54096,
+    "mtime_ns": 1792143579304936371,
+    "sha256": "882a97e376196b5d59186fd5bafddf9352fc4294c949c1425f0a45c4afd2a984"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_analysis_20261016/code/refine_figures.py": {
+    "size": 4852,
+    "mtime_ns": 1792143455011858425,
+    "sha256": "8a8dfee2b9b948c6cf8e66927d35897cddf1a37f2a1e740a3aa0298cd66a87e3"
+  },
+  "/ceph_data/yeonwoo/MHW_subset/outputs/paper_analysis_20261016/code/finalize_findings.py": {
+    "size": 7293,
+    "mtime_ns": 1792143542757794093,
+    "sha256": "f3c6e35053cfa1420487f9b49469bd6dace300c8f59603cbda1be91971e43b5f"
+  }
+}
