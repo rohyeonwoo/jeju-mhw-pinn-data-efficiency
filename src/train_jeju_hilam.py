@@ -25,6 +25,8 @@ from train_hybrid_jeju_forecast import (
     daily_rollout_physics_loss,
     finalize_budget_metrics,
     identifiability_terms,
+    rres_penalty,
+    entrainment_tie_penalty,
     physics_budget_diagnostics,
     physics_lambda_factor,
 )
@@ -47,12 +49,16 @@ DEFAULT_RESIDUAL_PATH = Path("D:/MHW/outputs/newphys_inverse_feature_map/f_theta
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Jeju-adapted HiLAM baseline")
     p.add_argument("--data-path", type=Path, default=DEFAULT_DATA_PATH)
+    p.add_argument("--subset-manifest", type=Path, default=None,
+                   help="Load subset-fitted input/target/RHS statistics and fixed split indices")
     p.add_argument("--residual-map", type=Path, default=DEFAULT_RESIDUAL_PATH)
-    p.add_argument("--output-root", type=Path, default=Path("D:/MHW/outputs/jeju_hilam"))
+    p.add_argument("--output-root", type=Path, default=Path("/ceph_data/yeonwoo/MHW_subset/outputs/jeju_hilam"))
     p.add_argument("--history", type=int, default=30)
     p.add_argument("--lead", type=int, required=True, choices=[1, 3, 7, 14])
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--epochs", type=int, default=80)
+    p.add_argument("--virtual-epoch-steps", type=int, default=None,
+                   help="Persistent cycling train stream; fixed optimizer steps per validation interval")
     p.add_argument("--patience", type=int, default=12)
     p.add_argument("--batch-size", type=int, default=8)
     p.add_argument("--num-workers", type=int, default=0)
@@ -196,6 +202,7 @@ def physics_raw_residual_stats(
     rres_term = torch.zeros_like(rres_pred) if getattr(physics_args, "zero_rres_physics", False) else rres_pred
     residual = dtdt_per_day - rhs_per_day - rres_term.repeat(steps, 1, 1, 1) * SECONDS_PER_DAY
     valid = rhs_mask
+    residual = torch.where(valid > 0, residual, torch.zeros_like(residual))
     count = float(valid.sum().detach().cpu().item())
     if count <= 0:
         return {"common_res_abs_sum": 0.0, "common_res_sq_sum": 0.0, "common_res_count": 0.0}
@@ -254,6 +261,44 @@ def batch_raw_stats(
     }
 
 
+def compute_batch_losses(output, batch, graph, target_mean, target_std,
+                         physics_args, lambda_eff, model):
+    """Construct only active objectives; zero-weight terms are never evaluated."""
+    pred = output["pred"] if isinstance(output, dict) else output
+    data = F.mse_loss(pred, batch["y_nodes"].to(pred.device))
+    phys = pred.new_zeros(())
+    rres = pred.new_zeros(())
+    tie = pred.new_zeros(())
+    total = data
+    if physics_args is None:
+        return pred, data, phys, rres, tie, total
+    lr = float(getattr(physics_args, "lambda_rres", 0.0))
+    lw = float(getattr(physics_args, "lambda_we_tie", 0.0))
+    if lambda_eff == 0 and lr == 0 and lw == 0:
+        return pred, data, phys, rres, tie, total
+    lead = int(batch["target_index"][0] - batch["current_index"][0])
+    mask = batch["mask"].to(pred.device)
+    grid = lambda values: nodes_to_grid_torch(values, graph)
+    raw = grid(pred * target_std + target_mean)
+    if lambda_eff != 0:
+        we = grid(output["we"])
+        closure = torch.zeros_like(we) if physics_args.zero_rres_physics else grid(output["rres"])
+        phys = daily_rollout_physics_loss(raw, batch["Tm"].to(pred.device),
+            batch["y_raw"].to(pred.device), mask, batch, physics_args, lead, we, closure)
+        total = total + lambda_eff * phys
+    if lr != 0:
+        # v3 always has a fixed RHS scale; no physics or inactive we-head graph.
+        we = None if getattr(physics_args, "physics_rhs_scale", None) is not None else grid(output["we"])
+        rres = rres_penalty(grid(output["rres"]), raw, batch, mask, lead, physics_args,
+                            we_pred=we, rres_scale=float(getattr(model, "rres_scale", 1e-4)))
+        total = total + lr * rres
+    if lw != 0:
+        tie = entrainment_tie_penalty(grid(output["we"]), batch, mask, lead,
+                                      float(getattr(model, "we_scale", 1e-5)))
+        total = total + lw * tie
+    return pred, data, phys, rres, tie, total
+
+
 def run_epoch(
     model: JejuHiLAM,
     loader: DataLoader,
@@ -298,50 +343,8 @@ def run_epoch(
             optimizer.zero_grad(set_to_none=True)
         with autocast:
             output = model(x_nodes, base_nodes=base_nodes, return_aux=physics_args is not None)
-            if physics_args is None:
-                pred_norm = output
-                data_loss = F.mse_loss(pred_norm, y_nodes)
-                phys_loss = pred_norm.new_zeros(())
-                rres_l2 = pred_norm.new_zeros(())
-                we_tie = pred_norm.new_zeros(())
-                total_loss = data_loss
-            else:
-                pred_norm = output["pred"]
-                data_loss = F.mse_loss(pred_norm, y_nodes)
-                pred_raw_grid = nodes_to_grid_torch(pred_norm * target_std + target_mean, graph)
-                we_grid = nodes_to_grid_torch(output["we"], graph)
-                rres_grid = nodes_to_grid_torch(output["rres"], graph)
-                tm = batch["Tm"].to(device, non_blocking=True)
-                y_raw_grid = batch["y_raw"].to(device, non_blocking=True)
-                mask = batch["mask"].to(device, non_blocking=True)
-                phys_loss = daily_rollout_physics_loss(
-                    pred_raw=pred_raw_grid,
-                    Tm=tm,
-                    target_raw=y_raw_grid,
-                    mask=mask,
-                    batch=batch,
-                    args=physics_args,
-                    lead_days=int(batch["target_index"][0].item() - batch["current_index"][0].item()),
-                    we_pred=we_grid,
-                    rres_pred=rres_grid,
-                )
-                rres_l2, we_tie, _ = identifiability_terms(
-                    we_pred=we_grid,
-                    rres_pred=rres_grid,
-                    pred_raw=pred_raw_grid,
-                    batch=batch,
-                    mask=mask,
-                    lead_days=int(batch["target_index"][0].item() - batch["current_index"][0].item()),
-                    args=physics_args,
-                    we_scale=float(getattr(model, "we_scale", 1.0e-5)),
-                    rres_scale=float(getattr(model, "rres_scale", 1.0e-4)),
-                )
-                total_loss = (
-                    data_loss
-                    + lambda_eff * phys_loss
-                    + float(getattr(physics_args, "lambda_rres", 0.0)) * rres_l2
-                    + float(getattr(physics_args, "lambda_we_tie", 0.0)) * we_tie
-                )
+            pred_norm, data_loss, phys_loss, rres_l2, we_tie, total_loss = compute_batch_losses(
+                output, batch, graph, target_mean, target_std, physics_args, lambda_eff, model)
         if training:
             total_loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
@@ -586,8 +589,41 @@ def run_smoke(args: argparse.Namespace, model: JejuHiLAM, loader: DataLoader, de
         print(f"tiny_loss_first={first_loss} tiny_loss_last={last_loss}")
 
 
+def enforce_execution_rules(args) -> None:
+    # Must run before set_seed/resolve_device can touch CUDA.
+    import setproctitle
+    setproctitle.setproctitle("yeonwoo")
+    if setproctitle.getproctitle() != "yeonwoo":
+        raise RuntimeError("Process title could not be set to yeonwoo")
+    root = Path("/ceph_data/yeonwoo").resolve()
+    if not args.output_root.resolve().is_relative_to(root):
+        raise ValueError("Output root must resolve inside /ceph_data/yeonwoo")
+    if args.virtual_epoch_steps is not None:
+        if args.virtual_epoch_steps <= 0 or args.max_train_batches is not None:
+            raise ValueError("Fixed-step schedule needs positive steps and no max_train_batches override")
+
+
+class CyclingTrainBatches:
+    """Continue across virtual epochs without resetting a partially consumed pass."""
+    def __init__(self, loader):
+        if len(loader) == 0:
+            raise ValueError("Empty training loader")
+        self.loader = loader
+        self.iterator = iter(loader)
+
+    def take(self, count):
+        for _ in range(count):
+            try:
+                batch = next(self.iterator)
+            except StopIteration:
+                self.iterator = iter(self.loader)
+                batch = next(self.iterator)
+            yield batch
+
+
 def main() -> None:
     args = parse_args()
+    enforce_execution_rules(args)
     set_seed(args.seed)
     device = resolve_device(args.device)
 
@@ -601,13 +637,21 @@ def main() -> None:
         else "SeaCast-inspired HiLAM / JejuHiLAM"
     )
 
-    bundle = make_jeju_hilam_bundle(
-        data_path=args.data_path,
-        residual_map_path=args.residual_map,
-        history=args.history,
-        lead_days=args.lead,
-        include_residual_feature=args.include_residual_feature,
-    )
+    subset_metadata = None
+    if args.subset_manifest is not None:
+        from mhw.subset_preprocessing import load_subset_bundle, apply_manifest_physics
+        data_override = None if args.data_path == DEFAULT_DATA_PATH else args.data_path
+        bundle, subset_metadata = load_subset_bundle(args.subset_manifest, data_override)
+        apply_manifest_physics(args, physics_args, subset_metadata)
+        args.data_path = Path(data_override or subset_metadata["data_path"])
+    else:
+        bundle = make_jeju_hilam_bundle(
+            data_path=args.data_path,
+            residual_map_path=args.residual_map,
+            history=args.history,
+            lead_days=args.lead,
+            include_residual_feature=args.include_residual_feature,
+        )
     save_graph_artifacts(bundle.graph, run_dir)
     if args.plot_graph:
         maybe_plot_graph(bundle.graph, run_dir / "jeju_hilam_graph.png")
@@ -646,6 +690,9 @@ def main() -> None:
         print(f"{physics_args.physics_preset} train-fixed RHS scale: {physics_args.physics_rhs_scale:.8g}")
 
     config = {
+        "virtual_epoch_steps": args.virtual_epoch_steps,
+        "subset_manifest": str(args.subset_manifest) if args.subset_manifest else None,
+        "subset_preprocessing": subset_metadata,
         "model": model_id,
         "model_label": model_label,
         "lead": args.lead,
@@ -699,11 +746,12 @@ def main() -> None:
     history_rows: list[dict[str, Any]] = []
     best_path = run_dir / "jeju_hilam_best.pt"
 
+    stream = CyclingTrainBatches(train_loader) if args.virtual_epoch_steps is not None else None
     for epoch in range(1, args.epochs + 1):
         lr = set_epoch_lr(optimizer, args, epoch)
         train_stats = run_epoch(
             model,
-            train_loader,
+            stream.take(args.virtual_epoch_steps) if stream is not None else train_loader,
             bundle.graph,
             device,
             target_mean,

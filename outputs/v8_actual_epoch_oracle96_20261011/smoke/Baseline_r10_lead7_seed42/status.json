@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "config_sha256": "fffe318c59da64dbb4e19a02048c13077471c049c5a5023882aa93fd9c0a54ce",
+  "forward": true,
+  "backward": true,
+  "optimizer_steps": 2,
+  "checkpoint_roundtrip": true,
+  "metrics": {
+    "loss": 0.937337808998558,
+    "total_loss": 0.9373377859592438,
+    "data_loss": 0.9373377859592438,
+    "physics_loss": 0.0,
+    "rres_l2": 0.0,
+    "we_tie_loss": 0.0,
+    "lambda_physics_effective": 0.0,
+    "rmse": 5.450162246106812,
+    "mae": 4.637315066246691,
+    "bias": -1.5030221174416132
+  },
+  "gradient_norms": [
+    10.196846008300781,
+    11.253989219665527
+  ],
+  "predictor_gradients": [],
+  "peak_reserved_mib": 8036.0,
+  "timestamp": "2026-10-11 17:55 KST"
+}

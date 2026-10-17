@@ -1,0 +1,165 @@
+{
+  "verdict": {
+    "run provenance correct": "Yes",
+    "cellwise metric correct": "Yes",
+    "lat/lon mapping verified": "Yes",
+    "no transpose/flip": "Yes",
+    "center/edge handling correct": "Yes",
+    "ocean mask semantics correct": "Yes",
+    "test dates correct": "Yes",
+    "existing spatial values numerically preserved": "Yes",
+    "final figure reproducible": "Yes"
+  },
+  "numeric_equivalence": [
+    {
+      "lead_day": 7,
+      "shape": "29 x 33",
+      "finite_cells": 661,
+      "min": -0.23136735569068678,
+      "max": 0.02511574669293637,
+      "n_improved_cells": 652,
+      "mean_seed_rmse_vs_pooled_seed_rmse": "mean of seed-specific RMSE only",
+      "regenerated_legacy_vs_geospatial_max_abs_difference": 0.0,
+      "regenerated_legacy_vs_geospatial_mean_abs_difference": 0.0,
+      "historical_csv_vs_recomputed_max_abs_difference": 4.758832217177655e-13,
+      "historical_csv_vs_recomputed_mean_abs_difference": 3.068504149844709e-14,
+      "independent_native_grid_delta_max_abs_difference": 6.661338147750939e-16,
+      "csv_rounding_tolerance": 1e-12,
+      "array_sha256": "39824c66c990098598339108f4d281baba0437caf1e1bfcdcea6b0b600a065d0"
+    },
+    {
+      "lead_day": 14,
+      "shape": "29 x 33",
+      "finite_cells": 661,
+      "min": -0.16787938732672525,
+      "max": 0.04494517476052384,
+      "n_improved_cells": 548,
+      "mean_seed_rmse_vs_pooled_seed_rmse": "mean of seed-specific RMSE only",
+      "regenerated_legacy_vs_geospatial_max_abs_difference": 0.0,
+      "regenerated_legacy_vs_geospatial_mean_abs_difference": 0.0,
+      "historical_csv_vs_recomputed_max_abs_difference": 4.803796249674974e-13,
+      "historical_csv_vs_recomputed_mean_abs_difference": 3.2439604664499445e-14,
+      "independent_native_grid_delta_max_abs_difference": 1.3322676295501878e-15,
+      "csv_rounding_tolerance": 1e-12,
+      "array_sha256": "0b943e8b54a81623c5a5707860bae1f95a0ddb86e34a8e36678a5949550ca404"
+    }
+  ],
+  "renderer_mesh_checks": [
+    {
+      "lead_day": 7,
+      "plotted_array_max_abs_difference": 0.0,
+      "masked_cells": 296,
+      "mesh_coordinate_shape": [
+        30,
+        34,
+        2
+      ],
+      "pixel_centers_match_netcdf_exactly": true,
+      "no_transpose_or_flip": true
+    },
+    {
+      "lead_day": 14,
+      "plotted_array_max_abs_difference": 0.0,
+      "masked_cells": 296,
+      "mesh_coordinate_shape": [
+        30,
+        34,
+        2
+      ],
+      "pixel_centers_match_netcdf_exactly": true,
+      "no_transpose_or_flip": true
+    }
+  ],
+  "input_files_unchanged": true,
+  "input_count": 89,
+  "gpu_used": false,
+  "torch_imported": false,
+  "training": false,
+  "inference": false,
+  "full_netcdf_targets_match_every_saved_run": true,
+  "synthetic_node_grid_roundtrip_all_ocean_cells": true,
+  "corner_checks": [
+    {
+      "lead_day": 7,
+      "corner": "SW",
+      "row": 0,
+      "column": 0,
+      "latitude": 30.0,
+      "longitude": 123.0,
+      "in_ocean_mask": false,
+      "delta_rmse": null
+    },
+    {
+      "lead_day": 7,
+      "corner": "SE",
+      "row": 0,
+      "column": 32,
+      "latitude": 30.0,
+      "longitude": 131.0,
+      "in_ocean_mask": false,
+      "delta_rmse": null
+    },
+    {
+      "lead_day": 7,
+      "corner": "NW",
+      "row": 28,
+      "column": 0,
+      "latitude": 37.0,
+      "longitude": 123.0,
+      "in_ocean_mask": false,
+      "delta_rmse": null
+    },
+    {
+      "lead_day": 7,
+      "corner": "NE",
+      "row": 28,
+      "column": 32,
+      "latitude": 37.0,
+      "longitude": 131.0,
+      "in_ocean_mask": false,
+      "delta_rmse": null
+    },
+    {
+      "lead_day": 14,
+      "corner": "SW",
+      "row": 0,
+      "column": 0,
+      "latitude": 30.0,
+      "longitude": 123.0,
+      "in_ocean_mask": false,
+      "delta_rmse": null
+    },
+    {
+      "lead_day": 14,
+      "corner": "SE",
+      "row": 0,
+      "column": 32,
+      "latitude": 30.0,
+      "longitude": 131.0,
+      "in_ocean_mask": false,
+      "delta_rmse": null
+    },
+    {
+      "lead_day": 14,
+      "corner": "NW",
+      "row": 28,
+      "column": 0,
+      "latitude": 37.0,
+      "longitude": 123.0,
+      "in_ocean_mask": false,
+      "delta_rmse": null
+    },
+    {
+      "lead_day": 14,
+      "corner": "NE",
+      "row": 28,
+      "column": 32,
+      "latitude": 37.0,
+      "longitude": 131.0,
+      "in_ocean_mask": false,
+      "delta_rmse": null
+    }
+  ],
+  "lat_attribute_conflict_disclosed": true,
+  "array_center_vs_declared_cell_bounds": "pixel centers verified; midpoint edges are derived rendering bounds, no original bounds available"
+}

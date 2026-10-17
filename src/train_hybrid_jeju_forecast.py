@@ -585,20 +585,12 @@ def bound_pinn_prediction(
     return pred_norm_bounded, pred_raw
 
 
-def spatial_gradients_torch(field: torch.Tensor, dx: torch.Tensor, dy: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
-    dTdx_num = torch.zeros_like(field)
-    dTdy_num = torch.zeros_like(field)
-    if field.shape[-1] > 1:
-        dTdx_num[..., 1:-1] = (field[..., 2:] - field[..., :-2]) * 0.5
-        dTdx_num[..., 0] = field[..., 1] - field[..., 0]
-        dTdx_num[..., -1] = field[..., -1] - field[..., -2]
-    if field.shape[-2] > 1:
-        dTdy_num[..., 1:-1, :] = (field[..., 2:, :] - field[..., :-2, :]) * 0.5
-        dTdy_num[..., 0, :] = field[..., 1, :] - field[..., 0, :]
-        dTdy_num[..., -1, :] = field[..., -1, :] - field[..., -2, :]
-    dx_safe = torch.where(dx.abs() > 1e-12, dx, torch.ones_like(dx))
-    dy_safe = torch.where(dy.abs() > 1e-12, dy, torch.ones_like(dy))
-    return dTdx_num / dx_safe, dTdy_num / dy_safe
+from mhw.ocean_stencil import ocean_neighbor_gradients, ocean_neighbor_support
+
+def spatial_gradients_torch(field: torch.Tensor, dx: torch.Tensor, dy: torch.Tensor,
+                            mask: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
+    """One ocean-aware stencil shared by loss, scale and diagnostics."""
+    return ocean_neighbor_gradients(field, dx, dy, mask)
 
 
 def laplacian_torch(field: torch.Tensor, dx: torch.Tensor, dy: torch.Tensor) -> torch.Tensor:
@@ -675,12 +667,15 @@ def daily_rollout_physics_loss(
     we_pred: torch.Tensor,
     rres_pred: torch.Tensor,
 ) -> torch.Tensor:
+    pred_raw = torch.where(mask > 0, pred_raw, torch.zeros_like(pred_raw))
+    Tm = torch.where(mask > 0, Tm, torch.zeros_like(Tm))
     qnet_seq = batch["qnet_seq"].to(pred_raw.device)
     hm_seq = batch["hm_seq"].to(pred_raw.device)
     u_seq = batch["u_seq"].to(pred_raw.device)
     v_seq = batch["v_seq"].to(pred_raw.device)
     dx = batch["dx"].to(pred_raw.device)
     dy = batch["dy"].to(pred_raw.device)
+    support = ocean_neighbor_support(mask)
     residuals = []
     tendency_terms = []
     rhs_terms = []
@@ -694,7 +689,7 @@ def daily_rollout_physics_loss(
         next_state = Tm + frac * (pred_raw - Tm)
         dTdt = (next_state - prev) / SECONDS_PER_DAY
         tendency_terms.append(obs_tendency)
-        dTdx, dTdy = spatial_gradients_torch(prev, dx, dy)
+        dTdx, dTdy = spatial_gradients_torch(prev, dx, dy, mask)
         entrainment_dt = float(getattr(args, "entrainment_dt", 0.0))
         Td_step = prev - entrainment_dt if entrainment_dt > 0.0 else prev
         residual = compute_residual(
@@ -726,9 +721,10 @@ def daily_rollout_physics_loss(
         residual_per_day = residual * SECONDS_PER_DAY
         # Normalize against the resolved RHS scale, excluding the free Rres closure
         # so the catch-all head cannot inflate its own denominator.
-        rhs_terms.append(dTdt * SECONDS_PER_DAY - residual_per_day - rres_term * SECONDS_PER_DAY)
-        residuals.append(residual_per_day)
-        masks.append(mask)
+        rhs_value = dTdt * SECONDS_PER_DAY - residual_per_day - rres_term * SECONDS_PER_DAY
+        rhs_terms.append(torch.where(support > 0, rhs_value, torch.zeros_like(rhs_value)))
+        residuals.append(torch.where(support > 0, residual_per_day, torch.zeros_like(residual_per_day)))
+        masks.append(support)
         prev = next_state
     return compute_physics_loss(
         torch.cat(residuals, dim=0),
@@ -751,6 +747,8 @@ def _linear_rhs_per_day(
     """Resolved RHS in K/day (flux + adv + entrain + hdiff + vadv), EXCLUDING the
     free Rres closure, plus its step-broadcast mask. Single source of truth so the
     online rhs-scale and the fixed train rhs-scale share an identical definition."""
+    pred_raw = torch.where(mask > 0, pred_raw, torch.zeros_like(pred_raw))
+    Tm = torch.where(mask > 0, Tm, torch.zeros_like(Tm))
     device = pred_raw.device
     qnet_seq = batch["qnet_seq"].to(device)
     hm_seq = batch["hm_seq"].to(device)
@@ -767,7 +765,7 @@ def _linear_rhs_per_day(
     for step in range(1, steps + 1):
         frac = float(step) / float(steps)
         next_state = Tm + frac * (pred_raw - Tm)
-        dTdx, dTdy = spatial_gradients_torch(prev, dx, dy)
+        dTdx, dTdy = spatial_gradients_torch(prev, dx, dy, mask)
         hm_safe = torch.clamp(hm_seq[:, step - 1], min=hm_min)
         Td_step = prev - entrainment_dt if entrainment_dt > 0.0 else prev
         rhs = (
@@ -789,7 +787,8 @@ def _linear_rhs_per_day(
         prev = next_state
 
     rhs_per_day = torch.cat(rhs_terms, dim=0)
-    rhs_mask = mask.repeat(steps, 1, 1, 1)
+    rhs_mask = ocean_neighbor_support(mask).repeat(steps, 1, 1, 1)
+    rhs_per_day = torch.where(rhs_mask > 0, rhs_per_day, torch.zeros_like(rhs_per_day))
     return rhs_per_day, rhs_mask
 
 
@@ -803,6 +802,9 @@ def resolved_rhs_scale_from_linear_path(
     we_pred: torch.Tensor,
 ) -> torch.Tensor:
     """Pooled mean(RHS^2) in K/day units, excluding the free Rres closure."""
+    fixed = getattr(args, "physics_rhs_scale", None)
+    if fixed is not None and float(fixed) > 0:
+        return _fixed_or_batch_rhs_scale(args, pred_raw, mask).detach()
     rhs_per_day, rhs_mask = _linear_rhs_per_day(pred_raw, Tm, mask, batch, args, lead_days, we_pred)
     return _fixed_or_batch_rhs_scale(args, rhs_per_day, rhs_mask).detach()
 
@@ -886,7 +888,7 @@ def integrate_budget_forecast(
         v_step = v_seq[:, step - 1]
         flux = qnet_step / (1025.0 * 3990.0 * hm_safe)
         for _ in range(substeps):
-            dTdx, dTdy = spatial_gradients_torch(prev, dx, dy)
+            dTdx, dTdy = spatial_gradients_torch(prev, dx, dy, mask)
             Td_step = prev - entrainment_dt if entrainment_dt > 0.0 else prev
             rhs = (
                 flux
@@ -930,6 +932,8 @@ def physics_budget_diagnostics(
     ablation can show flux/adv/entrainment variance rising as |Rres| falls --
     distinguishing "physics explains more" from "L2 just erased the signal".
     """
+    pred_raw = torch.where(mask > 0, pred_raw, torch.zeros_like(pred_raw))
+    Tm = torch.where(mask > 0, Tm, torch.zeros_like(Tm))
     device = pred_raw.device
     qnet_seq = batch["qnet_seq"].to(device)
     hm_seq = batch["hm_seq"].to(device)
@@ -949,7 +953,7 @@ def physics_budget_diagnostics(
         frac = float(step) / float(steps)
         next_state = Tm + frac * (pred_raw - Tm)
         dTdt = (next_state - prev) / SECONDS_PER_DAY
-        dTdx, dTdy = spatial_gradients_torch(prev, dx, dy)
+        dTdx, dTdy = spatial_gradients_torch(prev, dx, dy, mask)
         hm_safe = torch.clamp(hm_seq[:, step - 1], min=hm_min)
         Td_step = prev - entrainment_dt if entrainment_dt > 0.0 else prev
         flux = qnet_seq[:, step - 1] / (1025.0 * 3990.0 * hm_safe)
@@ -971,7 +975,7 @@ def physics_budget_diagnostics(
     dtdt = torch.cat(dtdt_terms) * day
     hdiff = torch.cat(hdiff_terms) * day
     vadv = torch.cat(vadv_terms) * day
-    m = mask.repeat(steps, 1, 1, 1)  # same ocean mask for every rollout step
+    m = ocean_neighbor_support(mask).repeat(steps, 1, 1, 1)
 
     def _pooled(field: torch.Tensor) -> tuple[float, float, float]:
         """Masked pooled sums (Sigma|x|m, Sigma x m, Sigma x^2 m) for this batch.
@@ -980,6 +984,7 @@ def physics_budget_diagnostics(
         split and form ratio-of-pooled-means (no per-batch Jensen gap) and
         cell-count-weighted means (partial final batches no longer over-weighted).
         """
+        field = torch.where(m > 0, field, torch.zeros_like(field))
         fm = field * m
         return (
             float((field.abs() * m).sum().item()),
@@ -1073,6 +1078,62 @@ def finalize_budget_metrics(sums: dict[str, float]) -> dict[str, float]:
     }
 
 
+def rres_penalty(rres_pred, pred_raw, batch, mask, lead_days, args,
+                 we_pred=None, rres_scale=1.0e-4):
+    """Existing unresolved-residual penalty; callable independently of physics loss."""
+    device = rres_pred.device
+    def _mmean(field):
+        field = torch.where(mask > 0, field, torch.zeros_like(field))
+        return (field * mask).sum() / mask.sum().clamp_min(1.0)
+    rres_scale = max(float(rres_scale), 1e-12)
+    # L2 on the free residual closure: prefer physics over the catch-all.
+    if getattr(args, "rres_penalty_normalize", "head") == "tendency":
+        Tm = batch["Tm"].to(device)
+        target_raw = batch["y_raw"].to(device)
+        obs_tendency = observed_tendency_per_day(Tm, target_raw, lead_days)
+        tendency_scale = _fixed_or_batch_tendency_scale(
+            args,
+            obs_tendency,
+            mask,
+        ).detach()
+        rres_l2 = _mmean((rres_pred * SECONDS_PER_DAY) ** 2) / tendency_scale
+    elif getattr(args, "rres_penalty_normalize", "head") == "rhs":
+        if pred_raw is None:
+            raise ValueError("--rres-penalty-normalize rhs requires pred_raw")
+        Tm = batch["Tm"].to(device)
+        rhs_scale = resolved_rhs_scale_from_linear_path(
+            pred_raw=pred_raw,
+            Tm=Tm,
+            mask=mask,
+            batch=batch,
+            args=args,
+            lead_days=lead_days,
+            we_pred=we_pred,
+        )
+        rres_l2 = _mmean((rres_pred * SECONDS_PER_DAY) ** 2) / rhs_scale
+    else:
+        rres_l2 = _mmean((rres_pred / rres_scale) ** 2)
+
+    return rres_l2
+
+
+def entrainment_tie_penalty(we_pred, batch, mask, lead_days, we_scale=1.0e-5):
+    device = we_pred.device
+    we_scale = max(float(we_scale), 1e-12)
+    def _mmean(field):
+        field = torch.where(mask > 0, field, torch.zeros_like(field))
+        return (field * mask).sum() / mask.sum().clamp_min(1.0)
+    # Tie we to entrainment during mixed-layer deepening: we ~ relu(dh/dt), normalized.
+    hm = batch["hm"].to(device)                     # h at forecast start [B,1,H,W]
+    hm_seq = batch["hm_seq"].to(device)             # h over the rollout   [B,L,1,H,W]
+    steps = max(int(lead_days), 1)
+    dhdt = (hm_seq[:, -1] - hm) / (float(steps) * SECONDS_PER_DAY)
+    dhdt_deepen = torch.relu(dhdt)
+    we_tie = _mmean(((we_pred - dhdt_deepen) / we_scale) ** 2)
+
+    return we_tie
+
+
 def identifiability_terms(
     we_pred: torch.Tensor,
     rres_pred: torch.Tensor,
@@ -1104,41 +1165,13 @@ def identifiability_terms(
     def _mmean(field: torch.Tensor) -> torch.Tensor:
         return (field * mask).sum() / mask.sum().clamp_min(1.0)
 
-    # L2 on the free residual closure: prefer physics over the catch-all.
-    if getattr(args, "rres_penalty_normalize", "head") == "tendency":
-        Tm = batch["Tm"].to(device)
-        target_raw = batch["y_raw"].to(device)
-        obs_tendency = observed_tendency_per_day(Tm, target_raw, lead_days)
-        tendency_scale = _fixed_or_batch_tendency_scale(
-            args,
-            obs_tendency,
-            mask,
-        ).detach()
-        rres_l2 = _mmean((rres_pred * SECONDS_PER_DAY) ** 2) / tendency_scale
-    elif getattr(args, "rres_penalty_normalize", "head") == "rhs":
-        if pred_raw is None:
-            raise ValueError("--rres-penalty-normalize rhs requires pred_raw")
-        Tm = batch["Tm"].to(device)
-        rhs_scale = resolved_rhs_scale_from_linear_path(
-            pred_raw=pred_raw,
-            Tm=Tm,
-            mask=mask,
-            batch=batch,
-            args=args,
-            lead_days=lead_days,
-            we_pred=we_pred,
-        )
-        rres_l2 = _mmean((rres_pred * SECONDS_PER_DAY) ** 2) / rhs_scale
-    else:
-        rres_l2 = _mmean((rres_pred / rres_scale) ** 2)
-
-    # Tie we to entrainment during mixed-layer deepening: we ~ relu(dh/dt), normalized.
-    hm = batch["hm"].to(device)                     # h at forecast start [B,1,H,W]
-    hm_seq = batch["hm_seq"].to(device)             # h over the rollout   [B,L,1,H,W]
-    steps = max(int(lead_days), 1)
-    dhdt = (hm_seq[:, -1] - hm) / (float(steps) * SECONDS_PER_DAY)
+    rres_l2 = rres_penalty(rres_pred, pred_raw, batch, mask, lead_days, args,
+                           we_pred=we_pred, rres_scale=rres_scale)
+    we_tie = entrainment_tie_penalty(we_pred, batch, mask, lead_days, we_scale)
+    hm = batch["hm"].to(device)
+    hm_seq = batch["hm_seq"].to(device)
+    dhdt = (hm_seq[:, -1] - hm) / (max(int(lead_days), 1) * SECONDS_PER_DAY)
     dhdt_deepen = torch.relu(dhdt)
-    we_tie = _mmean(((we_pred - dhdt_deepen) / we_scale) ** 2)
 
     # Budget-term magnitudes for ablation reporting (raw units).
     entrainment_dt = float(getattr(args, "entrainment_dt", 0.0))

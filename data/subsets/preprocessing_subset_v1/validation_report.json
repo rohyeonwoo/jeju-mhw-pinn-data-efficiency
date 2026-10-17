@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-08",
+  "status": "passed",
+  "dataset_count": 24,
+  "unit_tests_passed": 5,
+  "manifest_and_source_hashes": "24/24 passed",
+  "original_subset_hashes": "passed",
+  "dataset_transform_validation": "all 24: train/val/test first and last samples",
+  "physics_reference_parity": "all 24: first 3 selected samples",
+  "serialized_manifest_loader": "ratio_10_lead7_seed42 passed",
+  "heldout_target_exclusion": "all 24 passed",
+  "training_executed": false,
+  "scope": "subset input/target normalization and P0 RHS scale; upstream anomaly climatology retained"
+}

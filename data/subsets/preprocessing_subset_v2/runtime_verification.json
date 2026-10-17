@@ -1,0 +1,105 @@
+{
+  "training_executed": false,
+  "gpu_used": false,
+  "checks": [
+    {
+      "manifest": "ratio_10_lead7_seed42.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_10_lead14_seed42.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_25_lead7_seed42.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_25_lead14_seed42.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_50_lead7_seed42.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_50_lead14_seed42.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_100_lead7_seed42.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_100_lead14_seed42.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_10_lead7_seed7.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_10_lead14_seed7.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_25_lead7_seed7.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_25_lead14_seed7.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_50_lead7_seed7.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_50_lead14_seed7.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_100_lead7_seed7.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_100_lead14_seed7.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_10_lead7_seed123.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_10_lead14_seed123.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_25_lead7_seed123.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_25_lead14_seed123.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_50_lead7_seed123.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_50_lead14_seed123.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_100_lead7_seed123.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    },
+    {
+      "manifest": "ratio_100_lead14_seed123.json",
+      "result": "PASS: actual main setup + CPU optimizer-free loss; same Baseline/PINN tensors; no Full fit"
+    }
+  ],
+  "public_disk_loader": "PASS",
+  "v1_files_preserved": "PASS",
+  "MHW_evaluator_sha256": "9b1864ca94724c641cca7786562c73c62dea8add3b0a28fdc47f1e5fed143853"
+}

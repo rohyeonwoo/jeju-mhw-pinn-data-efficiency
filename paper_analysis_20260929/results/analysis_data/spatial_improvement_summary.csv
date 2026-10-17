@@ -1,0 +1,11 @@
+data_regime,training_fraction,lead_day,improved_grid_fraction,n_improved_cells,n_ocean_cells,definition
+block_subset,10,7,0.986384266263,652,661,difference of seed-mean per-cell RMSE; unweighted ocean cells
+block_subset,10,14,0.829046898638,548,661,difference of seed-mean per-cell RMSE; unweighted ocean cells
+block_subset,25,7,0.515885022693,341,661,difference of seed-mean per-cell RMSE; unweighted ocean cells
+block_subset,25,14,0.862329803328,570,661,difference of seed-mean per-cell RMSE; unweighted ocean cells
+block_subset,50,7,0.868381240545,574,661,difference of seed-mean per-cell RMSE; unweighted ocean cells
+block_subset,50,14,0.638426626324,422,661,difference of seed-mean per-cell RMSE; unweighted ocean cells
+block_subset,100,7,0.856278366112,566,661,difference of seed-mean per-cell RMSE; unweighted ocean cells
+block_subset,100,14,0.574886535552,380,661,difference of seed-mean per-cell RMSE; unweighted ocean cells
+Full,NaN,7,0.205748865356,136,661,difference of seed-mean per-cell RMSE; unweighted ocean cells
+Full,NaN,14,0.373676248109,247,661,difference of seed-mean per-cell RMSE; unweighted ocean cells

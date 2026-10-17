@@ -1,44 +1,25 @@
-# Large datasets; keep data/subsets/*.json tracked.
-/data/**/*.nc
-
-# Generated checkpoints, prediction arrays and run logs.
-# Keep experiment manifests, configs, metrics, CSV and Markdown reports.
-/outputs/**/*.pt
-/outputs/**/*.pth
-/outputs/**/*.ckpt
-/outputs/**/*.npz
-/outputs/**/*.npy
-/outputs/**/*.log
-
-# Python environments and caches.
-.venv/
-venv/
+# Large scientific inputs and trained/predicted arrays stay outside GitHub.
+*.nc
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.tar
+*.tar.gz
+*.zip
+*.log
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.ipynb_checkpoints/
-
-# Local credentials; a future example file may be tracked.
+**/runtime/
+**/tmp/
+.venv/
 .env
 .env.*
 !.env.example
-
-# Machine-specific file-operation records, not experiment results.
-/docs/cleanup_manifest.json
-/docs/cleanup_execution.json
-/docs/cleanup_plan.md
-/docs/layout_migration.json
-
-# Editor and OS files.
 .vscode/
 .idea/
-.DS_Store
-Thumbs.db
-
-# Server-only runtime tree (including the Ceph symlink); publish curated summaries under docs.
-/outputs/data_efficiency
-
-# Installation and verification console logs stay on the server.
-/docs/server_preflight/*.log

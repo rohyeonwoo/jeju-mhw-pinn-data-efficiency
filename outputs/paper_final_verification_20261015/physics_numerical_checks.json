@@ -1,0 +1,43 @@
+{
+  "p0_rhs_runtime_max_error_kday": 2.384185791015625e-07,
+  "p0_residual_runtime_max_error_kday": 1.519918441772461e-06,
+  "tolerance_kday": 2e-06,
+  "prediction_gradient_norm": 0.12311724573373795,
+  "prediction_gradient_finite": true,
+  "runtime_consistency": "PASS",
+  "qnet_component_max_abs_difference_wm2": 9.1552734375e-05,
+  "qnet_component_rmse_wm2": 8.3667661345073e-06,
+  "alignment": {
+    "time": true,
+    "latitude": true,
+    "longitude": true
+  },
+  "velocity": {
+    "uo": {
+      "dims": [
+        "time",
+        "depth",
+        "latitude",
+        "longitude"
+      ],
+      "attrs": {
+        "land_handling": "GLORYS source NaNs are not used as valid data. Remaining target-grid NaNs are filled from nearest finite GLORYS values to keep this filled training dataset numerically usable; exclude land with ocean_mask or ocean_mask_static.",
+        "long_name": "GLORYS eastward velocity interpolated to MHW grid",
+        "units": "m s-1"
+      }
+    },
+    "vo": {
+      "dims": [
+        "time",
+        "depth",
+        "latitude",
+        "longitude"
+      ],
+      "attrs": {
+        "land_handling": "GLORYS source NaNs are not used as valid data. Remaining target-grid NaNs are filled from nearest finite GLORYS values to keep this filled training dataset numerically usable; exclude land with ocean_mask or ocean_mask_static.",
+        "long_name": "GLORYS northward velocity interpolated to MHW grid",
+        "units": "m s-1"
+      }
+    }
+  }
+}

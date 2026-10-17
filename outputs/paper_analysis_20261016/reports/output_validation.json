@@ -1,0 +1,63 @@
+{
+  "input_runs": 120,
+  "test_groups": 40,
+  "paired_seeds": 144,
+  "paired_groups": 48,
+  "figures": 11,
+  "tables": 9,
+  "raw_dates_targets_masks_labels": "120 aligned; prior full metrics audit reused",
+  "source_stats_unchanged": true,
+  "png_dpi_min": 350,
+  "bootstrap_recomputed": false,
+  "training_or_inference_run": false,
+  "NoAdv_rmse_wins": 22,
+  "NoAdv_csi_wins": 19,
+  "roi_counts": [
+    {
+      "region": "All",
+      "n_cells": 661
+    },
+    {
+      "region": "SW_Jeju_exploratory",
+      "n_cells": 40
+    },
+    {
+      "region": "Coast",
+      "n_cells": 141
+    },
+    {
+      "region": "Offshore",
+      "n_cells": 520
+    },
+    {
+      "region": "Historical_SW_Korea",
+      "n_cells": 36
+    }
+  ],
+  "S1_common_epoch_run_counts": {
+    "1": 24,
+    "5": 24,
+    "10": 24,
+    "20": 24,
+    "80": 24
+  },
+  "visually_reviewed": [
+    "Figure1",
+    "Figure3",
+    "Figure5",
+    "S1",
+    "S5"
+  ],
+  "NoAdv_joint_rmse_csi_wins": 18,
+  "NoAdv_CSI_interval_sign_conversion_checked": true,
+  "manuscript_main_paired_rows": 8,
+  "manuscript_main_paired_display_columns": 6,
+  "supplementary_paired_shape": [
+    48,
+    15
+  ],
+  "public_evidence_entries": 7,
+  "publication_evidence_absolute_paths": false,
+  "manuscript_revision_numerics_checked": true,
+  "latex_compiled": false
+}

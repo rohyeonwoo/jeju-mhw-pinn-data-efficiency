@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Matched NoAdv–Adv ablation across eight ratio/lead conditions. Positive ΔRMSE=RMSE(Adv)−RMSE(NoAdv) and ΔCSI=CSI(NoAdv)−CSI(Adv) favor NoAdv. RMSE is mean ± sample SD across three seeds; CSI is the seed mean. Wins count seeds with strictly lower NoAdv RMSE. The 95\% intervals reuse a 90-day temporal block bootstrap conditional on these seeds, without multiplicity correction. Full comparisons appear in Supplementary Table S1; extended NoAdv–Adv CSI intervals appear in the supplementary NoAdv–Adv table.}
+\label{tab:table5_paired}
+\begin{tabular}{rrlllr}
+\toprule
+Ratio (\%) & Lead (d) & ΔRMSE (K) & RMSE 95\% CI & NoAdv wins & ΔCSI \\
+\midrule
+10 & 7 & 0.0616 ± 0.0495 & [0.0461, 0.0793] & 3/3 & 0.03598 \\
+10 & 14 & 0.0313 ± 0.0411 & [0.0047, 0.0591] & 2/3 & 0.02517 \\
+25 & 7 & 0.0371 ± 0.0269 & [0.0255, 0.0501] & 3/3 & 0.01851 \\
+25 & 14 & 0.0504 ± 0.0468 & [0.0263, 0.0774] & 3/3 & 0.05265 \\
+50 & 7 & 0.0417 ± 0.0180 & [0.0260, 0.0586] & 3/3 & 0.03192 \\
+50 & 14 & 0.0125 ± 0.0267 & [-0.0110, 0.0371] & 2/3 & 0.01914 \\
+100 & 7 & 0.0230 ± 0.0127 & [0.0113, 0.0338] & 3/3 & 0.01556 \\
+100 & 14 & 0.0164 ± 0.0019 & [-0.0019, 0.0350] & 3/3 & 0.01867 \\
+\bottomrule
+\end{tabular}
+\end{table}

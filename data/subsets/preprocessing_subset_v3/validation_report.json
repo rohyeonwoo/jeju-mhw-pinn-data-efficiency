@@ -1,0 +1,26 @@
+{
+  "gates": {
+    "manifest_integrity": "PASS",
+    "nested_and_splits": "PASS",
+    "baseline_pinn_same_inputs": "PASS",
+    "no_full_statistics_override": "PASS",
+    "land_fill_invariance": "PASS",
+    "loss_rhs_diagnostic_consistency": "PASS",
+    "inactive_loss_skipped": "PASS",
+    "positive_finite_rhs": "PASS",
+    "mhw_evaluation_preserved": "PASS",
+    "existing_results_preserved": "PASS"
+  },
+  "regression_tests": 24,
+  "gpu_smoke": "PASS",
+  "training_executed": false,
+  "optimizer_steps": 2,
+  "input_target_statistics_refitted": false,
+  "climatology_refitted": false,
+  "gpu_smoke_report": "/ceph_data/yeonwoo/MHW_subset/outputs/v3_preflight_20261008/gpu_smoke.json",
+  "gpu_smoke_optimizer_steps_total": 2,
+  "formal_training_executed": false,
+  "loss_arms_actual_model_cpu": "PASS",
+  "final_verdict": "PASS — 정식 학습 가능",
+  "training_executed_definition": "formal training; limited GPU smoke separately recorded"
+}

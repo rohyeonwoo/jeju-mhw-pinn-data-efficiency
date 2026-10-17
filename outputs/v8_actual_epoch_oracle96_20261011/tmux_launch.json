@@ -1,0 +1,13 @@
+{
+  "session": "v8_actual_oracle96_gpu789",
+  "socket": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runtime/tmux.sock",
+  "panes": "v8_actual_oracle96_gpu789 1787682 bash\n",
+  "allowed_gpus": [
+    7,
+    8,
+    9
+  ],
+  "max_workers_per_gpu": 2,
+  "timestamp": "2026-10-11 17:54 KST",
+  "command": "env CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 TMPDIR=/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/runtime/TMPDIR /ceph_data/yeonwoo/conda_envs/mhw_subset/bin/python -B /ceph_data/yeonwoo/MHW_subset/scripts/oracle96_actual/controller.py > /ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/logs/controller.log 2>&1"
+}

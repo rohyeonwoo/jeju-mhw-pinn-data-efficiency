@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "two_per_gpu": true,
+  "others_memory_counted": true,
+  "pending_worker_reservation": true,
+  "allowed_gpus": [
+    7,
+    8,
+    9
+  ],
+  "timestamp": "2026-10-11 17:54 KST"
+}

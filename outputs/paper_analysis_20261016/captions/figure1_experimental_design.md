@@ -1,0 +1,1 @@
+Figure 1. Study grid and matched Oracle120 design. The dashed box is the new exploratory SW-Jeju region, not a prior dynamical definition. The 100% subset contains 3,995 retained windows and is smaller than the original full training set. All five models use oracle forcing only where specified in their training losses; Test is exploratory.

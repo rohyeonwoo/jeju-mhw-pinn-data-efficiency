@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "same_inputs_initialization_order": true,
+  "timestamp": "2026-10-11 18:33 KST"
+}

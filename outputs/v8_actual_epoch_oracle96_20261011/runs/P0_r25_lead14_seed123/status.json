@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETED",
+  "epochs": 80,
+  "validation_selection_calls": 80,
+  "steps": 4960,
+  "best_epoch": 34,
+  "best_val_rmse": 1.1256615099826035,
+  "post_warmup_best_epoch": 34,
+  "post_warmup_best_val_rmse": 1.1256615099826035,
+  "post_minus_overall_rmse": 0.0,
+  "early_stopping": false,
+  "checkpoint_roundtrip": "PASS",
+  "checkpoint_dir": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/checkpoints/P0_r25_lead14_seed123",
+  "timestamp": "2026-10-12 00:19 KST"
+}

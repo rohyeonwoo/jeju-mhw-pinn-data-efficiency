@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "scope": "launch + first5 actual epochs only; NOT representative completion",
+  "timestamp": "2026-10-11 17:59 KST",
+  "rows": [
+    {
+      "model": "Baseline",
+      "completed_epochs": 7,
+      "updates": 168,
+      "first5_order_match": true,
+      "epoch5_lambda": 0.0,
+      "epoch5_lr": 0.0002,
+      "post_warmup_checkpoint_exists": true
+    },
+    {
+      "model": "P0",
+      "completed_epochs": 9,
+      "updates": 216,
+      "first5_order_match": true,
+      "epoch5_lambda": 0.1,
+      "epoch5_lr": 0.0002,
+      "post_warmup_checkpoint_exists": true
+    },
+    {
+      "model": "NoAdv",
+      "completed_epochs": 9,
+      "updates": 216,
+      "first5_order_match": true,
+      "epoch5_lambda": 0.1,
+      "epoch5_lr": 0.0002,
+      "post_warmup_checkpoint_exists": true
+    },
+    {
+      "model": "Adv",
+      "completed_epochs": 6,
+      "updates": 144,
+      "first5_order_match": true,
+      "epoch5_lambda": 0.1,
+      "epoch5_lr": 0.0002,
+      "post_warmup_checkpoint_exists": true
+    }
+  ],
+  "leases": [
+    {
+      "gpu": 7,
+      "job": 0,
+      "pid": 1789321,
+      "start_ticks": "9995026",
+      "phase": "train",
+      "log": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/logs/train_Baseline_r10_lead7_seed42_1791708937111202401.log"
+    },
+    {
+      "gpu": 8,
+      "job": 1,
+      "pid": 1789322,
+      "start_ticks": "9995027",
+      "phase": "train",
+      "log": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/logs/train_P0_r10_lead7_seed42_1791708937130045467.log"
+    },
+    {
+      "gpu": 9,
+      "job": 2,
+      "pid": 1789323,
+      "start_ticks": "9995044",
+      "phase": "train",
+      "log": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/logs/train_NoAdv_r10_lead7_seed42_1791708937292636069.log"
+    },
+    {
+      "gpu": 7,
+      "job": 3,
+      "pid": 1789751,
+      "start_ticks": "9995768",
+      "phase": "train",
+      "log": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_oracle96_20261011/logs/train_Adv_r10_lead7_seed42_1791708944539263968.log"
+    }
+  ],
+  "gpu_processes": [
+    [
+      "GPU-76c80055-411b-1994-f310-83cead2ddd57",
+      " 1789321",
+      " yeonwoo",
+      " 8360"
+    ],
+    [
+      "GPU-76c80055-411b-1994-f310-83cead2ddd57",
+      " 1789751",
+      " yeonwoo",
+      " 11568"
+    ],
+    [
+      "GPU-ac578650-c7e5-cdc8-475d-211111324b26",
+      " 1789322",
+      " yeonwoo",
+      " 11568"
+    ],
+    [
+      "GPU-3405285d-f606-7faa-d78e-e1333eb0fbe1",
+      " 1789323",
+      " yeonwoo",
+      " 11568"
+    ]
+  ],
+  "completed_runs": 0,
+  "test_evaluation": "NOT_RUN"
+}

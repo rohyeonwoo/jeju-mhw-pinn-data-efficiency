@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "modes": [
+    "removed",
+    "oracle_present",
+    "NaN_poisoned"
+  ],
+  "prediction_bitwise_identical": true,
+  "model_state_unchanged": true,
+  "baseline_truth_identical": true,
+  "optimizer_steps": 0
+}

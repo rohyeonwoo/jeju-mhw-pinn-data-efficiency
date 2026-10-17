@@ -1,0 +1,468 @@
+{
+  "timestamp_kst": "2026-10-08T14:01:05.867178+09:00",
+  "training_executed": false,
+  "gpu_used": false,
+  "setup_method": "actual main AST prefix before config/optimizer; cached immutable raw arrays; CPU zero-output probe; run_epoch optimizer=None",
+  "disk_loader_roundtrip": "PASS",
+  "datasets": [
+    {
+      "manifest": "ratio_10_lead7_seed42.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.215541124343872,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.215541124343872,
+          "physics_loss": 0.5296554565429688,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 7062,
+      "theta_climatology_days_outside_selected_sample_footprints": 7006,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_10_lead14_seed42.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.4410463571548462,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.4410463571548462,
+          "physics_loss": 0.5006329417228699,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 7062,
+      "theta_climatology_days_outside_selected_sample_footprints": 6950,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_25_lead7_seed42.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.1387608051300049,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.1387608051300049,
+          "physics_loss": 0.533534049987793,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 6074,
+      "theta_climatology_days_outside_selected_sample_footprints": 5927,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_25_lead14_seed42.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.2692941427230835,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.2692941427230835,
+          "physics_loss": 0.49620866775512695,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 6074,
+      "theta_climatology_days_outside_selected_sample_footprints": 5780,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_50_lead7_seed42.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 0.6106990575790405,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 0.6106990575790405,
+          "physics_loss": 0.3540588617324829,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 4478,
+      "theta_climatology_days_outside_selected_sample_footprints": 4184,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_50_lead14_seed42.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 0.3871205449104309,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 0.3871205449104309,
+          "physics_loss": 0.32961708307266235,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 4478,
+      "theta_climatology_days_outside_selected_sample_footprints": 3890,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_100_lead7_seed42.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.618835210800171,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.618835210800171,
+          "physics_loss": 0.4234163463115692,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 1210,
+      "theta_climatology_days_outside_selected_sample_footprints": 615,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_100_lead14_seed42.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.6642212867736816,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.6642212867736816,
+          "physics_loss": 0.3334500789642334,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 1210,
+      "theta_climatology_days_outside_selected_sample_footprints": 20,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_10_lead7_seed7.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 0.20500986278057098,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 0.20500986278057098,
+          "physics_loss": 0.3021203875541687,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 7062,
+      "theta_climatology_days_outside_selected_sample_footprints": 7006,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_10_lead14_seed7.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 0.22165067493915558,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 0.22165067493915558,
+          "physics_loss": 0.28759682178497314,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 7062,
+      "theta_climatology_days_outside_selected_sample_footprints": 6950,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_25_lead7_seed7.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 0.9482571482658386,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 0.9482571482658386,
+          "physics_loss": 0.5210680365562439,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 6074,
+      "theta_climatology_days_outside_selected_sample_footprints": 5927,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_25_lead14_seed7.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.0571507215499878,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.0571507215499878,
+          "physics_loss": 0.4855296015739441,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 6074,
+      "theta_climatology_days_outside_selected_sample_footprints": 5780,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_50_lead7_seed7.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.495804786682129,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.495804786682129,
+          "physics_loss": 0.4305680990219116,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 4478,
+      "theta_climatology_days_outside_selected_sample_footprints": 4184,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_50_lead14_seed7.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.5215131044387817,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.5215131044387817,
+          "physics_loss": 0.33837226033210754,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 4478,
+      "theta_climatology_days_outside_selected_sample_footprints": 3890,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_100_lead7_seed7.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.618835210800171,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.618835210800171,
+          "physics_loss": 0.4234163463115692,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 1210,
+      "theta_climatology_days_outside_selected_sample_footprints": 615,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_100_lead14_seed7.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.6642212867736816,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.6642212867736816,
+          "physics_loss": 0.3334500789642334,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 1210,
+      "theta_climatology_days_outside_selected_sample_footprints": 20,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_10_lead7_seed123.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 2.2293589115142822,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 2.2293589115142822,
+          "physics_loss": 0.8412817120552063,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 7062,
+      "theta_climatology_days_outside_selected_sample_footprints": 7006,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_10_lead14_seed123.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 2.2885472774505615,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 2.2885472774505615,
+          "physics_loss": 0.7490795254707336,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 7062,
+      "theta_climatology_days_outside_selected_sample_footprints": 6950,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_25_lead7_seed123.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 2.4281866550445557,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 2.4281866550445557,
+          "physics_loss": 0.8414729237556458,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 6074,
+      "theta_climatology_days_outside_selected_sample_footprints": 5927,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_25_lead14_seed123.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 2.3730382919311523,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 2.3730382919311523,
+          "physics_loss": 0.7379583120346069,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 6074,
+      "theta_climatology_days_outside_selected_sample_footprints": 5780,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_50_lead7_seed123.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 0.1862180233001709,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 0.1862180233001709,
+          "physics_loss": 0.31863173842430115,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 4478,
+      "theta_climatology_days_outside_selected_sample_footprints": 4184,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_50_lead14_seed123.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 0.19644056260585785,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 0.19644056260585785,
+          "physics_loss": 0.30803248286247253,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 4478,
+      "theta_climatology_days_outside_selected_sample_footprints": 3890,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_100_lead7_seed123.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.618835210800171,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.618835210800171,
+          "physics_loss": 0.4234163463115692,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 1210,
+      "theta_climatology_days_outside_selected_sample_footprints": 615,
+      "theta_climatology_heldout_target_dates": 0
+    },
+    {
+      "manifest": "ratio_100_lead14_seed123.json",
+      "checks_3_4_5_6": "PASS",
+      "loss_probe": {
+        "none": {
+          "data_loss": 1.6642212867736816,
+          "physics_loss": 0.0,
+          "rres_l2": 0.0
+        },
+        "p0_original": {
+          "data_loss": 1.6642212867736816,
+          "physics_loss": 0.3334500789642334,
+          "rres_l2": 0.0
+        }
+      },
+      "theta_climatology_days_outside_input_fit": 1210,
+      "theta_climatology_days_outside_selected_sample_footprints": 20,
+      "theta_climatology_heldout_target_dates": 0
+    }
+  ],
+  "nested_and_cross_lead_indices": "PASS",
+  "all_datasets_verified": 24,
+  "conflicting_full_scale_rejected": "PASS"
+}

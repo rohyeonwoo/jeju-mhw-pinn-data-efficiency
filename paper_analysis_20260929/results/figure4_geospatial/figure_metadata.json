@@ -1,0 +1,37 @@
+{
+  "pdf": "/ceph_data/yeonwoo/MHW_subset/paper_analysis_20260929/results/figure4_geospatial/fig4_spatial_delta_rmse_10pct_geospatial.pdf",
+  "png": "/ceph_data/yeonwoo/MHW_subset/paper_analysis_20260929/results/figure4_geospatial/fig4_spatial_delta_rmse_10pct_geospatial.png",
+  "size_inches": [
+    3.35,
+    6.3
+  ],
+  "png_dpi": 600,
+  "layout": "single-column 2x1",
+  "colormap": "RdBu_r",
+  "color_scale": [
+    -0.231367355691,
+    0.231367355691
+  ],
+  "center": 0,
+  "legacy_common_scale_from_four_original_maps": 0.231367355691,
+  "required_scale_of_two_ratio10_panels": 0.23136735569068678,
+  "geographic_extent_edges": [
+    122.875,
+    131.125,
+    29.875,
+    37.125
+  ],
+  "aspect": "1/cos(mean native latitude); geographic degree axes; not a projected/regridded map",
+  "mask": "296 excluded cells blank; all 661 ocean cells have full finite test predictions and native targets",
+  "caption": "Cellwise change in SST RMSE under the 10% controlled block allocation, P0 PINN minus baseline. Each model RMSE is calculated over held-out target dates separately for each seed and then averaged over seeds 7, 42 and 123. Negative (blue) values favor P0 PINN. (a) 7-day lead; (b) 14-day lead. Both panels use identical geographic bounds and a common zero-centered color scale. Blank cells lie outside the 661-cell evaluation mask.",
+  "metric": "mean_seed(sqrt(mean_date((PINN-target)^2))) - mean_seed(sqrt(mean_date((baseline-target)^2))) per cell",
+  "timestamp_kst": "2026-10-01T16:52:30.753053+09:00",
+  "script": "/ceph_data/yeonwoo/MHW_subset/paper_analysis_20260929/generate_figure4_geospatial.py",
+  "script_sha256": "77cd04059e192843473f9250f70acd800f54dd96c7fe72b552573a29ab368e98",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "xarray": "2026.7.0",
+    "matplotlib": "3.11.2"
+  }
+}

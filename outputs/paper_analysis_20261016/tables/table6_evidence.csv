@@ -1,0 +1,8 @@
+evidence_id,item,evidence,verification_method,status
+E1,Model and protocol,outputs/paper_final_verification_20261015/protocol120.csv,"Inspect all 120 run configurations, epoch counts and selected-checkpoint records.",Existing evidence reused; audit not rerun
+E2,MHW threshold,outputs/paper_final_verification_20261015/mhw_reference_check.json,Inspect the prior bitwise reference comparison and shared evaluation-threshold check.,Existing evidence reused; audit not rerun
+E3,Test metrics and alignment,outputs/paper_final_verification_20261015/analysis_status.json,Inspect the prior 120-run metric recomputation and target/mask/label alignment status.,Existing evidence reused; audit not rerun
+E4,Stencil,outputs/paper_final_verification_20261015/stencil_tests.csv,Inspect the 88 recorded regular-grid numerical tests and their outcomes.,Existing evidence reused; audit not rerun
+E5,Coordinates / support,outputs/paper_final_verification_20261015/dataset_metadata.json,Check ascending coordinates and recorded ocean/support counts of 661/660.,Existing evidence reused; audit not rerun
+E6,Auxiliary diagnostics,outputs/paper_final_verification_20261015/aux_diagnostics_rechecked.csv,Inspect the saved diagnostic-batch outputs and gradients; no optimizer update is performed.,Existing evidence reused; audit not rerun
+E7,Physics units,outputs/paper_final_verification_20261015/horizontal_advection_audit.md,"Inspect the K/day conversion, coordinate conventions and recorded upstream limitations.",Existing evidence reused; audit not rerun

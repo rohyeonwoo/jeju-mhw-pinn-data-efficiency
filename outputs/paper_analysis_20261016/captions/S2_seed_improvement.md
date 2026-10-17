@@ -1,0 +1,1 @@
+Figure S2. Seedwise RMSE improvement percentages for six prespecified paired comparisons: 100(reference−candidate)/reference. Each dot represents an identical ratio/lead/seed pair; positive favors the candidate. Percentage averages in tables are averages of these seedwise values, not percentages computed from group means.

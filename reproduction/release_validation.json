@@ -1,0 +1,18 @@
+{
+  "project_bytes": 69121049022,
+  "proposed_cleanup_files": 1562,
+  "proposed_cleanup_bytes": 50719366500,
+  "remaining_bytes": 18401682522,
+  "source_files_verified": 133,
+  "input_files_deleted": 0,
+  "input_files_moved": 0,
+  "github_upload_performed": false,
+  "special_sockets_excluded": 3,
+  "final_validation_best_preserved": 120,
+  "completed_resume_alternate_candidates": 216,
+  "kept_scientific_files_check": {
+    "kept_scientific_files_checked": 7245,
+    "missing": [],
+    "changed_size": []
+  }
+}

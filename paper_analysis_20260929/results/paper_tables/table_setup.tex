@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\caption{Verified experimental setup. Block 100\% is distinct from Full.}
+\label{tab:table_setup}
+\small
+\begin{tabular}{ll}
+\toprule
+Setting & Value \\
+\midrule
+Input history / leads & 30 days / 7, 14 days \\
+Block fractions & 10, 25, 50, 100\% \\
+Training windows & 376, 987, 1974, 3995 \\
+Full reference windows & 7644 (7d), 7639 (14d) \\
+Subset / training seeds & 7, 42, 123 (paired) \\
+Train/val/test split & Chronological 70/15/15 samples \\
+Batch / maximum steps & 16 / 38240 \\
+Validation / patience & 478 steps / 12 validations \\
+Normalization & Original Full training statistics \\
+MHW reference & First 7670 daily records \\
+MHW threshold / duration & DOY 90th percentile / 5 days \\
+Primary bootstrap & 20000 shared 90-day block draws \\
+\bottomrule
+\end{tabular}
+\end{table*}

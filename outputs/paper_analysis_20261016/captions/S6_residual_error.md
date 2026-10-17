@@ -1,0 +1,1 @@
+Figure S6. Existing common-equation posthoc residual RMS and SST RMSE for all 120 frozen predictions. A excludes horizontal advection and B includes it. Daily within-run residual/error correlations are also provided. Descriptive associations do not show independent physical closure or causal improvement.

@@ -1,0 +1,183 @@
+{
+  "jobs": [
+    {
+      "name": "Auxiliary_r10_lead7_seed42",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r10_lead7_seed42/best.pt",
+      "sha256": "cff8d107520d387a36ba55902bd9e4773e9f08e5fb1235a60e9e0477fb2808fc",
+      "epoch": 26,
+      "val_rmse": 1.0398550287768349
+    },
+    {
+      "name": "Auxiliary_r10_lead7_seed7",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r10_lead7_seed7/best.pt",
+      "sha256": "e27c56dffba878ff50f3e803858dbe89c7b467dc916f2f2f0ab14e1599c9cd84",
+      "epoch": 20,
+      "val_rmse": 1.0022925347938947
+    },
+    {
+      "name": "Auxiliary_r10_lead7_seed123",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r10_lead7_seed123/best.pt",
+      "sha256": "8b831f6e17b59f99a61b1acc5835770492010281d7416e7feca44f1a9d786185",
+      "epoch": 52,
+      "val_rmse": 0.9829923744872979
+    },
+    {
+      "name": "Auxiliary_r10_lead14_seed42",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r10_lead14_seed42/best.pt",
+      "sha256": "0712452ee192c19819113bbe4d2b71761ad6f17f9e343842135c0efbc697b4a8",
+      "epoch": 14,
+      "val_rmse": 1.240005211254051
+    },
+    {
+      "name": "Auxiliary_r10_lead14_seed7",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r10_lead14_seed7/best.pt",
+      "sha256": "3db154f3a0d277a46d03be020c12e659de7105dafca11ea046cc94f3f4d769fb",
+      "epoch": 11,
+      "val_rmse": 1.2285019337889556
+    },
+    {
+      "name": "Auxiliary_r10_lead14_seed123",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r10_lead14_seed123/best.pt",
+      "sha256": "20f0936af8ebe451af59e8c63b13c59d6004459c7c67bc49261370ea107d7242",
+      "epoch": 16,
+      "val_rmse": 1.203957292522228
+    },
+    {
+      "name": "Auxiliary_r25_lead7_seed42",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r25_lead7_seed42/best.pt",
+      "sha256": "7cf35187003b553cb011303a57447a83ac259e7bcbba18f3d3599d4bd16752ba",
+      "epoch": 28,
+      "val_rmse": 0.8926174985873988
+    },
+    {
+      "name": "Auxiliary_r25_lead7_seed7",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r25_lead7_seed7/best.pt",
+      "sha256": "43c38691553c9135b893b92d1a2f3c17894a4b52ac53747507e3e6d8d03e98de",
+      "epoch": 20,
+      "val_rmse": 0.8781288594688098
+    },
+    {
+      "name": "Auxiliary_r25_lead7_seed123",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r25_lead7_seed123/best.pt",
+      "sha256": "4ef7ce0c8219c6c6daa5f37a261fd274e3d3bfa5ef4b00614ca261ebe98cd278",
+      "epoch": 17,
+      "val_rmse": 0.8815089345874484
+    },
+    {
+      "name": "Auxiliary_r25_lead14_seed42",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r25_lead14_seed42/best.pt",
+      "sha256": "878c4df4aad1ea904bd3e065c8322925e2531a8ce29bc6827875bd7ba2b3607d",
+      "epoch": 15,
+      "val_rmse": 1.0692420364536477
+    },
+    {
+      "name": "Auxiliary_r25_lead14_seed7",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r25_lead14_seed7/best.pt",
+      "sha256": "3c7e4ada1bab40ac3eb4cdab82d13a4f75296c33290d0d4a4a320455a1b2d419",
+      "epoch": 14,
+      "val_rmse": 1.0832886055284523
+    },
+    {
+      "name": "Auxiliary_r25_lead14_seed123",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r25_lead14_seed123/best.pt",
+      "sha256": "3c1fff2f1bc24c0069c1494b57d82557f0511b642bdb485b23ef17ca134daf30",
+      "epoch": 4,
+      "val_rmse": 1.0947466632771992
+    },
+    {
+      "name": "Auxiliary_r50_lead7_seed42",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r50_lead7_seed42/best.pt",
+      "sha256": "939aa5f9f4e2970be0d5f09e6634783845d3db953f8e2369ddc0eb900e92496e",
+      "epoch": 22,
+      "val_rmse": 0.8489333009015658
+    },
+    {
+      "name": "Auxiliary_r50_lead7_seed7",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r50_lead7_seed7/best.pt",
+      "sha256": "e5012647c9e134dec316d253f733338b87150681d588ade763377ee48fe6a19d",
+      "epoch": 23,
+      "val_rmse": 0.8449291789292069
+    },
+    {
+      "name": "Auxiliary_r50_lead7_seed123",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r50_lead7_seed123/best.pt",
+      "sha256": "f689e389674c303b3c391a7144ca6ddc1f8a0a057db3562041f73b94dc61ed6b",
+      "epoch": 32,
+      "val_rmse": 0.854943493485823
+    },
+    {
+      "name": "Auxiliary_r50_lead14_seed42",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r50_lead14_seed42/best.pt",
+      "sha256": "67788c7b40ed2cd4e763abe36ce7f966ffd21f03d606d00b3d1dcc7b5ba96d30",
+      "epoch": 41,
+      "val_rmse": 1.0178482457190225
+    },
+    {
+      "name": "Auxiliary_r50_lead14_seed7",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r50_lead14_seed7/best.pt",
+      "sha256": "cdfd5b0efcf7b330723adad58a43c5f16f657ba2bdd164dca23eb31b3ec8cd00",
+      "epoch": 27,
+      "val_rmse": 1.0082725131047425
+    },
+    {
+      "name": "Auxiliary_r50_lead14_seed123",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r50_lead14_seed123/best.pt",
+      "sha256": "f75dac9affa08a650f98e1d05e06815223dbabc87798d98c79dbe3c9b5101d8c",
+      "epoch": 31,
+      "val_rmse": 1.039400166881456
+    },
+    {
+      "name": "Auxiliary_r100_lead7_seed42",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r100_lead7_seed42/best.pt",
+      "sha256": "cd491efa350779a93218f6fe10fb18320cb07b7e47a24bdc90c0ef5d7cc37355",
+      "epoch": 19,
+      "val_rmse": 0.8171921677697905
+    },
+    {
+      "name": "Auxiliary_r100_lead7_seed7",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r100_lead7_seed7/best.pt",
+      "sha256": "7022dd84a2d64174edf8b0c20372d8cd537ad1159b2834f9277089f1d3483b67",
+      "epoch": 23,
+      "val_rmse": 0.8179264559488857
+    },
+    {
+      "name": "Auxiliary_r100_lead7_seed123",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r100_lead7_seed123/best.pt",
+      "sha256": "b6b3ff21769053a3c8a4d6150983fd564b64b31bb28cc62c0e81baa74341f5b4",
+      "epoch": 20,
+      "val_rmse": 0.8188264869048963
+    },
+    {
+      "name": "Auxiliary_r100_lead14_seed42",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r100_lead14_seed42/best.pt",
+      "sha256": "8e0b693a5789ea07ab612fb3b786a20a860dfb3780bcc9e29da3248e4a91ed13",
+      "epoch": 19,
+      "val_rmse": 0.9711465107159848
+    },
+    {
+      "name": "Auxiliary_r100_lead14_seed7",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r100_lead14_seed7/best.pt",
+      "sha256": "7d5940e0ea7b5198728f40b093d72c5be73bd8b11fdd13d413705591f767a7a5",
+      "epoch": 18,
+      "val_rmse": 0.9684674594068196
+    },
+    {
+      "name": "Auxiliary_r100_lead14_seed123",
+      "checkpoint": "/ceph_data/yeonwoo/MHW_subset/outputs/v8_actual_epoch_auxiliary24_20261015/checkpoints/Auxiliary_r100_lead14_seed123/best.pt",
+      "sha256": "204530b09fedc08fdd580d0e581dcae15b3386997720a8fe4bb12532560ec950",
+      "epoch": 7,
+      "val_rmse": 0.969307886986785
+    }
+  ],
+  "reference_sha256": "ebf00ed893ac839e1593f81a631c4a51cb2e772840be04c0a40787476c24402e",
+  "training_protocol_sha256": "60128a049784c910228dcba5916906e6199c1be87eb0171563a3f889e9e91de5",
+  "inference_source_sha256": "5868c6bcff15ede6145872b25ef738d3eb7aa1d61ae0c5543ed40455bbc734bc",
+  "selection": "fixed pre-existing Validation-best; no re-selection",
+  "gpus": [
+    5,
+    6,
+    7
+  ],
+  "max_processes_per_gpu": 1,
+  "optimizer_steps": 0
+}

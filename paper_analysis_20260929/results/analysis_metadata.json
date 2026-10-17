@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-09-29T09:11:41.160770+00:00",
+  "script_sha256": "bad43880e2355ac6a42325ca5d267abd975d5df6e4a7501818401c9db4aabad4",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "matplotlib": "3.11.2",
+  "command": [
+    "/ceph_data/yeonwoo/MHW_subset/paper_analysis_20260929/analyze_data_scarcity_paper.py",
+    "--results-root",
+    "/ceph_data/yeonwoo/MHW_subset/outputs/data_efficiency",
+    "--output-dir",
+    "/ceph_data/yeonwoo/MHW_subset/paper_analysis_20260929/results",
+    "--bootstrap",
+    "20000"
+  ],
+  "bootstrap_seed_formula": "20260925 + lead + block_days",
+  "float_precision": "float64 error reductions; saved evaluator values remain primary",
+  "figure_count": 15,
+  "csv_count": 40,
+  "primary_main_protocol": "batch16 original, not corrected clean pilot",
+  "editorial_validation": "Lead-specific trend wording checked against scarcity_trend.csv; setup table uses table* for ACM width.",
+  "curve_layout_update": "2026-10-01 Asia/Seoul; existing 1x2 curve panels changed to 2x1 using stored CSV only",
+  "rmse_layout_update": "2026-10-01: reference style preserved; relative 90-day bootstrap 95% CI restored; absolute mean ± SD and independent lead axes; 2x1 panels"
+}

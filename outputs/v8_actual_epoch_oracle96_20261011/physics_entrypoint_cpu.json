@@ -1,0 +1,90 @@
+[
+  {
+    "lead": 7,
+    "model": "B0",
+    "epoch": 1,
+    "lambda_effective": 0.0,
+    "data_loss": 1.4605116844177246,
+    "physics_loss": 0.0,
+    "physics_predictor_gradient": 0.0,
+    "weighted_ratio": 0.0,
+    "status": "PASS"
+  },
+  {
+    "lead": 7,
+    "model": "B1",
+    "epoch": 1,
+    "lambda_effective": 0.020000000000000004,
+    "data_loss": 1.4605116844177246,
+    "physics_loss": 15.761465072631836,
+    "physics_predictor_gradient": 369.48710403542253,
+    "weighted_ratio": 0.18167129336928659,
+    "status": "PASS"
+  },
+  {
+    "lead": 7,
+    "model": "A",
+    "epoch": 1,
+    "lambda_effective": 0.020000000000000004,
+    "data_loss": 1.4605116844177246,
+    "physics_loss": 11.61189079284668,
+    "physics_predictor_gradient": 313.8811323126191,
+    "weighted_ratio": 0.15433066715633706,
+    "status": "PASS"
+  },
+  {
+    "lead": 7,
+    "model": "B",
+    "epoch": 1,
+    "lambda_effective": 0.020000000000000004,
+    "data_loss": 1.4605116844177246,
+    "physics_loss": 12.040169715881348,
+    "physics_predictor_gradient": 321.15832214437984,
+    "weighted_ratio": 0.15790875276308952,
+    "status": "PASS"
+  },
+  {
+    "lead": 14,
+    "model": "B0",
+    "epoch": 1,
+    "lambda_effective": 0.0,
+    "data_loss": 1.7413370609283447,
+    "physics_loss": 0.0,
+    "physics_predictor_gradient": 0.0,
+    "weighted_ratio": 0.0,
+    "status": "PASS"
+  },
+  {
+    "lead": 14,
+    "model": "B1",
+    "epoch": 1,
+    "lambda_effective": 0.020000000000000004,
+    "data_loss": 1.7413370609283447,
+    "physics_loss": 5.646406650543213,
+    "physics_predictor_gradient": 108.55567139659053,
+    "weighted_ratio": 0.04868847312626429,
+    "status": "PASS"
+  },
+  {
+    "lead": 14,
+    "model": "A",
+    "epoch": 1,
+    "lambda_effective": 0.020000000000000004,
+    "data_loss": 1.7413370609283447,
+    "physics_loss": 5.035985469818115,
+    "physics_predictor_gradient": 113.20336881950786,
+    "weighted_ratio": 0.05077301913075637,
+    "status": "PASS"
+  },
+  {
+    "lead": 14,
+    "model": "B",
+    "epoch": 1,
+    "lambda_effective": 0.020000000000000004,
+    "data_loss": 1.7413370609283447,
+    "physics_loss": 5.405547618865967,
+    "physics_predictor_gradient": 122.38819636950375,
+    "weighted_ratio": 0.05489252042980496,
+    "status": "PASS"
+  }
+]

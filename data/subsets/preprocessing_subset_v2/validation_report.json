@@ -1,0 +1,15 @@
+{
+  "timestamp_kst": "2026-10-08T14:21:51.075520+09:00",
+  "gates": {
+    "subset_only_invariance": "PASS",
+    "baseline_pinn_equal": "PASS",
+    "coverage_missing_extremes": "PASS",
+    "actual_v2_entrypoint_no_full_override": "PASS"
+  },
+  "training_executed": false,
+  "gpu_used": false,
+  "artifact_count": 24,
+  "target_stats_unchanged": "24/24 PASS",
+  "rhs_unchanged": "24/24 PASS",
+  "v1_unchanged": true
+}

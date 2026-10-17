@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "models": 120,
+  "recomputed_metrics_match": 120,
+  "ground_truth_same": true,
+  "block_days": [
+    30,
+    90,
+    180
+  ],
+  "replicates": 2000,
+  "resampling": "paired circular time blocks; all grid cells jointly; same times across fixed three seeds; mean per-seed metrics; MHW labels fixed before resampling",
+  "bootstrap_seed": "20261015+lead+block",
+  "NoAdv_vs_Adv_seed_wins": 22
+}

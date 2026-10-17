@@ -1,0 +1,8 @@
+item,status,reason
+MHW threshold/climatology array and fresh event masks,계산 불가,"No saved arrays in discovered result NPZ/NPY; evaluator originally recomputed from training NetCDF, which this saved-results-only analysis does not read."
+MHW CSI/POD/FAR paired date bootstrap,계산 불가,Aggregate counts exist but not per-date event masks/counts; cannot resample aggregate scores as dates.
+Non-MHW-conditioned RMSE and fresh MHW-conditioned recomputation,계산 불가,Exact MHW masks absent. Existing saved MHW-conditioned RMSE is retained and labeled.
+Latitude/longitude geographic maps,계산 불가,Saved prediction/graph NPZ has mask/topology but no raw lat/lon. Grid-index maps supplied instead; normalized node features not treated as coordinates.
+ACC independent recomputation,계산 불가,Saved ACC reused; climatology arrays absent.
+New-training-seed population CI,계산 불가,Only 3 fitted seed pairs; bootstrap describes conditional test-period variation.
+Reliable isolated wall-clock efficiency comparison,계산 불가,Concurrent shared-GPU original jobs; logged elapsed time is descriptive only.

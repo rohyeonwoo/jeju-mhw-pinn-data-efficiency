@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "epochs": 80,
+  "updates": 160,
+  "resume_after_epoch": 3,
+  "weights_bitwise_equal": true,
+  "history_and_sampler_equal": true,
+  "both_checkpoint_reload": true,
+  "nonfinite_guard": true
+}

@@ -1,0 +1,16 @@
+{
+  "bootstrap_matches_existing_reference_and_zero_effect_test": true,
+  "all_pairs_and_signs_independently_verified": true,
+  "report_tables_equal_csv_values": true,
+  "lead_specific_trend_text_verified": true,
+  "14_figures_pdf_png_300dpi_and_plot_source_numeric_consistency": true,
+  "latex_values_and_two_column_environments_verified": true,
+  "all_discovered_original_result_files_size_mtime_unchanged": true,
+  "inventory_mtime_precision": "ISO microseconds; <=1 microsecond conversion tolerance; used-source contents additionally SHA-256 verified",
+  "all_used_source_hashes_unchanged": true,
+  "mhw_definitions_identical_across_fractions_and_full": true,
+  "torch_not_imported_cuda_hidden": true,
+  "status": "passed",
+  "input_source_count": 551,
+  "original_discovered_files": 1869
+}
